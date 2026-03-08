@@ -1,0 +1,108 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import VideoPlayer from '../../../components/VideoPlayer.astro';
+import EpisodeCard from '../../../components/EpisodeCard.astro';
+import { getAllSeries, getSerieBySlug, getSerieEpisodios, getTemaPrincipal, getCanalDeSerie } from '../../../lib/datos';
+import { formatDate } from '../../../lib/utils';
+
+export function getStaticPaths() {
+  const series = getAllSeries();
+  const paths: { params: { tema: string; serie: string; episodio: string } }[] = [];
+
+  for (const s of series) {
+    for (const ep of s.episodios) {
+      if (ep.titulo === 'Deleted video' || ep.titulo === 'Private video') continue;
+      paths.push({
+        params: {
+          tema: s.temas[0],
+          serie: s.slug,
+          episodio: ep.video_id,
+        },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { tema: temaSlug, serie: serieSlug, episodio: videoId } = Astro.params;
+const serie = getSerieBySlug(serieSlug!)!;
+const tema = getTemaPrincipal(serie)!;
+const canal = getCanalDeSerie(serie);
+const episodios = getSerieEpisodios(serie);
+const episode = episodios.find(ep => ep.video_id === videoId)!;
+
+const relacionados = episodios.filter(ep => ep.video_id !== videoId).slice(0, 8);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: episode.titulo,
+  description: episode.descripcion || `${episode.titulo} — ${serie.nombre}`,
+  thumbnailUrl: episode.thumbnail,
+  uploadDate: episode.fecha_emision,
+  embedUrl: `https://www.youtube.com/embed/${episode.video_id}`,
+  contentUrl: `https://www.youtube.com/watch?v=${episode.video_id}`,
+};
+---
+
+<Layout
+  title={`${episode.titulo} — Biblioteca`}
+  description={episode.descripcion || `${episode.titulo} — ${serie.nombre}`}
+  image={episode.thumbnail}
+  ogType="video.other"
+  jsonLd={jsonLd}
+>
+  <VideoPlayer
+    videoId={episode.video_id}
+    title={episode.titulo}
+    embeddable={episode.embeddable}
+    thumbnail={episode.thumbnail}
+  />
+
+  <section class="py-8">
+    <div class="container mx-auto px-4 md:px-8 max-w-5xl">
+      <nav class="text-sm text-brand-400 mb-4">
+        <a href="/" class="hover:text-brand-600 transition">Inicio</a>
+        <span class="mx-2 text-brand-300">/</span>
+        <a href={`/${temaSlug}/`} class="hover:text-brand-600 transition">{tema.nombre}</a>
+        <span class="mx-2 text-brand-300">/</span>
+        <a href={`/${temaSlug}/${serieSlug}/`} class="hover:text-brand-600 transition">{serie.nombre}</a>
+      </nav>
+
+      <h1 class="text-2xl md:text-3xl font-bold text-brand-800">{episode.titulo}</h1>
+
+      <div class="flex flex-wrap items-center gap-3 mt-2 text-sm text-brand-500">
+        <span>{formatDate(episode.fecha_emision)}</span>
+        {canal && (
+          <>
+            <span>&middot;</span>
+            <span>{canal.nombre}</span>
+          </>
+        )}
+      </div>
+
+      {episode.descripcion && (
+        <div class="mt-4 text-brand-700 whitespace-pre-line max-w-3xl">
+          {episode.descripcion}
+        </div>
+      )}
+    </div>
+  </section>
+
+  {relacionados.length > 0 && (
+    <section class="py-8 bg-brand-100">
+      <div class="container mx-auto px-4 md:px-8">
+        <h2 class="text-xl font-bold text-brand-800 mb-6">Más de {serie.nombre}</h2>
+        <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {relacionados.map(ep => (
+            <EpisodeCard
+              episode={ep}
+              href={`/${temaSlug}/${serieSlug}/${ep.video_id}`}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+</Layout>

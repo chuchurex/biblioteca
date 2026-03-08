@@ -1,0 +1,4451 @@
+{
+  "temas": [
+    {
+      "slug": "ley-del-uno",
+      "nombre": "La Ley del Uno",
+      "descripcion": "El Material de Ra: cosmología, densidades, el Creador, la evolución del alma y el servicio a otros.",
+      "icono": "☥"
+    },
+    {
+      "slug": "antroposofia",
+      "nombre": "Antroposofía",
+      "descripcion": "La ciencia espiritual de Rudolf Steiner: mundos superiores, teosofía, ciencia oculta, pedagogía Waldorf y medicina antroposófica.",
+      "icono": "🌿"
+    },
+    {
+      "slug": "chamanismo-tolteca",
+      "nombre": "Chamanismo tolteca",
+      "descripcion": "Carlos Castaneda, don Juan Matus, el nagualismo, Jacobo Grinberg y la tradición chamánica mesoamericana.",
+      "icono": "🦅"
+    },
+    {
+      "slug": "cuarto-camino",
+      "nombre": "Cuarto Camino",
+      "descripcion": "G.I. Gurdjieff, P.D. Ouspensky: el trabajo sobre sí, el recuerdo de sí, la atención y la consciencia.",
+      "icono": "⚙"
+    },
+    {
+      "slug": "no-dualidad",
+      "nombre": "No-dualidad",
+      "descripcion": "Advaita Vedanta, auto-indagación, Nisargadatta, Ramana Maharshi: la naturaleza del Ser.",
+      "icono": "◯"
+    },
+    {
+      "slug": "ayurveda",
+      "nombre": "Ayurveda",
+      "descripcion": "Medicina tradicional de la India: doshas, alimentación consciente, mente y autoconocimiento a través del cuerpo.",
+      "icono": "🪷"
+    },
+    {
+      "slug": "astrologia",
+      "nombre": "Astrología evolutiva",
+      "descripcion": "Carta natal, tránsitos, casas y planetas como herramienta de autoconocimiento y evolución personal.",
+      "icono": "♄"
+    },
+    {
+      "slug": "budismo",
+      "nombre": "Budismo y filosofía oriental",
+      "descripcion": "Zen, filosofía budista, estoicismo, meditación vipassana y caminos contemplativos.",
+      "icono": "☸"
+    },
+    {
+      "slug": "hermetismo",
+      "nombre": "Hermetismo y metafísica",
+      "descripcion": "El Kybalión, principios herméticos, Conny Méndez, Saint Germain, decretos y la ley de atracción.",
+      "icono": "⚗"
+    },
+    {
+      "slug": "geometria-sagrada",
+      "nombre": "Geometría sagrada",
+      "descripcion": "La Flor de la Vida, Drunvalo Melchizedek, Mer-Ka-Ba, consciencia planetaria y civilizaciones antiguas.",
+      "icono": "✡"
+    },
+    {
+      "slug": "consciencia",
+      "nombre": "Consciencia y despertar",
+      "descripcion": "Samadhi, meditación, auto-indagación, el despertar de la consciencia y la exploración interior.",
+      "icono": "✦"
+    }
+  ],
+  "formatos": [
+    {
+      "slug": "audiolibro",
+      "nombre": "Audiolibro",
+      "descripcion": "Libro completo narrado con voz humana."
+    },
+    {
+      "slug": "curso",
+      "nombre": "Curso / Taller",
+      "descripcion": "Seminario o taller estructurado en sesiones."
+    },
+    {
+      "slug": "conferencia",
+      "nombre": "Conferencia",
+      "descripcion": "Charla o presentación puntual sobre un tema."
+    },
+    {
+      "slug": "documental",
+      "nombre": "Documental",
+      "descripcion": "Película o documental de producción audiovisual."
+    },
+    {
+      "slug": "podcast",
+      "nombre": "Podcast / Conversación",
+      "descripcion": "Entrevista, diálogo, Q&A o programa de radio."
+    },
+    {
+      "slug": "meditacion-guiada",
+      "nombre": "Meditación guiada",
+      "descripcion": "Sesión de meditación guiada con instrucciones."
+    },
+    {
+      "slug": "lectura-comentada",
+      "nombre": "Lectura comentada",
+      "descripcion": "Lectura de un texto con análisis y comentarios del lector."
+    },
+    {
+      "slug": "clase",
+      "nombre": "Clase / Estudio",
+      "descripcion": "Sesión de estudio en profundidad, extractos temáticos o clases regulares."
+    }
+  ],
+  "canales": [
+    {
+      "slug": "sutil-densidad",
+      "nombre": "Sutil Densidad",
+      "canal_id": "UCLMDP797CL08umHmiHaV02A",
+      "suscriptores": 127
+    },
+    {
+      "slug": "la-ley-del-uno",
+      "nombre": "La Ley del Uno",
+      "canal_id": "UCM65XTOuJadTslqDTWek2Xw",
+      "suscriptores": 178
+    },
+    {
+      "slug": "ayurveda-maria-de-ezcurra",
+      "nombre": "Ayurveda María de Ezcurra",
+      "canal_id": "UCpfs-1OodiJ1edDmol0XxTg",
+      "suscriptores": 80200
+    },
+    {
+      "slug": "doblando-realidades",
+      "nombre": "Doblando Realidades",
+      "canal_id": "UCQmlqCPPfA8_PkMtkzbDzUA",
+      "suscriptores": 163000
+    },
+    {
+      "slug": "ll-research",
+      "nombre": "L/L Research",
+      "canal_id": "UCY6atkykMJAljLkIP7L8ZVA",
+      "suscriptores": 24700
+    },
+    {
+      "slug": "word-of-rudolf-steiner",
+      "nombre": "Word of Rudolf Steiner",
+      "canal_id": "UCOwvwoBewlGL69WmM2LxUFQ",
+      "suscriptores": 30900
+    },
+    {
+      "slug": "audiolibros-pablo-andres",
+      "nombre": "Audiolibros PABLO ANDRÉS",
+      "canal_id": "UCfALydeESZJWK3Xea16GiMw",
+      "suscriptores": 27500
+    },
+    {
+      "slug": "awakentheworldfilm",
+      "nombre": "AwakenTheWorldFilm",
+      "canal_id": "UCmzsYSXn3zdCsLS063oCt8w",
+      "suscriptores": 691000
+    },
+    {
+      "slug": "pablo-flores-laymuns",
+      "nombre": "Pablo Flores Laymuns",
+      "canal_id": "UCgHUpQ7zuNuXMQ0CUv6LQsw",
+      "suscriptores": 503000
+    },
+    {
+      "slug": "el-crisol-de-antroposofia",
+      "nombre": "El Crisol de Antroposofía",
+      "canal_id": "UC5kLVmgLWjEQfILD30WzVgw",
+      "suscriptores": 1190
+    },
+    {
+      "slug": "lecturas-de-poder",
+      "nombre": "LECTURAS DE PODER",
+      "canal_id": "UCHFcuX6f8dk4b5kZ0N9QjuQ",
+      "suscriptores": 6590
+    },
+    {
+      "slug": "gabriel-lugo",
+      "nombre": "Gabriel Lugo",
+      "canal_id": "UC2tXD-BtpzCkvp5UgdEf4mA",
+      "suscriptores": 17900
+    },
+    {
+      "slug": "chavenato",
+      "nombre": "Chavenato",
+      "canal_id": "UCEQY2A1Z5wCm53rXhqhKIUQ",
+      "suscriptores": null
+    },
+    {
+      "slug": "ciencia-del-saber",
+      "nombre": "Ciencia del Saber",
+      "canal_id": "UCk2EIkW1FePZztFh3Xt34Bg",
+      "suscriptores": 291000
+    },
+    {
+      "slug": "daniel-miccael-sais",
+      "nombre": "Daniel Miccael Sais",
+      "canal_id": "UCLftTWF15_VWXT9rNKCkGbQ",
+      "suscriptores": 29800
+    },
+    {
+      "slug": "frank-merkaba",
+      "nombre": "FranK Merkaba",
+      "canal_id": "UCESqo56tux5NgOEi-bWYyKQ",
+      "suscriptores": 6290
+    },
+    {
+      "slug": "luisa-jimenez-y-ramiro-calle",
+      "nombre": "Luisa Jiménez y Ramiro Calle",
+      "canal_id": "UCAJFNezXh9CzU5g9l_kx_8w",
+      "suscriptores": 20600
+    }
+  ],
+  "series": [
+    {
+      "nombre": "RA - La Ley Del Uno (Libro 1)",
+      "slug": "ra-la-ley-del-uno",
+      "descripcion": "Videolibro subtitulado del Libro #1 del Material de Ra.",
+      "thumbnail": "https://i.ytimg.com/vi/avQHJs9IN4Q/hqdefault.jpg",
+      "canal": "sutil-densidad",
+      "temas": [
+        "ley-del-uno"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Ra",
+        "Don Elkins",
+        "Carla Rueckert",
+        "Jim McCarty"
+      ],
+      "episodios": [
+        {
+          "video_id": "avQHJs9IN4Q",
+          "titulo": "01 - Introducción",
+          "url": "https://www.youtube.com/watch?v=avQHJs9IN4Q",
+          "fecha_emision": "2023-11-25",
+          "thumbnail": "https://i.ytimg.com/vi/avQHJs9IN4Q/hqdefault.jpg",
+          "descripcion": "Desde el 15 de enero de 1981 hasta el 15 de marzo de 1984, tres dedicados buscadores de la verdad recibieron la comunicación hablada contenida en ésta obra."
+        },
+        {
+          "video_id": "R_ix0UkCLEI",
+          "titulo": "02 - Fotografías",
+          "url": "https://www.youtube.com/watch?v=R_ix0UkCLEI",
+          "fecha_emision": "2023-12-09",
+          "thumbnail": "https://i.ytimg.com/vi/R_ix0UkCLEI/hqdefault.jpg",
+          "descripcion": "Fotografías de los libros originales de la Ley del Uno."
+        },
+        {
+          "video_id": "LhBIbb0gHyo",
+          "titulo": "03 - Sesión 1",
+          "url": "https://www.youtube.com/watch?v=LhBIbb0gHyo",
+          "fecha_emision": "2023-12-10",
+          "thumbnail": "https://i.ytimg.com/vi/LhBIbb0gHyo/hqdefault.jpg",
+          "descripcion": "El 15 de enero de 1981, un grupo de investigación comenzó a recibir una comunicación del complejo de memoria social llamado Ra."
+        },
+        {
+          "video_id": "gmUxNZG4RyE",
+          "titulo": "04 - Sesión 2",
+          "url": "https://www.youtube.com/watch?v=gmUxNZG4RyE",
+          "fecha_emision": "2023-12-11",
+          "thumbnail": "https://i.ytimg.com/vi/gmUxNZG4RyE/hqdefault.jpg",
+          "descripcion": "Técnica para alcanzar un mejor estado de trance."
+        },
+        {
+          "video_id": "g0S8cS4mkm4",
+          "titulo": "05 - Sesión 3",
+          "url": "https://www.youtube.com/watch?v=g0S8cS4mkm4",
+          "fecha_emision": "2023-12-12",
+          "thumbnail": "https://i.ytimg.com/vi/g0S8cS4mkm4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "uvp1oR9OBOA",
+          "titulo": "06 - Sesión 4",
+          "url": "https://www.youtube.com/watch?v=uvp1oR9OBOA",
+          "fecha_emision": "2023-12-13",
+          "thumbnail": "https://i.ytimg.com/vi/uvp1oR9OBOA/hqdefault.jpg",
+          "descripcion": "Técnica resumida de sanación."
+        },
+        {
+          "video_id": "TVpi7xeMfTI",
+          "titulo": "07 - Sesión 5",
+          "url": "https://www.youtube.com/watch?v=TVpi7xeMfTI",
+          "fecha_emision": "2023-12-15",
+          "thumbnail": "https://i.ytimg.com/vi/TVpi7xeMfTI/hqdefault.jpg",
+          "descripcion": "El honor y deber de aprender/enseñar el proceso de sanación eficaz mediante catálisis."
+        },
+        {
+          "video_id": "0JLC_nDFBgA",
+          "titulo": "08 - Sesión 6",
+          "url": "https://www.youtube.com/watch?v=0JLC_nDFBgA",
+          "fecha_emision": "2023-12-16",
+          "thumbnail": "https://i.ytimg.com/vi/0JLC_nDFBgA/hqdefault.jpg",
+          "descripcion": "El honor y deber de aprender/enseñar la tercera parte del proceso de sanación mediante catálisis."
+        },
+        {
+          "video_id": "kzaH9GiZy1E",
+          "titulo": "09 - Sesión 7",
+          "url": "https://www.youtube.com/watch?v=kzaH9GiZy1E",
+          "fecha_emision": "2023-12-17",
+          "thumbnail": "https://i.ytimg.com/vi/kzaH9GiZy1E/hqdefault.jpg",
+          "descripcion": "Método de cálculo para que la Confederación Planetaria se ponga al servicio de un llamamiento Terrícola."
+        },
+        {
+          "video_id": "zyLQlmPFUGg",
+          "titulo": "10 - Sesión 8",
+          "url": "https://www.youtube.com/watch?v=zyLQlmPFUGg",
+          "fecha_emision": "2023-12-19",
+          "thumbnail": "https://i.ytimg.com/vi/zyLQlmPFUGg/hqdefault.jpg",
+          "descripcion": "El grupo de Orión se ha llamado por sí mismo a la conquista."
+        },
+        {
+          "video_id": "QUAleHii5B4",
+          "titulo": "11 - Sesión 9",
+          "url": "https://www.youtube.com/watch?v=QUAleHii5B4",
+          "fecha_emision": "2023-12-19",
+          "thumbnail": "https://i.ytimg.com/vi/QUAleHii5B4/hqdefault.jpg",
+          "descripcion": "Construir a partir de lo naturalmente básico y asegurar que los cimientos sean aptos."
+        },
+        {
+          "video_id": "sMMRN8ajgeU",
+          "titulo": "12 - Sesión 10",
+          "url": "https://www.youtube.com/watch?v=sMMRN8ajgeU",
+          "fecha_emision": "2023-12-21",
+          "thumbnail": "https://i.ytimg.com/vi/sMMRN8ajgeU/hqdefault.jpg",
+          "descripcion": "El libre albedrío es una de las distorsiones fundamentales de la Ley del Uno."
+        },
+        {
+          "video_id": "HolXWMHysEQ",
+          "titulo": "13 - Sesión 11",
+          "url": "https://www.youtube.com/watch?v=HolXWMHysEQ",
+          "fecha_emision": "2023-12-22",
+          "thumbnail": "https://i.ytimg.com/vi/HolXWMHysEQ/hqdefault.jpg",
+          "descripcion": "Los cruzados se desplazan en sus naves de combate para conquistar complejos sociales de mente/cuerpo/espíritu."
+        },
+        {
+          "video_id": "fgeC0hxns-U",
+          "titulo": "14 - Sesión 12",
+          "url": "https://www.youtube.com/watch?v=fgeC0hxns-U",
+          "fecha_emision": "2023-12-23",
+          "thumbnail": "https://i.ytimg.com/vi/fgeC0hxns-U/hqdefault.jpg",
+          "descripcion": "Los cruzados de Orión hacen uso de dos tipos de entidades para ejecutar sus órdenes."
+        },
+        {
+          "video_id": "o1LSoaFvyWY",
+          "titulo": "15 - Sesión 13",
+          "url": "https://www.youtube.com/watch?v=o1LSoaFvyWY",
+          "fecha_emision": "2023-12-24",
+          "thumbnail": "https://i.ytimg.com/vi/o1LSoaFvyWY/hqdefault.jpg",
+          "descripcion": "Lo primero conocido en la creación es la infinidad. La infinidad es creación."
+        },
+        {
+          "video_id": "1Y9siMWXveI",
+          "titulo": "16 - Sesión 14",
+          "url": "https://www.youtube.com/watch?v=1Y9siMWXveI",
+          "fecha_emision": "2023-12-25",
+          "thumbnail": "https://i.ytimg.com/vi/1Y9siMWXveI/hqdefault.jpg",
+          "descripcion": "Hay seis pirámides equilibradoras, y otras cincuenta y dos que se erigieron para tareas adicionales de sanación e iniciación."
+        },
+        {
+          "video_id": "X07TKdWYCuk",
+          "titulo": "17 - Sesión 15",
+          "url": "https://www.youtube.com/watch?v=X07TKdWYCuk",
+          "fecha_emision": "2023-12-27",
+          "thumbnail": "https://i.ytimg.com/vi/X07TKdWYCuk/hqdefault.jpg",
+          "descripcion": "El material para vuestra comprensión es el ser: el complejo mente/cuerpo/espíritu a través de la experiencia."
+        },
+        {
+          "video_id": "bWTznZm84T0",
+          "titulo": "18 - Sesión 16",
+          "url": "https://www.youtube.com/watch?v=bWTznZm84T0",
+          "fecha_emision": "2023-12-28",
+          "thumbnail": "https://i.ytimg.com/vi/bWTznZm84T0/hqdefault.jpg",
+          "descripcion": "El concepto densidad es matemático."
+        },
+        {
+          "video_id": "CUPe0VjxSM4",
+          "titulo": "19 - Sesión 17",
+          "url": "https://www.youtube.com/watch?v=CUPe0VjxSM4",
+          "fecha_emision": "2023-12-30",
+          "thumbnail": "https://i.ytimg.com/vi/CUPe0VjxSM4/hqdefault.jpg",
+          "descripcion": "La supremacía de vibración es el tratamiento preferencial."
+        },
+        {
+          "video_id": "7IPdD_aIxc0",
+          "titulo": "20 - Sesión 18",
+          "url": "https://www.youtube.com/watch?v=7IPdD_aIxc0",
+          "fecha_emision": "2023-12-31",
+          "thumbnail": "https://i.ytimg.com/vi/7IPdD_aIxc0/hqdefault.jpg",
+          "descripcion": "Aquellos que son fuertes, inteligentes, etc., tienen la tentación de sentirse diferentes."
+        },
+        {
+          "video_id": "BbTgTYMcpdw",
+          "titulo": "21 - Sesión 19",
+          "url": "https://www.youtube.com/watch?v=BbTgTYMcpdw",
+          "fecha_emision": "2024-01-01",
+          "thumbnail": "https://i.ytimg.com/vi/BbTgTYMcpdw/hqdefault.jpg",
+          "descripcion": "Como un imán con una polaridad."
+        },
+        {
+          "video_id": "zwZBlvaRgrE",
+          "titulo": "22 - Sesión 20",
+          "url": "https://www.youtube.com/watch?v=zwZBlvaRgrE",
+          "fecha_emision": "2024-01-02",
+          "thumbnail": "https://i.ytimg.com/vi/zwZBlvaRgrE/hqdefault.jpg",
+          "descripcion": "La ciencia de Dewey B. Larson es un sistema correcto hasta donde le es posible alcanzar."
+        },
+        {
+          "video_id": "3oT6VgkU3r0",
+          "titulo": "23 - Sesión 21",
+          "url": "https://www.youtube.com/watch?v=3oT6VgkU3r0",
+          "fecha_emision": "2024-01-04",
+          "thumbnail": "https://i.ytimg.com/vi/3oT6VgkU3r0/hqdefault.jpg",
+          "descripcion": "A medida que las encarnaciones comienzan a acumularse, se descubren otras necesidades."
+        },
+        {
+          "video_id": "XoN_Z7OPl8g",
+          "titulo": "24 - Sesión 22",
+          "url": "https://www.youtube.com/watch?v=XoN_Z7OPl8g",
+          "fecha_emision": "2024-01-05",
+          "thumbnail": "https://i.ytimg.com/vi/XoN_Z7OPl8g/hqdefault.jpg",
+          "descripcion": "De todas las leyes hay una que realmente existe, esa es la Ley del Uno."
+        },
+        {
+          "video_id": "44gX1L7d6xY",
+          "titulo": "25 - Sesión 23",
+          "url": "https://www.youtube.com/watch?v=44gX1L7d6xY",
+          "fecha_emision": "2024-01-06",
+          "thumbnail": "https://i.ytimg.com/vi/44gX1L7d6xY/hqdefault.jpg",
+          "descripcion": "Mientras se formaba la Gran Pirámide de Giza, se proporcionó información relativa a la iniciación y a la sanación mediante el cristal."
+        },
+        {
+          "video_id": "A2EwdwyKexU",
+          "titulo": "Sesiones de Cierre (1)",
+          "url": "https://www.youtube.com/watch?v=A2EwdwyKexU",
+          "fecha_emision": "2024-01-07",
+          "thumbnail": "https://i.ytimg.com/vi/A2EwdwyKexU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "sihd5mQF3hY",
+          "titulo": "Sesiones de Cierre (2)",
+          "url": "https://www.youtube.com/watch?v=sihd5mQF3hY",
+          "fecha_emision": "2024-01-09",
+          "thumbnail": "https://i.ytimg.com/vi/sihd5mQF3hY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "LGSHetTS1kE",
+          "titulo": "Sesiones de Cierre (3)",
+          "url": "https://www.youtube.com/watch?v=LGSHetTS1kE",
+          "fecha_emision": "2024-01-11",
+          "thumbnail": "https://i.ytimg.com/vi/LGSHetTS1kE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "MssJNvkaUg4",
+          "titulo": "Sesiones de Cierre (4)",
+          "url": "https://www.youtube.com/watch?v=MssJNvkaUg4",
+          "fecha_emision": "2024-12-14",
+          "thumbnail": "https://i.ytimg.com/vi/MssJNvkaUg4/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "La Ley del Uno - Libro I",
+      "slug": "la-ley-del-uno-libro-1",
+      "descripcion": "Audiolibro del Libro I de La Ley del Uno.",
+      "thumbnail": "https://i.ytimg.com/vi/jZwzGOmPA_4/hqdefault.jpg",
+      "canal": "la-ley-del-uno",
+      "temas": [
+        "ley-del-uno"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Ra",
+        "Don Elkins",
+        "Carla Rueckert",
+        "Jim McCarty"
+      ],
+      "episodios": [
+        {
+          "video_id": "jZwzGOmPA_4",
+          "titulo": "Libro 01. Sesión 01",
+          "url": "https://www.youtube.com/watch?v=jZwzGOmPA_4",
+          "fecha_emision": "2022-08-09",
+          "thumbnail": "https://i.ytimg.com/vi/jZwzGOmPA_4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "cT6LDL1t26o",
+          "titulo": "Libro 01. Sesión 02",
+          "url": "https://www.youtube.com/watch?v=cT6LDL1t26o",
+          "fecha_emision": "2022-08-09",
+          "thumbnail": "https://i.ytimg.com/vi/cT6LDL1t26o/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "nxiTxiY2DVg",
+          "titulo": "Libro 01. Sesión 03",
+          "url": "https://www.youtube.com/watch?v=nxiTxiY2DVg",
+          "fecha_emision": "2022-08-09",
+          "thumbnail": "https://i.ytimg.com/vi/nxiTxiY2DVg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "DZc6Xy8k-4o",
+          "titulo": "Libro 01. Sesión 04",
+          "url": "https://www.youtube.com/watch?v=DZc6Xy8k-4o",
+          "fecha_emision": "2022-08-09",
+          "thumbnail": "https://i.ytimg.com/vi/DZc6Xy8k-4o/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "TxOq7iHM4XI",
+          "titulo": "Libro 01. Sesión 05",
+          "url": "https://www.youtube.com/watch?v=TxOq7iHM4XI",
+          "fecha_emision": "2022-08-09",
+          "thumbnail": "https://i.ytimg.com/vi/TxOq7iHM4XI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "3kAfQ2YeyLE",
+          "titulo": "Libro 01. Sesión 06",
+          "url": "https://www.youtube.com/watch?v=3kAfQ2YeyLE",
+          "fecha_emision": "2022-08-09",
+          "thumbnail": "https://i.ytimg.com/vi/3kAfQ2YeyLE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "_tzpFgufpbY",
+          "titulo": "Libro 01. Sesión 07",
+          "url": "https://www.youtube.com/watch?v=_tzpFgufpbY",
+          "fecha_emision": "2022-08-09",
+          "thumbnail": "https://i.ytimg.com/vi/_tzpFgufpbY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "EEkS7840Qoo",
+          "titulo": "Libro 01. Sesión 08",
+          "url": "https://www.youtube.com/watch?v=EEkS7840Qoo",
+          "fecha_emision": "2022-08-09",
+          "thumbnail": "https://i.ytimg.com/vi/EEkS7840Qoo/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "IlgZOPqUmSc",
+          "titulo": "Libro 01. Sesión 09",
+          "url": "https://www.youtube.com/watch?v=IlgZOPqUmSc",
+          "fecha_emision": "2022-08-09",
+          "thumbnail": "https://i.ytimg.com/vi/IlgZOPqUmSc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "h_Kmsrmml9k",
+          "titulo": "Libro 01. Sesión 10",
+          "url": "https://www.youtube.com/watch?v=h_Kmsrmml9k",
+          "fecha_emision": "2022-08-09",
+          "thumbnail": "https://i.ytimg.com/vi/h_Kmsrmml9k/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "sCYA2VYhPfU",
+          "titulo": "Libro 01. Sesión 11",
+          "url": "https://www.youtube.com/watch?v=sCYA2VYhPfU",
+          "fecha_emision": "2022-08-09",
+          "thumbnail": "https://i.ytimg.com/vi/sCYA2VYhPfU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "BRTFzsD0X70",
+          "titulo": "Libro 01. Sesión 12",
+          "url": "https://www.youtube.com/watch?v=BRTFzsD0X70",
+          "fecha_emision": "2022-08-09",
+          "thumbnail": "https://i.ytimg.com/vi/BRTFzsD0X70/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "-zWEVPihB_M",
+          "titulo": "Libro 01. Sesión 13",
+          "url": "https://www.youtube.com/watch?v=-zWEVPihB_M",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/-zWEVPihB_M/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "jReWa2rkVhA",
+          "titulo": "Libro 01. Sesión 14",
+          "url": "https://www.youtube.com/watch?v=jReWa2rkVhA",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/jReWa2rkVhA/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ALIZIMXUquU",
+          "titulo": "Libro 01. Sesión 15",
+          "url": "https://www.youtube.com/watch?v=ALIZIMXUquU",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/ALIZIMXUquU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "MY03WbLWeJI",
+          "titulo": "Libro 01. Sesión 16",
+          "url": "https://www.youtube.com/watch?v=MY03WbLWeJI",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/MY03WbLWeJI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "SxqwcI4fR3g",
+          "titulo": "Libro 01. Sesión 17",
+          "url": "https://www.youtube.com/watch?v=SxqwcI4fR3g",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/SxqwcI4fR3g/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "HAMiumyLk30",
+          "titulo": "Libro 01. Sesión 18",
+          "url": "https://www.youtube.com/watch?v=HAMiumyLk30",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/HAMiumyLk30/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "3R72RMuSA2w",
+          "titulo": "Libro 01. Sesión 19",
+          "url": "https://www.youtube.com/watch?v=3R72RMuSA2w",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/3R72RMuSA2w/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "BF-r6s50ouw",
+          "titulo": "Libro 01. Sesión 20",
+          "url": "https://www.youtube.com/watch?v=BF-r6s50ouw",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/BF-r6s50ouw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Aru9jopOeo8",
+          "titulo": "Libro 01. Sesión 21",
+          "url": "https://www.youtube.com/watch?v=Aru9jopOeo8",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/Aru9jopOeo8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Q_igirIglBk",
+          "titulo": "Libro 01. Sesión 22",
+          "url": "https://www.youtube.com/watch?v=Q_igirIglBk",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/Q_igirIglBk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "h9aqWKf7iFs",
+          "titulo": "Libro 01. Sesión 23",
+          "url": "https://www.youtube.com/watch?v=h9aqWKf7iFs",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/h9aqWKf7iFs/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "qYJHdQOHfSA",
+          "titulo": "Libro 01. Sesión 24",
+          "url": "https://www.youtube.com/watch?v=qYJHdQOHfSA",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/qYJHdQOHfSA/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "6fFiPCtcSKw",
+          "titulo": "Libro 01. Sesión 25",
+          "url": "https://www.youtube.com/watch?v=6fFiPCtcSKw",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/6fFiPCtcSKw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "WLVbNB8BKpY",
+          "titulo": "Libro 01. Sesión 26",
+          "url": "https://www.youtube.com/watch?v=WLVbNB8BKpY",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/WLVbNB8BKpY/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "La Ley del Uno - Libro II",
+      "slug": "la-ley-del-uno-libro-2",
+      "descripcion": "Audiolibro del Libro II de La Ley del Uno.",
+      "thumbnail": "https://i.ytimg.com/vi/c6qhXAE99nI/hqdefault.jpg",
+      "canal": "la-ley-del-uno",
+      "temas": [
+        "ley-del-uno"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Ra",
+        "Don Elkins",
+        "Carla Rueckert",
+        "Jim McCarty"
+      ],
+      "episodios": [
+        {
+          "video_id": "c6qhXAE99nI",
+          "titulo": "Libro 02. Sesión 27",
+          "url": "https://www.youtube.com/watch?v=c6qhXAE99nI",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/c6qhXAE99nI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "zR9vXSZILF0",
+          "titulo": "Libro 02. Sesión 28",
+          "url": "https://www.youtube.com/watch?v=zR9vXSZILF0",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/zR9vXSZILF0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "fXFOsLcVsDE",
+          "titulo": "Libro 02. Sesión 29",
+          "url": "https://www.youtube.com/watch?v=fXFOsLcVsDE",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/fXFOsLcVsDE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "L1Hk3LGr_Sk",
+          "titulo": "Libro 02. Sesión 30",
+          "url": "https://www.youtube.com/watch?v=L1Hk3LGr_Sk",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/L1Hk3LGr_Sk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "D3aFlsTqjvs",
+          "titulo": "Libro 02. Sesión 31",
+          "url": "https://www.youtube.com/watch?v=D3aFlsTqjvs",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/D3aFlsTqjvs/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "5AsySMNS_YQ",
+          "titulo": "Libro 02. Sesión 32",
+          "url": "https://www.youtube.com/watch?v=5AsySMNS_YQ",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/5AsySMNS_YQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "agbgoOeccBg",
+          "titulo": "Libro 02. Sesión 33",
+          "url": "https://www.youtube.com/watch?v=agbgoOeccBg",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/agbgoOeccBg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "1NuYgsmtUg0",
+          "titulo": "Libro 02. Sesión 34",
+          "url": "https://www.youtube.com/watch?v=1NuYgsmtUg0",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/1NuYgsmtUg0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "xg8eomZwRKA",
+          "titulo": "Libro 02. Sesión 35",
+          "url": "https://www.youtube.com/watch?v=xg8eomZwRKA",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/xg8eomZwRKA/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "9baIfa7r8pU",
+          "titulo": "Libro 02. Sesión 36",
+          "url": "https://www.youtube.com/watch?v=9baIfa7r8pU",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/9baIfa7r8pU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "bzM1JG2It4g",
+          "titulo": "Libro 02. Sesión 37",
+          "url": "https://www.youtube.com/watch?v=bzM1JG2It4g",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/bzM1JG2It4g/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "sr9t4Xipjw8",
+          "titulo": "Libro 02. Sesión 38",
+          "url": "https://www.youtube.com/watch?v=sr9t4Xipjw8",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/sr9t4Xipjw8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "f9I8DNNmsac",
+          "titulo": "Libro 02. Sesión 39",
+          "url": "https://www.youtube.com/watch?v=f9I8DNNmsac",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/f9I8DNNmsac/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "vVWhiWn_sFA",
+          "titulo": "Libro 02. Sesión 40",
+          "url": "https://www.youtube.com/watch?v=vVWhiWn_sFA",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/vVWhiWn_sFA/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "_MRn5Xap5Kw",
+          "titulo": "Libro 02. Sesión 41",
+          "url": "https://www.youtube.com/watch?v=_MRn5Xap5Kw",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/_MRn5Xap5Kw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "6f493CwxFV4",
+          "titulo": "Libro 02. Sesión 42",
+          "url": "https://www.youtube.com/watch?v=6f493CwxFV4",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/6f493CwxFV4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "RSun1WaKESo",
+          "titulo": "Libro 02. Sesión 43",
+          "url": "https://www.youtube.com/watch?v=RSun1WaKESo",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/RSun1WaKESo/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "tQmFTz5hZsU",
+          "titulo": "Libro 02. Sesión 46",
+          "url": "https://www.youtube.com/watch?v=tQmFTz5hZsU",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/tQmFTz5hZsU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "58ONxp6iYiQ",
+          "titulo": "Libro 02. Sesión 47",
+          "url": "https://www.youtube.com/watch?v=58ONxp6iYiQ",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/58ONxp6iYiQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "E5Czd6QjDtY",
+          "titulo": "Libro 02. Sesión 48",
+          "url": "https://www.youtube.com/watch?v=E5Czd6QjDtY",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/E5Czd6QjDtY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "EPl8zBey1og",
+          "titulo": "Libro 02. Sesión 49",
+          "url": "https://www.youtube.com/watch?v=EPl8zBey1og",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/EPl8zBey1og/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "aCiGeOY1PcM",
+          "titulo": "Libro 02. Sesión 50",
+          "url": "https://www.youtube.com/watch?v=aCiGeOY1PcM",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/aCiGeOY1PcM/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "La Ley del Uno - Libro III",
+      "slug": "la-ley-del-uno-libro-3",
+      "descripcion": "Audiolibro del Libro III de La Ley del Uno.",
+      "thumbnail": "https://i.ytimg.com/vi/tCVS_WpX_v4/hqdefault.jpg",
+      "canal": "la-ley-del-uno",
+      "temas": [
+        "ley-del-uno"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Ra",
+        "Don Elkins",
+        "Carla Rueckert",
+        "Jim McCarty"
+      ],
+      "episodios": [
+        {
+          "video_id": "tCVS_WpX_v4",
+          "titulo": "Libro 03. Sesión 51",
+          "url": "https://www.youtube.com/watch?v=tCVS_WpX_v4",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/tCVS_WpX_v4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "DkNglbr2sVw",
+          "titulo": "Libro 03. Sesión 52",
+          "url": "https://www.youtube.com/watch?v=DkNglbr2sVw",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/DkNglbr2sVw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "nQVg1eFrwac",
+          "titulo": "Libro 03. Sesión 53",
+          "url": "https://www.youtube.com/watch?v=nQVg1eFrwac",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/nQVg1eFrwac/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "qX_WFrqyzPM",
+          "titulo": "Libro 03. Sesión 54",
+          "url": "https://www.youtube.com/watch?v=qX_WFrqyzPM",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/qX_WFrqyzPM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "_atwG1tCRyw",
+          "titulo": "Libro 03. Sesión 55",
+          "url": "https://www.youtube.com/watch?v=_atwG1tCRyw",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/_atwG1tCRyw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "MeCs1uB7Q1Y",
+          "titulo": "Libro 03. Sesión 56",
+          "url": "https://www.youtube.com/watch?v=MeCs1uB7Q1Y",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/MeCs1uB7Q1Y/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "xalda_jQ4uc",
+          "titulo": "Libro 03. Sesión 57",
+          "url": "https://www.youtube.com/watch?v=xalda_jQ4uc",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/xalda_jQ4uc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "dvzKM5inFQk",
+          "titulo": "Libro 03. Sesión 58",
+          "url": "https://www.youtube.com/watch?v=dvzKM5inFQk",
+          "fecha_emision": "2022-08-27",
+          "thumbnail": "https://i.ytimg.com/vi/dvzKM5inFQk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "etBC2gyXmng",
+          "titulo": "Libro 03. Sesión 59",
+          "url": "https://www.youtube.com/watch?v=etBC2gyXmng",
+          "fecha_emision": "2022-08-28",
+          "thumbnail": "https://i.ytimg.com/vi/etBC2gyXmng/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "zW4FdIR6xN8",
+          "titulo": "Libro 03. Sesión 60",
+          "url": "https://www.youtube.com/watch?v=zW4FdIR6xN8",
+          "fecha_emision": "2022-08-29",
+          "thumbnail": "https://i.ytimg.com/vi/zW4FdIR6xN8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "fXXgb21w57I",
+          "titulo": "Libro 03. Sesión 61",
+          "url": "https://www.youtube.com/watch?v=fXXgb21w57I",
+          "fecha_emision": "2022-08-29",
+          "thumbnail": "https://i.ytimg.com/vi/fXXgb21w57I/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "45k1f19ycm4",
+          "titulo": "Libro 03. Sesión 62",
+          "url": "https://www.youtube.com/watch?v=45k1f19ycm4",
+          "fecha_emision": "2022-08-29",
+          "thumbnail": "https://i.ytimg.com/vi/45k1f19ycm4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Pk2u-DGknGY",
+          "titulo": "Libro 03. Sesión 63",
+          "url": "https://www.youtube.com/watch?v=Pk2u-DGknGY",
+          "fecha_emision": "2022-08-29",
+          "thumbnail": "https://i.ytimg.com/vi/Pk2u-DGknGY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "PanRmmlYU8A",
+          "titulo": "Libro 03. Sesión 64",
+          "url": "https://www.youtube.com/watch?v=PanRmmlYU8A",
+          "fecha_emision": "2022-08-30",
+          "thumbnail": "https://i.ytimg.com/vi/PanRmmlYU8A/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "IAyXJcVsw8I",
+          "titulo": "Libro 03. Sesión 65",
+          "url": "https://www.youtube.com/watch?v=IAyXJcVsw8I",
+          "fecha_emision": "2022-08-31",
+          "thumbnail": "https://i.ytimg.com/vi/IAyXJcVsw8I/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "wskOO4IzfL0",
+          "titulo": "Libro 03. Sesión 66",
+          "url": "https://www.youtube.com/watch?v=wskOO4IzfL0",
+          "fecha_emision": "2022-08-31",
+          "thumbnail": "https://i.ytimg.com/vi/wskOO4IzfL0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "eyEFcZH8R1Y",
+          "titulo": "Libro 03. Sesión 67",
+          "url": "https://www.youtube.com/watch?v=eyEFcZH8R1Y",
+          "fecha_emision": "2022-08-31",
+          "thumbnail": "https://i.ytimg.com/vi/eyEFcZH8R1Y/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "VF5hHn-7RZY",
+          "titulo": "Libro 03. Sesión 68",
+          "url": "https://www.youtube.com/watch?v=VF5hHn-7RZY",
+          "fecha_emision": "2022-08-31",
+          "thumbnail": "https://i.ytimg.com/vi/VF5hHn-7RZY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "yJUB28tKfMA",
+          "titulo": "Libro 03. Sesión 69",
+          "url": "https://www.youtube.com/watch?v=yJUB28tKfMA",
+          "fecha_emision": "2022-08-31",
+          "thumbnail": "https://i.ytimg.com/vi/yJUB28tKfMA/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "wPJEiHgzWso",
+          "titulo": "Libro 03. Sesión 70",
+          "url": "https://www.youtube.com/watch?v=wPJEiHgzWso",
+          "fecha_emision": "2022-08-31",
+          "thumbnail": "https://i.ytimg.com/vi/wPJEiHgzWso/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "RFYXmS0op4M",
+          "titulo": "Libro 03. Sesión 71",
+          "url": "https://www.youtube.com/watch?v=RFYXmS0op4M",
+          "fecha_emision": "2022-08-31",
+          "thumbnail": "https://i.ytimg.com/vi/RFYXmS0op4M/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "WET9LYcWKlw",
+          "titulo": "Libro 03. Sesión 72",
+          "url": "https://www.youtube.com/watch?v=WET9LYcWKlw",
+          "fecha_emision": "2022-08-31",
+          "thumbnail": "https://i.ytimg.com/vi/WET9LYcWKlw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "74n3_5xmRHc",
+          "titulo": "Libro 03. Sesión 73",
+          "url": "https://www.youtube.com/watch?v=74n3_5xmRHc",
+          "fecha_emision": "2022-08-31",
+          "thumbnail": "https://i.ytimg.com/vi/74n3_5xmRHc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "I3-oO5sCutA",
+          "titulo": "Libro 03. Sesión 74",
+          "url": "https://www.youtube.com/watch?v=I3-oO5sCutA",
+          "fecha_emision": "2022-08-31",
+          "thumbnail": "https://i.ytimg.com/vi/I3-oO5sCutA/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "oWivKEYoWgA",
+          "titulo": "Libro 03. Sesión 75",
+          "url": "https://www.youtube.com/watch?v=oWivKEYoWgA",
+          "fecha_emision": "2022-08-31",
+          "thumbnail": "https://i.ytimg.com/vi/oWivKEYoWgA/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "La Ley del Uno - Libro IV",
+      "slug": "la-ley-del-uno-libro-4",
+      "descripcion": "Audiolibro del Libro IV de La Ley del Uno.",
+      "thumbnail": "https://i.ytimg.com/vi/Mg7Vgj78Tjg/hqdefault.jpg",
+      "canal": "la-ley-del-uno",
+      "temas": [
+        "ley-del-uno"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Ra",
+        "Don Elkins",
+        "Carla Rueckert",
+        "Jim McCarty"
+      ],
+      "episodios": [
+        {
+          "video_id": "Mg7Vgj78Tjg",
+          "titulo": "Libro 04. Sesión 100",
+          "url": "https://www.youtube.com/watch?v=Mg7Vgj78Tjg",
+          "fecha_emision": "2022-09-08",
+          "thumbnail": "https://i.ytimg.com/vi/Mg7Vgj78Tjg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "oNE8Lb4W-M0",
+          "titulo": "Libro 04. Sesión 103",
+          "url": "https://www.youtube.com/watch?v=oNE8Lb4W-M0",
+          "fecha_emision": "2022-09-08",
+          "thumbnail": "https://i.ytimg.com/vi/oNE8Lb4W-M0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "EjOahvWUfVE",
+          "titulo": "Libro 04. Sesión 104",
+          "url": "https://www.youtube.com/watch?v=EjOahvWUfVE",
+          "fecha_emision": "2022-09-08",
+          "thumbnail": "https://i.ytimg.com/vi/EjOahvWUfVE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "LIbR42YIecs",
+          "titulo": "Libro 04. Sesión 76",
+          "url": "https://www.youtube.com/watch?v=LIbR42YIecs",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/LIbR42YIecs/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "urrLPBFsTII",
+          "titulo": "Libro 04. Sesión 77",
+          "url": "https://www.youtube.com/watch?v=urrLPBFsTII",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/urrLPBFsTII/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "W_BmOaTNjmg",
+          "titulo": "Libro 04. Sesión 78",
+          "url": "https://www.youtube.com/watch?v=W_BmOaTNjmg",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/W_BmOaTNjmg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "52NmnBMSKZQ",
+          "titulo": "Libro 04. Sesión 79",
+          "url": "https://www.youtube.com/watch?v=52NmnBMSKZQ",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/52NmnBMSKZQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "mx4X1B9trK4",
+          "titulo": "Libro 04. Sesión 80",
+          "url": "https://www.youtube.com/watch?v=mx4X1B9trK4",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/mx4X1B9trK4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "9sWyba6ZuOM",
+          "titulo": "Libro 04. Sesión 81",
+          "url": "https://www.youtube.com/watch?v=9sWyba6ZuOM",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/9sWyba6ZuOM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "uAeCnDefpP0",
+          "titulo": "Libro 04. Sesión 82",
+          "url": "https://www.youtube.com/watch?v=uAeCnDefpP0",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/uAeCnDefpP0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "MKhbeaiuDRU",
+          "titulo": "Libro 04. Sesión 83",
+          "url": "https://www.youtube.com/watch?v=MKhbeaiuDRU",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/MKhbeaiuDRU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "gvUv_EUu9eM",
+          "titulo": "Libro 04. Sesión 84",
+          "url": "https://www.youtube.com/watch?v=gvUv_EUu9eM",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/gvUv_EUu9eM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "nE7sgQsjOgw",
+          "titulo": "Libro 04. Sesión 85",
+          "url": "https://www.youtube.com/watch?v=nE7sgQsjOgw",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/nE7sgQsjOgw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Jo9Ckw4N_QY",
+          "titulo": "Libro 04. Sesión 86",
+          "url": "https://www.youtube.com/watch?v=Jo9Ckw4N_QY",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/Jo9Ckw4N_QY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "HI1wyYnFBuc",
+          "titulo": "Libro 04. Sesión 87",
+          "url": "https://www.youtube.com/watch?v=HI1wyYnFBuc",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/HI1wyYnFBuc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "obb3QfLdpEg",
+          "titulo": "Libro 04. Sesión 88",
+          "url": "https://www.youtube.com/watch?v=obb3QfLdpEg",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/obb3QfLdpEg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "rGMp8bXXx50",
+          "titulo": "Libro 04. Sesión 89",
+          "url": "https://www.youtube.com/watch?v=rGMp8bXXx50",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/rGMp8bXXx50/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "6VAXO7nfVTc",
+          "titulo": "Libro 04. Sesión 90",
+          "url": "https://www.youtube.com/watch?v=6VAXO7nfVTc",
+          "fecha_emision": "2022-09-05",
+          "thumbnail": "https://i.ytimg.com/vi/6VAXO7nfVTc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "7Tq17L0EO2g",
+          "titulo": "Libro 04. Sesión 91",
+          "url": "https://www.youtube.com/watch?v=7Tq17L0EO2g",
+          "fecha_emision": "2022-09-08",
+          "thumbnail": "https://i.ytimg.com/vi/7Tq17L0EO2g/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "QLx1d_m0OYY",
+          "titulo": "Libro 04. Sesión 92",
+          "url": "https://www.youtube.com/watch?v=QLx1d_m0OYY",
+          "fecha_emision": "2022-09-08",
+          "thumbnail": "https://i.ytimg.com/vi/QLx1d_m0OYY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "suTQcrSYWXk",
+          "titulo": "Libro 04. Sesión 93",
+          "url": "https://www.youtube.com/watch?v=suTQcrSYWXk",
+          "fecha_emision": "2022-09-08",
+          "thumbnail": "https://i.ytimg.com/vi/suTQcrSYWXk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "m6lbdpX9FiM",
+          "titulo": "Libro 04. Sesión 94",
+          "url": "https://www.youtube.com/watch?v=m6lbdpX9FiM",
+          "fecha_emision": "2022-09-08",
+          "thumbnail": "https://i.ytimg.com/vi/m6lbdpX9FiM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Z9i0k2O271w",
+          "titulo": "Libro 04. Sesión 95",
+          "url": "https://www.youtube.com/watch?v=Z9i0k2O271w",
+          "fecha_emision": "2022-09-08",
+          "thumbnail": "https://i.ytimg.com/vi/Z9i0k2O271w/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "BdzU_UwFVTI",
+          "titulo": "Libro 04. Sesión 96",
+          "url": "https://www.youtube.com/watch?v=BdzU_UwFVTI",
+          "fecha_emision": "2022-09-08",
+          "thumbnail": "https://i.ytimg.com/vi/BdzU_UwFVTI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "od5LRj03lko",
+          "titulo": "Libro 04. Sesión 97",
+          "url": "https://www.youtube.com/watch?v=od5LRj03lko",
+          "fecha_emision": "2022-09-08",
+          "thumbnail": "https://i.ytimg.com/vi/od5LRj03lko/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ImH4-eRwB_g",
+          "titulo": "Libro 04. Sesión 99",
+          "url": "https://www.youtube.com/watch?v=ImH4-eRwB_g",
+          "fecha_emision": "2022-09-08",
+          "thumbnail": "https://i.ytimg.com/vi/ImH4-eRwB_g/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "La Ley del Uno - Libro V",
+      "slug": "la-ley-del-uno-libro-5",
+      "descripcion": "Audiolibro del Libro V de La Ley del Uno.",
+      "thumbnail": "https://i.ytimg.com/vi/bd7PgMhIS_M/hqdefault.jpg",
+      "canal": "la-ley-del-uno",
+      "temas": [
+        "ley-del-uno"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Ra",
+        "Don Elkins",
+        "Carla Rueckert",
+        "Jim McCarty"
+      ],
+      "episodios": [
+        {
+          "video_id": "bd7PgMhIS_M",
+          "titulo": "Libro V. Fragmento 01",
+          "url": "https://www.youtube.com/watch?v=bd7PgMhIS_M",
+          "fecha_emision": "2024-09-23",
+          "thumbnail": "https://i.ytimg.com/vi/bd7PgMhIS_M/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "DWfXEogFcKk",
+          "titulo": "Libro V. Fragmento 03",
+          "url": "https://www.youtube.com/watch?v=DWfXEogFcKk",
+          "fecha_emision": "2024-09-23",
+          "thumbnail": "https://i.ytimg.com/vi/DWfXEogFcKk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "3c1v3AnjNMw",
+          "titulo": "Libro V. Fragmento 04",
+          "url": "https://www.youtube.com/watch?v=3c1v3AnjNMw",
+          "fecha_emision": "2024-09-23",
+          "thumbnail": "https://i.ytimg.com/vi/3c1v3AnjNMw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "if0lTKgd41U",
+          "titulo": "Libro V. Fragmento 2",
+          "url": "https://www.youtube.com/watch?v=if0lTKgd41U",
+          "fecha_emision": "2024-09-23",
+          "thumbnail": "https://i.ytimg.com/vi/if0lTKgd41U/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "e3IIjg7GRPE",
+          "titulo": "Libro V. Introduccion",
+          "url": "https://www.youtube.com/watch?v=e3IIjg7GRPE",
+          "fecha_emision": "2024-09-23",
+          "thumbnail": "https://i.ytimg.com/vi/e3IIjg7GRPE/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "The Flower Of Life - Drunvalo Melchizedek",
+      "slug": "the-flower-of-life",
+      "descripcion": "Workshop completo de Drunvalo Melchizedek sobre la Flor de la Vida y el Mer-Ka-Ba.",
+      "thumbnail": "https://i.ytimg.com/vi/SYd4ll_4kgk/hqdefault.jpg",
+      "canal": "sutil-densidad",
+      "temas": [
+        "geometria-sagrada",
+        "consciencia"
+      ],
+      "formato": "curso",
+      "idioma": "en",
+      "autores": [
+        "Drunvalo Melchizedek"
+      ],
+      "episodios": [
+        {
+          "video_id": "SYd4ll_4kgk",
+          "titulo": "D01 - Introduction & Chapter 1 (Dimensional Levels)",
+          "url": "https://www.youtube.com/watch?v=SYd4ll_4kgk",
+          "fecha_emision": "2024-12-01",
+          "thumbnail": "https://i.ytimg.com/vi/SYd4ll_4kgk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "FvlpdGcFGnI",
+          "titulo": "D02 - Chapter 2 (The Earth's History) & Chapter 3 (Thoth)",
+          "url": "https://www.youtube.com/watch?v=FvlpdGcFGnI",
+          "fecha_emision": "2024-12-01",
+          "thumbnail": "https://i.ytimg.com/vi/FvlpdGcFGnI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "CIsWVnW8xAU",
+          "titulo": "D03 - Chapters 4 (The Secret of the Flower) and 5 (Earth's Relation to the Cosmos)",
+          "url": "https://www.youtube.com/watch?v=CIsWVnW8xAU",
+          "fecha_emision": "2024-12-03",
+          "thumbnail": "https://i.ytimg.com/vi/CIsWVnW8xAU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "jhsILSOTf8Y",
+          "titulo": "D04 - Chapter 6 (Eras) & Chapter 7 (Pole Shift Triggers)",
+          "url": "https://www.youtube.com/watch?v=jhsILSOTf8Y",
+          "fecha_emision": "2024-12-04",
+          "thumbnail": "https://i.ytimg.com/vi/jhsILSOTf8Y/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "kErvDh3xG3w",
+          "titulo": "D05 - Chapter 8 (Earth's History) Part 1",
+          "url": "https://www.youtube.com/watch?v=kErvDh3xG3w",
+          "fecha_emision": "2024-12-06",
+          "thumbnail": "https://i.ytimg.com/vi/kErvDh3xG3w/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "nCHGgSsjEiU",
+          "titulo": "D06 - Chapter 8 (Earth's History) Part 2",
+          "url": "https://www.youtube.com/watch?v=nCHGgSsjEiU",
+          "fecha_emision": "2024-12-09",
+          "thumbnail": "https://i.ytimg.com/vi/nCHGgSsjEiU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "kcpS_6lTQbA",
+          "titulo": "D07 - Chapter 9 (Egypt's Role in the Evolution of Consciousness)",
+          "url": "https://www.youtube.com/watch?v=kcpS_6lTQbA",
+          "fecha_emision": "2024-12-10",
+          "thumbnail": "https://i.ytimg.com/vi/kcpS_6lTQbA/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "TiWO4giJop8",
+          "titulo": "D08 - Chapter 10 (Genesis, History of Creation)",
+          "url": "https://www.youtube.com/watch?v=TiWO4giJop8",
+          "fecha_emision": "2024-12-22",
+          "thumbnail": "https://i.ytimg.com/vi/TiWO4giJop8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "eMgApwlqFfE",
+          "titulo": "D09 - Chapters 11 (Platonic Solids) & 12 (Geometry Within the Human Body)",
+          "url": "https://www.youtube.com/watch?v=eMgApwlqFfE",
+          "fecha_emision": "2026-02-15",
+          "thumbnail": "https://i.ytimg.com/vi/eMgApwlqFfE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "WGvr2UYbxLI",
+          "titulo": "D10 - Chapters 13 (Geometries/Phi Ratio) & 14 (Spirals)",
+          "url": "https://www.youtube.com/watch?v=WGvr2UYbxLI",
+          "fecha_emision": "2026-02-22",
+          "thumbnail": "https://i.ytimg.com/vi/WGvr2UYbxLI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "YNXBHmKKnws",
+          "titulo": "D11 - Chapters 15 (Dolphins and Whales) & 16 (Binary Sequencing)",
+          "url": "https://www.youtube.com/watch?v=YNXBHmKKnws",
+          "fecha_emision": "2026-03-07",
+          "thumbnail": "https://i.ytimg.com/vi/YNXBHmKKnws/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Conferencia 1 - Introducción a Drunvalo",
+      "slug": "conferencia-1",
+      "descripcion": "Conferencia introductoria sobre Drunvalo Melchizedek y su trabajo.",
+      "thumbnail": "https://i.ytimg.com/vi/sRCFAEDDeho/hqdefault.jpg",
+      "canal": "sutil-densidad",
+      "temas": [
+        "geometria-sagrada",
+        "consciencia"
+      ],
+      "formato": "conferencia",
+      "idioma": "es",
+      "autores": [
+        "Drunvalo Melchizedek"
+      ],
+      "episodios": [
+        {
+          "video_id": "sRCFAEDDeho",
+          "titulo": "1. Introducción",
+          "url": "https://www.youtube.com/watch?v=sRCFAEDDeho",
+          "fecha_emision": "2024-10-20",
+          "thumbnail": "https://i.ytimg.com/vi/sRCFAEDDeho/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "C99ajJ3Fos0",
+          "titulo": "2. Akenatón, La Ley De Uno",
+          "url": "https://www.youtube.com/watch?v=C99ajJ3Fos0",
+          "fecha_emision": "2024-10-21",
+          "thumbnail": "https://i.ytimg.com/vi/C99ajJ3Fos0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Muc1pY4xe24",
+          "titulo": "3. Recordando Alguna Historia Desde Thot",
+          "url": "https://www.youtube.com/watch?v=Muc1pY4xe24",
+          "fecha_emision": "2024-10-22",
+          "thumbnail": "https://i.ytimg.com/vi/Muc1pY4xe24/hqdefault.jpg",
+          "descripcion": "Contemporáneamente se relacionan algunas historias recordadas por Thot."
+        }
+      ]
+    },
+    {
+      "nombre": "Conferencia 2 - México, Mayo 2003",
+      "slug": "conferencia-2-mexico",
+      "descripcion": "Conferencia de Drunvalo en México, mayo 2003.",
+      "thumbnail": "https://i.ytimg.com/vi/YcUY8RvPLYQ/hqdefault.jpg",
+      "canal": "sutil-densidad",
+      "temas": [
+        "geometria-sagrada",
+        "consciencia"
+      ],
+      "formato": "conferencia",
+      "idioma": "es",
+      "autores": [
+        "Drunvalo Melchizedek"
+      ],
+      "episodios": [
+        {
+          "video_id": "YcUY8RvPLYQ",
+          "titulo": "Parte 1",
+          "url": "https://www.youtube.com/watch?v=YcUY8RvPLYQ",
+          "fecha_emision": "2024-10-29",
+          "thumbnail": "https://i.ytimg.com/vi/YcUY8RvPLYQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "djjTdRnaWqk",
+          "titulo": "Parte 2",
+          "url": "https://www.youtube.com/watch?v=djjTdRnaWqk",
+          "fecha_emision": "2024-10-31",
+          "thumbnail": "https://i.ytimg.com/vi/djjTdRnaWqk/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Conferencia 3 - La Energía Kundalini del Planeta Tierra",
+      "slug": "conferencia-3-kundalini",
+      "descripcion": "Conferencia sobre la energía kundalini del planeta.",
+      "thumbnail": "https://i.ytimg.com/vi/dLXbdbxFIgQ/hqdefault.jpg",
+      "canal": "sutil-densidad",
+      "temas": [
+        "geometria-sagrada",
+        "consciencia"
+      ],
+      "formato": "conferencia",
+      "idioma": "es",
+      "autores": [
+        "Drunvalo Melchizedek"
+      ],
+      "episodios": [
+        {
+          "video_id": "dLXbdbxFIgQ",
+          "titulo": "Parte 1",
+          "url": "https://www.youtube.com/watch?v=dLXbdbxFIgQ",
+          "fecha_emision": "2024-11-04",
+          "thumbnail": "https://i.ytimg.com/vi/dLXbdbxFIgQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "D85FPXci1QY",
+          "titulo": "Parte 2",
+          "url": "https://www.youtube.com/watch?v=D85FPXci1QY",
+          "fecha_emision": "2024-11-06",
+          "thumbnail": "https://i.ytimg.com/vi/D85FPXci1QY/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Los Mayas del Tiempo Eterno",
+      "slug": "los-mayas-del-tiempo-eterno",
+      "descripcion": "Documental sobre los Mayas, el calendario cósmico y la consciencia planetaria.",
+      "thumbnail": "https://i.ytimg.com/vi/DJIpjIX5bLs/hqdefault.jpg",
+      "canal": "sutil-densidad",
+      "temas": [
+        "geometria-sagrada",
+        "consciencia"
+      ],
+      "formato": "documental",
+      "idioma": "es",
+      "autores": [
+        "Drunvalo Melchizedek"
+      ],
+      "episodios": [
+        {
+          "video_id": "DJIpjIX5bLs",
+          "titulo": "Los Mayas Del Tiempo Eterno (Español)",
+          "url": "https://www.youtube.com/watch?v=DJIpjIX5bLs",
+          "fecha_emision": "2024-10-27",
+          "thumbnail": "https://i.ytimg.com/vi/DJIpjIX5bLs/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ZO2T3J6nIlE",
+          "titulo": "The Maya of Eternal Time - Part 1 (English)",
+          "url": "https://www.youtube.com/watch?v=ZO2T3J6nIlE",
+          "fecha_emision": "2024-11-12",
+          "thumbnail": "https://i.ytimg.com/vi/ZO2T3J6nIlE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "vCsJrJTfjWs",
+          "titulo": "The Maya of Eternal Time - Part 2 (English)",
+          "url": "https://www.youtube.com/watch?v=vCsJrJTfjWs",
+          "fecha_emision": "2024-11-15",
+          "thumbnail": "https://i.ytimg.com/vi/vCsJrJTfjWs/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "faqklxMvNuU",
+          "titulo": "The Maya of Eternal Time - Part 3 (English)",
+          "url": "https://www.youtube.com/watch?v=faqklxMvNuU",
+          "fecha_emision": "2024-11-19",
+          "thumbnail": "https://i.ytimg.com/vi/faqklxMvNuU/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "El Nacimiento de Una Nueva Humanidad",
+      "slug": "el-nacimiento-de-una-nueva-humanidad",
+      "descripcion": "Documental sobre la transición de consciencia y el nacimiento de una nueva humanidad.",
+      "thumbnail": "https://i.ytimg.com/vi/3yEl1lHm_f4/hqdefault.jpg",
+      "canal": "sutil-densidad",
+      "temas": [
+        "geometria-sagrada",
+        "consciencia"
+      ],
+      "formato": "documental",
+      "idioma": "es",
+      "autores": [
+        "Drunvalo Melchizedek"
+      ],
+      "episodios": [
+        {
+          "video_id": "3yEl1lHm_f4",
+          "titulo": "El Nacimiento De Una Nueva Humanidad (Español)",
+          "url": "https://www.youtube.com/watch?v=3yEl1lHm_f4",
+          "fecha_emision": "2024-11-02",
+          "thumbnail": "https://i.ytimg.com/vi/3yEl1lHm_f4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "shu6XZGDMYI",
+          "titulo": "The Birth Of A New Humanity (English)",
+          "url": "https://www.youtube.com/watch?v=shu6XZGDMYI",
+          "fecha_emision": "2024-11-22",
+          "thumbnail": "https://i.ytimg.com/vi/shu6XZGDMYI/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Conjeturas Desde La Compasión",
+      "slug": "conjeturas-desde-la-compasion",
+      "descripcion": "Documental reflexivo sobre la compasión y la consciencia.",
+      "thumbnail": "https://i.ytimg.com/vi/q1V_rzq5Bdw/hqdefault.jpg",
+      "canal": "sutil-densidad",
+      "temas": [
+        "consciencia"
+      ],
+      "formato": "documental",
+      "idioma": "es",
+      "episodios": [
+        {
+          "video_id": "q1V_rzq5Bdw",
+          "titulo": "Conjeturas Desde La Compasión",
+          "url": "https://www.youtube.com/watch?v=q1V_rzq5Bdw",
+          "fecha_emision": "2024-11-08",
+          "thumbnail": "https://i.ytimg.com/vi/q1V_rzq5Bdw/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Introducción al Ayurveda",
+      "slug": "introduccion-al-ayurveda",
+      "descripcion": "Curso introductorio al Ayurveda: doshas, constitución, alimentación y rutinas.",
+      "thumbnail": "https://i.ytimg.com/vi/Dsfd6sD54iY/hqdefault.jpg",
+      "canal": "ayurveda-maria-de-ezcurra",
+      "temas": [
+        "ayurveda"
+      ],
+      "formato": "curso",
+      "idioma": "es",
+      "autores": [
+        "María de Ezcurra"
+      ],
+      "episodios": [
+        {
+          "video_id": "Dsfd6sD54iY",
+          "titulo": "Introducción a la Medicina Ayurveda 1/5",
+          "url": "https://www.youtube.com/watch?v=Dsfd6sD54iY",
+          "fecha_emision": "2014-11-23",
+          "thumbnail": "https://i.ytimg.com/vi/Dsfd6sD54iY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Ns-AyQQPwBg",
+          "titulo": "Introducción a la Medicina Ayurveda 2/5",
+          "url": "https://www.youtube.com/watch?v=Ns-AyQQPwBg",
+          "fecha_emision": "2014-11-25",
+          "thumbnail": "https://i.ytimg.com/vi/Ns-AyQQPwBg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "AaV_A503rwI",
+          "titulo": "Introducción a la Medicina Ayurveda 3/5",
+          "url": "https://www.youtube.com/watch?v=AaV_A503rwI",
+          "fecha_emision": "2014-11-25",
+          "thumbnail": "https://i.ytimg.com/vi/AaV_A503rwI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "4A_HClSB6C8",
+          "titulo": "Introducción a la Medicina Ayurveda 4/5",
+          "url": "https://www.youtube.com/watch?v=4A_HClSB6C8",
+          "fecha_emision": "2014-11-25",
+          "thumbnail": "https://i.ytimg.com/vi/4A_HClSB6C8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "qYI1FSdO8TM",
+          "titulo": "Introducción a la Medicina Ayurveda 5/5",
+          "url": "https://www.youtube.com/watch?v=qYI1FSdO8TM",
+          "fecha_emision": "2016-10-20",
+          "thumbnail": "https://i.ytimg.com/vi/qYI1FSdO8TM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "0nrTEu7qWeU",
+          "titulo": "Introducción al Ayurveda: los 3 doshas",
+          "url": "https://www.youtube.com/watch?v=0nrTEu7qWeU",
+          "fecha_emision": "2025-01-03",
+          "thumbnail": "https://i.ytimg.com/vi/0nrTEu7qWeU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "MoqcmiOmADg",
+          "titulo": "Equilibrando los doshas parte 1: Vata y Kapha",
+          "url": "https://www.youtube.com/watch?v=MoqcmiOmADg",
+          "fecha_emision": "2025-01-03",
+          "thumbnail": "https://i.ytimg.com/vi/MoqcmiOmADg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "QWdQpWqPKY8",
+          "titulo": "Ayurveda: dosha Pitta",
+          "url": "https://www.youtube.com/watch?v=QWdQpWqPKY8",
+          "fecha_emision": "2025-01-03",
+          "thumbnail": "https://i.ytimg.com/vi/QWdQpWqPKY8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "AyNvSsAUNuc",
+          "titulo": "Equilibrando los doshas parte 2: Dosha Pitta y Bidosha Prakriti",
+          "url": "https://www.youtube.com/watch?v=AyNvSsAUNuc",
+          "fecha_emision": "2022-09-26",
+          "thumbnail": "https://i.ytimg.com/vi/AyNvSsAUNuc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Qk7HzzAvzDY",
+          "titulo": "VATA: su disarmonía y propuestas preventivas",
+          "url": "https://www.youtube.com/watch?v=Qk7HzzAvzDY",
+          "fecha_emision": "2025-01-03",
+          "thumbnail": "https://i.ytimg.com/vi/Qk7HzzAvzDY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "A3n0xzrtvFk",
+          "titulo": "Yendo más allá de nuestros doshas",
+          "url": "https://www.youtube.com/watch?v=A3n0xzrtvFk",
+          "fecha_emision": "2025-01-03",
+          "thumbnail": "https://i.ytimg.com/vi/A3n0xzrtvFk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "HbW148S7u1g",
+          "titulo": "Ayurveda: Introducción a la alimentación",
+          "url": "https://www.youtube.com/watch?v=HbW148S7u1g",
+          "fecha_emision": "2025-01-03",
+          "thumbnail": "https://i.ytimg.com/vi/HbW148S7u1g/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "TQtOLm6InkM",
+          "titulo": "Ayur tips: cómo empezar el día",
+          "url": "https://www.youtube.com/watch?v=TQtOLm6InkM",
+          "fecha_emision": "2022-09-26",
+          "thumbnail": "https://i.ytimg.com/vi/TQtOLm6InkM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "EqXX7OKdCA8",
+          "titulo": "Ayur Tips: Cómo Comer",
+          "url": "https://www.youtube.com/watch?v=EqXX7OKdCA8",
+          "fecha_emision": "2019-02-19",
+          "thumbnail": "https://i.ytimg.com/vi/EqXX7OKdCA8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "9Z2f7Bf2BGM",
+          "titulo": "Tipos de Tratamiento en el Ayurveda",
+          "url": "https://www.youtube.com/watch?v=9Z2f7Bf2BGM",
+          "fecha_emision": "2022-09-26",
+          "thumbnail": "https://i.ytimg.com/vi/9Z2f7Bf2BGM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "kbiIdaI9xUQ",
+          "titulo": "Prana",
+          "url": "https://www.youtube.com/watch?v=kbiIdaI9xUQ",
+          "fecha_emision": "2022-03-06",
+          "thumbnail": "https://i.ytimg.com/vi/kbiIdaI9xUQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "R2nNxJoNn0w",
+          "titulo": "Qué es el AGNI desde la mirada del Ayurveda",
+          "url": "https://www.youtube.com/watch?v=R2nNxJoNn0w",
+          "fecha_emision": "2021-05-04",
+          "thumbnail": "https://i.ytimg.com/vi/R2nNxJoNn0w/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "QaW3W6X-Fq4",
+          "titulo": "Taller de Introducción al Ayurveda (Agrupación de Sánscrito)",
+          "url": "https://www.youtube.com/watch?v=QaW3W6X-Fq4",
+          "fecha_emision": "2021-09-26",
+          "thumbnail": "https://i.ytimg.com/vi/QaW3W6X-Fq4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "in0_H6BBhHI",
+          "titulo": "Charla Introductoria (Vinicius Yoga)",
+          "url": "https://www.youtube.com/watch?v=in0_H6BBhHI",
+          "fecha_emision": "2020-06-02",
+          "thumbnail": "https://i.ytimg.com/vi/in0_H6BBhHI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "wvAqclQxIJU",
+          "titulo": "Salud Ayurveda",
+          "url": "https://www.youtube.com/watch?v=wvAqclQxIJU",
+          "fecha_emision": "2020-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/wvAqclQxIJU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "hGeDQhhrE_0",
+          "titulo": "Ayurveda, Bioneuroemoción y Constelaciones Familiares",
+          "url": "https://www.youtube.com/watch?v=hGeDQhhrE_0",
+          "fecha_emision": "2020-04-02",
+          "thumbnail": "https://i.ytimg.com/vi/hGeDQhhrE_0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "5HKGchKkSe0",
+          "titulo": "Alimentos y emociones (con Paula Scilirrone)",
+          "url": "https://www.youtube.com/watch?v=5HKGchKkSe0",
+          "fecha_emision": "2022-09-26",
+          "thumbnail": "https://i.ytimg.com/vi/5HKGchKkSe0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "E6GVVx7_bUc",
+          "titulo": "Intro al Ayurveda y Autoconocimiento",
+          "url": "https://www.youtube.com/watch?v=E6GVVx7_bUc",
+          "fecha_emision": "2018-10-26",
+          "thumbnail": "https://i.ytimg.com/vi/E6GVVx7_bUc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "MnB8T9UYDPI",
+          "titulo": "De qué trata el taller de introducción al Ayurveda",
+          "url": "https://www.youtube.com/watch?v=MnB8T9UYDPI",
+          "fecha_emision": "2022-09-26",
+          "thumbnail": "https://i.ytimg.com/vi/MnB8T9UYDPI/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Ayurveda y la Mente",
+      "slug": "ayurveda-y-la-mente",
+      "descripcion": "Exploración de la relación entre Ayurveda, la mente y las emociones.",
+      "thumbnail": "https://i.ytimg.com/vi/kroA8mKbtvA/hqdefault.jpg",
+      "canal": "ayurveda-maria-de-ezcurra",
+      "temas": [
+        "ayurveda"
+      ],
+      "formato": "curso",
+      "idioma": "es",
+      "autores": [
+        "María de Ezcurra"
+      ],
+      "episodios": [
+        {
+          "video_id": "kroA8mKbtvA",
+          "titulo": "Ayurveda y la Mente",
+          "url": "https://www.youtube.com/watch?v=kroA8mKbtvA",
+          "fecha_emision": "2016-10-18",
+          "thumbnail": "https://i.ytimg.com/vi/kroA8mKbtvA/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "xC9eB8lhAwc",
+          "titulo": "Ayurveda y la Mente 2",
+          "url": "https://www.youtube.com/watch?v=xC9eB8lhAwc",
+          "fecha_emision": "2016-10-18",
+          "thumbnail": "https://i.ytimg.com/vi/xC9eB8lhAwc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ZFtJil4gtvs",
+          "titulo": "Ayurveda y la Mente 3",
+          "url": "https://www.youtube.com/watch?v=ZFtJil4gtvs",
+          "fecha_emision": "2016-10-18",
+          "thumbnail": "https://i.ytimg.com/vi/ZFtJil4gtvs/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "O6Hn3QsOzL4",
+          "titulo": "Ayurveda y las 3 Gunas (estados mentales)",
+          "url": "https://www.youtube.com/watch?v=O6Hn3QsOzL4",
+          "fecha_emision": "2025-01-03",
+          "thumbnail": "https://i.ytimg.com/vi/O6Hn3QsOzL4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "zSoTl10ZDas",
+          "titulo": "Ayurveda, mente, Samkhya y otros condimentos",
+          "url": "https://www.youtube.com/watch?v=zSoTl10ZDas",
+          "fecha_emision": "2023-11-22",
+          "thumbnail": "https://i.ytimg.com/vi/zSoTl10ZDas/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "icqXiCIL_yI",
+          "titulo": "Ayurveda y mente (Satchitananda Yoga)",
+          "url": "https://www.youtube.com/watch?v=icqXiCIL_yI",
+          "fecha_emision": "2022-09-26",
+          "thumbnail": "https://i.ytimg.com/vi/icqXiCIL_yI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "fyZkqiuu5Tg",
+          "titulo": "Cómo aprende la mente",
+          "url": "https://www.youtube.com/watch?v=fyZkqiuu5Tg",
+          "fecha_emision": "2022-09-26",
+          "thumbnail": "https://i.ytimg.com/vi/fyZkqiuu5Tg/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Rudolf Steiner — Doblando Realidades",
+      "slug": "rudolf-steiner-doblando-realidades",
+      "descripcion": "Obras de Rudolf Steiner traducidas y narradas por el canal Doblando Realidades: Ciencia Oculta y conferencias.",
+      "thumbnail": "https://i.ytimg.com/vi/rpnZtZAA_qM/hqdefault.jpg",
+      "canal": "doblando-realidades",
+      "temas": [
+        "antroposofia"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Rudolf Steiner"
+      ],
+      "episodios": [
+        {
+          "video_id": "rpnZtZAA_qM",
+          "titulo": "Ciencia Oculta (1909)",
+          "url": "https://www.youtube.com/watch?v=rpnZtZAA_qM",
+          "fecha_emision": "2024-05-23",
+          "thumbnail": "https://i.ytimg.com/vi/rpnZtZAA_qM/hqdefault.jpg",
+          "descripcion": "Obra maestra que sitúa a la humanidad en el corazón de los vastos e invisibles procesos de la evolución cósmica."
+        },
+        {
+          "video_id": "3qjxbQKCA-s",
+          "titulo": "Leonardo da Vinci: Un Análisis Metafísico (1913)",
+          "url": "https://www.youtube.com/watch?v=3qjxbQKCA-s",
+          "fecha_emision": "2024-06-20",
+          "thumbnail": "https://i.ytimg.com/vi/3qjxbQKCA-s/hqdefault.jpg",
+          "descripcion": "Conferencia donde Steiner desvela los misterios ocultos tras La Última Cena y explora la mente de da Vinci desde una perspectiva esotérica."
+        }
+      ]
+    },
+    {
+      "nombre": "Secrets of the UFO — Don Elkins & Carla Rueckert (1978)",
+      "slug": "secrets-of-the-ufo-1978",
+      "descripcion": "Entrevista televisiva a Don Elkins y Carla Rueckert en el programa Open Up, Atlanta 1978. Grabación de archivo previa al contacto con Ra.",
+      "thumbnail": "https://i.ytimg.com/vi/uO0DT40csVo/hqdefault.jpg",
+      "canal": "ll-research",
+      "temas": [
+        "ley-del-uno"
+      ],
+      "formato": "conferencia",
+      "idioma": "en",
+      "autores": [
+        "Don Elkins",
+        "Carla Rueckert"
+      ],
+      "episodios": [
+        {
+          "video_id": "uO0DT40csVo",
+          "titulo": "Parte 1",
+          "url": "https://www.youtube.com/watch?v=uO0DT40csVo",
+          "fecha_emision": "2011-01-24",
+          "thumbnail": "https://i.ytimg.com/vi/uO0DT40csVo/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "asKOTGk_jDE",
+          "titulo": "Parte 2",
+          "url": "https://www.youtube.com/watch?v=asKOTGk_jDE",
+          "fecha_emision": "2011-01-24",
+          "thumbnail": "https://i.ytimg.com/vi/asKOTGk_jDE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "LmN70Etgl00",
+          "titulo": "Parte 3",
+          "url": "https://www.youtube.com/watch?v=LmN70Etgl00",
+          "fecha_emision": "2011-01-24",
+          "thumbnail": "https://i.ytimg.com/vi/LmN70Etgl00/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Kqt04fj-V0w",
+          "titulo": "Parte 4",
+          "url": "https://www.youtube.com/watch?v=Kqt04fj-V0w",
+          "fecha_emision": "2011-01-24",
+          "thumbnail": "https://i.ytimg.com/vi/Kqt04fj-V0w/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "-OTUFG5NAOM",
+          "titulo": "Parte 5",
+          "url": "https://www.youtube.com/watch?v=-OTUFG5NAOM",
+          "fecha_emision": "2011-01-24",
+          "thumbnail": "https://i.ytimg.com/vi/-OTUFG5NAOM/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Conferencias de Rudolf Steiner — Word of Rudolf Steiner",
+      "slug": "conferencias-rudolf-steiner-wors",
+      "descripcion": "Conferencias completas de Rudolf Steiner narradas en español: Relaciones Kármicas, El Quinto Evangelio, La Ley del Karma y más.",
+      "thumbnail": "https://i.ytimg.com/vi/x5LfTL7Bkas/hqdefault.jpg",
+      "canal": "word-of-rudolf-steiner",
+      "temas": [
+        "antroposofia"
+      ],
+      "formato": "lectura-comentada",
+      "idioma": "es",
+      "autores": [
+        "Rudolf Steiner"
+      ],
+      "episodios": [
+        {
+          "video_id": "x5LfTL7Bkas",
+          "titulo": "El Quinto Evangelio",
+          "url": "https://www.youtube.com/watch?v=x5LfTL7Bkas",
+          "fecha_emision": "2025-09-24",
+          "thumbnail": "https://i.ytimg.com/vi/x5LfTL7Bkas/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "nEEyUfnZpFU",
+          "titulo": "La Ley del Karma",
+          "url": "https://www.youtube.com/watch?v=nEEyUfnZpFU",
+          "fecha_emision": "2025-03-30",
+          "thumbnail": "https://i.ytimg.com/vi/nEEyUfnZpFU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "YhinKFh2e1U",
+          "titulo": "La Caída de los Espíritus de la Oscuridad (Conf. 1 y 2)",
+          "url": "https://www.youtube.com/watch?v=YhinKFh2e1U",
+          "fecha_emision": "2025-03-30",
+          "thumbnail": "https://i.ytimg.com/vi/YhinKFh2e1U/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "huubPKtxIOc",
+          "titulo": "Una Imagen de la Tierra",
+          "url": "https://www.youtube.com/watch?v=huubPKtxIOc",
+          "fecha_emision": "2025-03-30",
+          "thumbnail": "https://i.ytimg.com/vi/huubPKtxIOc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "R6u4zyNC0KM",
+          "titulo": "Relaciones Kármicas - Conferencia 11",
+          "url": "https://www.youtube.com/watch?v=R6u4zyNC0KM",
+          "fecha_emision": "2025-03-30",
+          "thumbnail": "https://i.ytimg.com/vi/R6u4zyNC0KM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "hOWvws4c49g",
+          "titulo": "Relaciones Kármicas - Conferencia 12",
+          "url": "https://www.youtube.com/watch?v=hOWvws4c49g",
+          "fecha_emision": "2025-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/hOWvws4c49g/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "K-KFjyozlhk",
+          "titulo": "Ángeles, Seres Vulcanos, AI — Adriana Koulias",
+          "url": "https://www.youtube.com/watch?v=K-KFjyozlhk",
+          "fecha_emision": "2025-04-20",
+          "thumbnail": "https://i.ytimg.com/vi/K-KFjyozlhk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "8mrolIv_SaY",
+          "titulo": "Relaciones Kármicas - Conferencia 13",
+          "url": "https://www.youtube.com/watch?v=8mrolIv_SaY",
+          "fecha_emision": "2025-06-06",
+          "thumbnail": "https://i.ytimg.com/vi/8mrolIv_SaY/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Las Enseñanzas de Don Juan — Carlos Castaneda",
+      "slug": "las-ensenanzas-de-don-juan",
+      "descripcion": "Audiolibro completo de «Las Enseñanzas de Don Juan» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/CPA-WJxxXUQ/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Carlos Castaneda"
+      ],
+      "episodios": [
+        {
+          "video_id": "CPA-WJxxXUQ",
+          "titulo": "LAS ENSEÑANZAS DE DON JUAN | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=CPA-WJxxXUQ",
+          "fecha_emision": "2022-12-17",
+          "thumbnail": "https://i.ytimg.com/vi/CPA-WJxxXUQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "VJZQRC77s2w",
+          "titulo": "Parte 2: LAS ENSEÑANZAS DE DON JUAN | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=VJZQRC77s2w",
+          "fecha_emision": "2022-12-17",
+          "thumbnail": "https://i.ytimg.com/vi/VJZQRC77s2w/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "bGvbF1Pm8PU",
+          "titulo": "Parte final: LAS ENSEÑANZAS DE DON JUAN | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=bGvbF1Pm8PU",
+          "fecha_emision": "2022-12-17",
+          "thumbnail": "https://i.ytimg.com/vi/bGvbF1Pm8PU/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Una Realidad Aparte — Carlos Castaneda",
+      "slug": "una-realidad-aparte",
+      "descripcion": "Audiolibro completo de «Una Realidad Aparte» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/C27e_hGx-qk/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Carlos Castaneda"
+      ],
+      "episodios": [
+        {
+          "video_id": "C27e_hGx-qk",
+          "titulo": "UNA REALIDAD APARTE | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=C27e_hGx-qk",
+          "fecha_emision": "2022-12-17",
+          "thumbnail": "https://i.ytimg.com/vi/C27e_hGx-qk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "8n9BeBO9YNE",
+          "titulo": "Parte 2: UNA REALIDAD APARTE | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=8n9BeBO9YNE",
+          "fecha_emision": "2022-12-17",
+          "thumbnail": "https://i.ytimg.com/vi/8n9BeBO9YNE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "MKYSn05-tFc",
+          "titulo": "Parte 3: UNA REALIDAD APARTE | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=MKYSn05-tFc",
+          "fecha_emision": "2022-12-17",
+          "thumbnail": "https://i.ytimg.com/vi/MKYSn05-tFc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ChJ9kBUDXpc",
+          "titulo": "Parte 4: UNA REALIDAD APARTE | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=ChJ9kBUDXpc",
+          "fecha_emision": "2022-12-17",
+          "thumbnail": "https://i.ytimg.com/vi/ChJ9kBUDXpc/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Viaje a Ixtlán — Carlos Castaneda",
+      "slug": "viaje-a-ixtlan",
+      "descripcion": "Audiolibro completo de «Viaje a Ixtlán» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/-FOGGSnRcoc/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Carlos Castaneda"
+      ],
+      "episodios": [
+        {
+          "video_id": "-FOGGSnRcoc",
+          "titulo": "VIAJE A IXTLÁN | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=-FOGGSnRcoc",
+          "fecha_emision": "2023-01-20",
+          "thumbnail": "https://i.ytimg.com/vi/-FOGGSnRcoc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Z0r8WPgK3pw",
+          "titulo": "Parte 2: VIAJE A IXTLÁN | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=Z0r8WPgK3pw",
+          "fecha_emision": "2023-01-20",
+          "thumbnail": "https://i.ytimg.com/vi/Z0r8WPgK3pw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "pJEUEKh7lDc",
+          "titulo": "Parte 3: VIAJE A IXTLÁN | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=pJEUEKh7lDc",
+          "fecha_emision": "2023-02-03",
+          "thumbnail": "https://i.ytimg.com/vi/pJEUEKh7lDc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "M1Qk17q7LZw",
+          "titulo": "Parte 4: VIAJE A IXTLÁN | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=M1Qk17q7LZw",
+          "fecha_emision": "2023-02-26",
+          "thumbnail": "https://i.ytimg.com/vi/M1Qk17q7LZw/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Relatos de Poder — Carlos Castaneda",
+      "slug": "relatos-de-poder",
+      "descripcion": "Audiolibro completo de «Relatos de Poder» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/9C7X5wgRzoo/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Carlos Castaneda"
+      ],
+      "episodios": [
+        {
+          "video_id": "9C7X5wgRzoo",
+          "titulo": "RELATOS DE PODER | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=9C7X5wgRzoo",
+          "fecha_emision": "2023-03-03",
+          "thumbnail": "https://i.ytimg.com/vi/9C7X5wgRzoo/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "AEeoPdDOKzw",
+          "titulo": "Parte 2: RELATOS DE PODER | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=AEeoPdDOKzw",
+          "fecha_emision": "2023-03-10",
+          "thumbnail": "https://i.ytimg.com/vi/AEeoPdDOKzw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "m3QecZpOTx4",
+          "titulo": "Parte 3: RELATOS DE PODER | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=m3QecZpOTx4",
+          "fecha_emision": "2023-03-30",
+          "thumbnail": "https://i.ytimg.com/vi/m3QecZpOTx4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "v-tRZLem69E",
+          "titulo": "Parte 4: RELATOS DE PODER | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=v-tRZLem69E",
+          "fecha_emision": "2023-04-08",
+          "thumbnail": "https://i.ytimg.com/vi/v-tRZLem69E/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "El Segundo Anillo de Poder — Carlos Castaneda",
+      "slug": "el-segundo-anillo-de-poder",
+      "descripcion": "Audiolibro completo de «El Segundo Anillo de Poder» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/oodZt00ESWk/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Carlos Castaneda"
+      ],
+      "episodios": [
+        {
+          "video_id": "oodZt00ESWk",
+          "titulo": "EL SEGUNDO ANILLO DE PODER | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=oodZt00ESWk",
+          "fecha_emision": "2023-04-13",
+          "thumbnail": "https://i.ytimg.com/vi/oodZt00ESWk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "yoX-cbHQ4cQ",
+          "titulo": "Parte 2: EL SEGUNDO ANILLO DE PODER | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=yoX-cbHQ4cQ",
+          "fecha_emision": "2023-04-20",
+          "thumbnail": "https://i.ytimg.com/vi/yoX-cbHQ4cQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "AIgCverjD6U",
+          "titulo": "Parte 3: EL SEGUNDO ANILLO DE PODER | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=AIgCverjD6U",
+          "fecha_emision": "2023-05-05",
+          "thumbnail": "https://i.ytimg.com/vi/AIgCverjD6U/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "kmxVa_4JdnA",
+          "titulo": "Parte 4: EL SEGUNDO ANILLO DE PODER | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=kmxVa_4JdnA",
+          "fecha_emision": "2023-05-12",
+          "thumbnail": "https://i.ytimg.com/vi/kmxVa_4JdnA/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "El Don del Águila — Carlos Castaneda",
+      "slug": "el-don-del-aguila",
+      "descripcion": "Audiolibro completo de «El Don del Águila» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/_QWD6qkbZw4/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Carlos Castaneda"
+      ],
+      "episodios": [
+        {
+          "video_id": "_QWD6qkbZw4",
+          "titulo": "EL DON DEL ÁGUILA | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=_QWD6qkbZw4",
+          "fecha_emision": "2023-05-19",
+          "thumbnail": "https://i.ytimg.com/vi/_QWD6qkbZw4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "06SQ2Mg6gac",
+          "titulo": "Parte 2: EL DON DEL ÁGUILA | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=06SQ2Mg6gac",
+          "fecha_emision": "2023-05-24",
+          "thumbnail": "https://i.ytimg.com/vi/06SQ2Mg6gac/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "IwRbS9MGsiE",
+          "titulo": "Parte 3: EL DON DEL ÁGUILA | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=IwRbS9MGsiE",
+          "fecha_emision": "2023-06-02",
+          "thumbnail": "https://i.ytimg.com/vi/IwRbS9MGsiE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "aeYdr6JhYrg",
+          "titulo": "Parte 4: EL DON DEL ÁGUILA | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=aeYdr6JhYrg",
+          "fecha_emision": "2023-06-10",
+          "thumbnail": "https://i.ytimg.com/vi/aeYdr6JhYrg/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "El Fuego Interno — Carlos Castaneda",
+      "slug": "el-fuego-interno",
+      "descripcion": "Audiolibro completo de «El Fuego Interno» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/pkAt5NhuscE/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Carlos Castaneda"
+      ],
+      "episodios": [
+        {
+          "video_id": "pkAt5NhuscE",
+          "titulo": "EL FUEGO INTERNO | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=pkAt5NhuscE",
+          "fecha_emision": "2023-07-03",
+          "thumbnail": "https://i.ytimg.com/vi/pkAt5NhuscE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "eAlZRKJ_2kk",
+          "titulo": "Parte 2: EL FUEGO INTERNO | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=eAlZRKJ_2kk",
+          "fecha_emision": "2023-07-26",
+          "thumbnail": "https://i.ytimg.com/vi/eAlZRKJ_2kk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "sYSfSgp3pzk",
+          "titulo": "Parte 3: EL FUEGO INTERNO | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=sYSfSgp3pzk",
+          "fecha_emision": "2023-08-04",
+          "thumbnail": "https://i.ytimg.com/vi/sYSfSgp3pzk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ermHYGYhUfA",
+          "titulo": "Parte 4: EL FUEGO INTERNO | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=ermHYGYhUfA",
+          "fecha_emision": "2023-08-10",
+          "thumbnail": "https://i.ytimg.com/vi/ermHYGYhUfA/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "El Conocimiento Silencioso — Carlos Castaneda",
+      "slug": "el-conocimiento-silencioso",
+      "descripcion": "Audiolibro completo de «El Conocimiento Silencioso» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/BTdo4wUHSd8/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Carlos Castaneda"
+      ],
+      "episodios": [
+        {
+          "video_id": "BTdo4wUHSd8",
+          "titulo": "El Conocimiento Silencioso | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=BTdo4wUHSd8",
+          "fecha_emision": "2023-10-31",
+          "thumbnail": "https://i.ytimg.com/vi/BTdo4wUHSd8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Cdv09tskGDE",
+          "titulo": "Parte 2: El Conocimiento Silencioso | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=Cdv09tskGDE",
+          "fecha_emision": "2023-11-08",
+          "thumbnail": "https://i.ytimg.com/vi/Cdv09tskGDE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "XGLRNPQFteQ",
+          "titulo": "Parte 3: El Conocimiento Silencioso | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=XGLRNPQFteQ",
+          "fecha_emision": "2023-11-13",
+          "thumbnail": "https://i.ytimg.com/vi/XGLRNPQFteQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "F0csS5UG1p4",
+          "titulo": "Parte final: El Conocimiento Silencioso | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=F0csS5UG1p4",
+          "fecha_emision": "2023-11-17",
+          "thumbnail": "https://i.ytimg.com/vi/F0csS5UG1p4/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "El Arte de Ensoñar — Carlos Castaneda",
+      "slug": "el-arte-de-ensonar",
+      "descripcion": "Audiolibro completo de «El Arte de Ensoñar» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/Oe1ddMbxWxY/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Carlos Castaneda"
+      ],
+      "episodios": [
+        {
+          "video_id": "Oe1ddMbxWxY",
+          "titulo": "EL ARTE DE ENSOÑAR | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=Oe1ddMbxWxY",
+          "fecha_emision": "2021-07-27",
+          "thumbnail": "https://i.ytimg.com/vi/Oe1ddMbxWxY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "KAVIsPnvVfw",
+          "titulo": "Parte 2: EL ARTE DE ENSOÑAR | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=KAVIsPnvVfw",
+          "fecha_emision": "2021-07-27",
+          "thumbnail": "https://i.ytimg.com/vi/KAVIsPnvVfw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "KB8v3lGlpWY",
+          "titulo": "Parte 3: EL ARTE DE ENSOÑAR | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=KB8v3lGlpWY",
+          "fecha_emision": "2021-08-03",
+          "thumbnail": "https://i.ytimg.com/vi/KB8v3lGlpWY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "oMFwpvQqkdU",
+          "titulo": "Parte final: EL ARTE DE ENSOÑAR | C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=oMFwpvQqkdU",
+          "fecha_emision": "2021-08-09",
+          "thumbnail": "https://i.ytimg.com/vi/oMFwpvQqkdU/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "El Lado Activo del Infinito — Carlos Castaneda",
+      "slug": "el-lado-activo-del-infinito",
+      "descripcion": "Audiolibro completo de «El Lado Activo del Infinito» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/jaKvrrQ_kCk/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Carlos Castaneda"
+      ],
+      "episodios": [
+        {
+          "video_id": "jaKvrrQ_kCk",
+          "titulo": "Parte 2: EL LADO ACTIVO DEL INFINITO |  C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=jaKvrrQ_kCk",
+          "fecha_emision": "2021-09-04",
+          "thumbnail": "https://i.ytimg.com/vi/jaKvrrQ_kCk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "2e815XuHSeI",
+          "titulo": "Parte 3: EL LADO ACTIVO DEL INFINITO |  C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=2e815XuHSeI",
+          "fecha_emision": "2022-02-16",
+          "thumbnail": "https://i.ytimg.com/vi/2e815XuHSeI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "9R5J4Dya2YY",
+          "titulo": "Parte 4: EL LADO ACTIVO DEL INFINITO |  C. Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=9R5J4Dya2YY",
+          "fecha_emision": "2022-04-04",
+          "thumbnail": "https://i.ytimg.com/vi/9R5J4Dya2YY/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "La Rueda del Tiempo — Carlos Castaneda",
+      "slug": "la-rueda-del-tiempo",
+      "descripcion": "Audiolibro completo de «La Rueda del Tiempo» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/HSBjA92rRe0/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Carlos Castaneda"
+      ],
+      "episodios": [
+        {
+          "video_id": "HSBjA92rRe0",
+          "titulo": "La obra final de Castaneda: LA RUEDA DEL TIEMPO | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=HSBjA92rRe0",
+          "fecha_emision": "2024-01-31",
+          "thumbnail": "https://i.ytimg.com/vi/HSBjA92rRe0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "7qAkEddtA6w",
+          "titulo": "Parte 2: LA RUEDA DEL TIEMPO | Castaneda | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=7qAkEddtA6w",
+          "fecha_emision": "2024-01-31",
+          "thumbnail": "https://i.ytimg.com/vi/7qAkEddtA6w/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "El Silencio Interno — Carlos Castaneda",
+      "slug": "el-silencio-interno",
+      "descripcion": "Audiolibro completo de «El Silencio Interno» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/325WIPY_H4I/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Carlos Castaneda"
+      ],
+      "episodios": [
+        {
+          "video_id": "325WIPY_H4I",
+          "titulo": "EL SILENCIO INTERNO | C. Castaneda | PARTE 1 | Audiolibro completo | Español latino, voz humana",
+          "url": "https://www.youtube.com/watch?v=325WIPY_H4I",
+          "fecha_emision": "2023-11-27",
+          "thumbnail": "https://i.ytimg.com/vi/325WIPY_H4I/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "m7c74pz56Ms",
+          "titulo": "EL SILENCIO INTERNO | C. Castaneda | PARTE 2 | Audiolibro completo | Español latino, voz humana",
+          "url": "https://www.youtube.com/watch?v=m7c74pz56Ms",
+          "fecha_emision": "2023-12-04",
+          "thumbnail": "https://i.ytimg.com/vi/m7c74pz56Ms/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Shabono — Florinda Donner",
+      "slug": "shabono",
+      "descripcion": "Audiolibro completo narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/CcSGQ3PElU0/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Florinda Donner"
+      ],
+      "episodios": [
+        {
+          "video_id": "CcSGQ3PElU0",
+          "titulo": "Audiolibro SHABONO, de Florinda Donner | PARTE 1",
+          "url": "https://www.youtube.com/watch?v=CcSGQ3PElU0",
+          "fecha_emision": "2025-12-04",
+          "thumbnail": "https://i.ytimg.com/vi/CcSGQ3PElU0/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Ser en el Ensueño — Florinda Donner",
+      "slug": "ser-en-el-ensueno",
+      "descripcion": "Audiolibro completo narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/qZMrDKZkrsk/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Florinda Donner"
+      ],
+      "episodios": [
+        {
+          "video_id": "qZMrDKZkrsk",
+          "titulo": "Parte final: SER EN EL ENSUEÑO | Florinda Donner | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=qZMrDKZkrsk",
+          "fecha_emision": "2025-02-15",
+          "thumbnail": "https://i.ytimg.com/vi/qZMrDKZkrsk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "yGD_eMkvsi8",
+          "titulo": "Parte 2: SER EN EL ENSUEÑO | Florinda Donner | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=yGD_eMkvsi8",
+          "fecha_emision": "2025-02-15",
+          "thumbnail": "https://i.ytimg.com/vi/yGD_eMkvsi8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Kmdvyj_CW80",
+          "titulo": "SER EN EL ENSUEÑO | Florinda Donner | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=Kmdvyj_CW80",
+          "fecha_emision": "2025-02-15",
+          "thumbnail": "https://i.ytimg.com/vi/Kmdvyj_CW80/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "El Sueño de la Bruja — Florinda Donner",
+      "slug": "el-sueno-de-la-bruja",
+      "descripcion": "Audiolibro completo narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/ITaMNtbSDTE/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Florinda Donner"
+      ],
+      "episodios": [
+        {
+          "video_id": "ITaMNtbSDTE",
+          "titulo": "Espíritus y curanderas: EL SUEÑO DE LA BRUJA | Florinda Donner | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=ITaMNtbSDTE",
+          "fecha_emision": "2024-04-10",
+          "thumbnail": "https://i.ytimg.com/vi/ITaMNtbSDTE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "pK2gDmUhoLg",
+          "titulo": "Parte 2: EL SUEÑO DE LA BRUJA | Florinda Donner | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=pK2gDmUhoLg",
+          "fecha_emision": "2024-04-29",
+          "thumbnail": "https://i.ytimg.com/vi/pK2gDmUhoLg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "7MhwKYI99kA",
+          "titulo": "Parte final: EL SUEÑO DE LA BRUJA | Florinda Donner | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=7MhwKYI99kA",
+          "fecha_emision": "2024-05-31",
+          "thumbnail": "https://i.ytimg.com/vi/7MhwKYI99kA/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Textos Inéditos — Taisha Abelar",
+      "slug": "textos-ineditos-taisha",
+      "descripcion": "Audiolibro completo narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/bIBy0uLMog8/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Taisha Abelar"
+      ],
+      "episodios": [
+        {
+          "video_id": "bIBy0uLMog8",
+          "titulo": "TEXTOS INÉDITOS | Taisha Abelar | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=bIBy0uLMog8",
+          "fecha_emision": "2024-04-21",
+          "thumbnail": "https://i.ytimg.com/vi/bIBy0uLMog8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "KJCjmzxyfwk",
+          "titulo": "Parte 2: TEXTOS INÉDITOS | Taisha Abelar | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=KJCjmzxyfwk",
+          "fecha_emision": "2024-05-01",
+          "thumbnail": "https://i.ytimg.com/vi/KJCjmzxyfwk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "l8bpmKOcPcs",
+          "titulo": "Parte 3: TEXTOS INÉDITOS | Taisha Abelar | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=l8bpmKOcPcs",
+          "fecha_emision": "2024-05-19",
+          "thumbnail": "https://i.ytimg.com/vi/l8bpmKOcPcs/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "MIylTKyPzb8",
+          "titulo": "Parte final: TEXTOS INÉDITOS | Taisha Abelar | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=MIylTKyPzb8",
+          "fecha_emision": "2024-06-26",
+          "thumbnail": "https://i.ytimg.com/vi/MIylTKyPzb8/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Donde Cruzan los Brujos — Taisha Abelar",
+      "slug": "donde-cruzan-los-brujos",
+      "descripcion": "Audiolibro completo narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/KAURRWjqxUs/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Taisha Abelar"
+      ],
+      "episodios": [
+        {
+          "video_id": "KAURRWjqxUs",
+          "titulo": "De mujer a BRUJA: Donde Cruzan los Brujos, Taisha Abelar | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=KAURRWjqxUs",
+          "fecha_emision": "2023-09-21",
+          "thumbnail": "https://i.ytimg.com/vi/KAURRWjqxUs/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "3EX37P4z0e0",
+          "titulo": "Parte 2: DONDE CRUZAN LOS BRUJOS | Taisha Abelar | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=3EX37P4z0e0",
+          "fecha_emision": "2023-09-29",
+          "thumbnail": "https://i.ytimg.com/vi/3EX37P4z0e0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Z2NtT4lJ5b8",
+          "titulo": "Parte 3: DONDE CRUZAN LOS BRUJOS | Taisha Abelar | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=Z2NtT4lJ5b8",
+          "fecha_emision": "2023-10-06",
+          "thumbnail": "https://i.ytimg.com/vi/Z2NtT4lJ5b8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "LysfugKS07Q",
+          "titulo": "Parte 4: DONDE CRUZAN LOS BRUJOS | Taisha Abelar | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=LysfugKS07Q",
+          "fecha_emision": "2023-10-18",
+          "thumbnail": "https://i.ytimg.com/vi/LysfugKS07Q/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "T7NxQiBmnY4",
+          "titulo": "Parte 5: DONDE CRUZAN LOS BRUJOS | Taisha Abelar | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=T7NxQiBmnY4",
+          "fecha_emision": "2023-10-18",
+          "thumbnail": "https://i.ytimg.com/vi/T7NxQiBmnY4/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "El Kybalión — Tres Iniciados",
+      "slug": "el-kybalion",
+      "descripcion": "Audiolibro completo de El Kybalión, texto fundamental del hermetismo, narrado por Pablo Andrés.",
+      "thumbnail": "https://i.ytimg.com/vi/jVfQn_HZp4k/hqdefault.jpg",
+      "canal": "audiolibros-pablo-andres",
+      "temas": [
+        "hermetismo"
+      ],
+      "formato": "audiolibro",
+      "idioma": "es",
+      "autores": [
+        "Tres Iniciados"
+      ],
+      "episodios": [
+        {
+          "video_id": "jVfQn_HZp4k",
+          "titulo": "La milenaria sabiduría hermética: EL KYBALIÓN | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=jVfQn_HZp4k",
+          "fecha_emision": "2022-11-17",
+          "thumbnail": "https://i.ytimg.com/vi/jVfQn_HZp4k/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "26j6FH2DEXI",
+          "titulo": "Parte 2: EL KYBALIÓN | Audiolibro",
+          "url": "https://www.youtube.com/watch?v=26j6FH2DEXI",
+          "fecha_emision": "2022-11-17",
+          "thumbnail": "https://i.ytimg.com/vi/26j6FH2DEXI/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Samadhi (Español)",
+      "slug": "samadhi-espanol",
+      "descripcion": "Trilogía documental sobre meditación, la ilusión del yo y el camino sin sendero. Narrada en español.",
+      "thumbnail": "https://i.ytimg.com/vi/Hb6stHO6quE/hqdefault.jpg",
+      "canal": "awakentheworldfilm",
+      "temas": [
+        "consciencia",
+        "no-dualidad"
+      ],
+      "formato": "documental",
+      "idioma": "es",
+      "autores": [
+        "Daniel Schmidt"
+      ],
+      "episodios": [
+        {
+          "video_id": "Hb6stHO6quE",
+          "titulo": "Samadhi Parte 1 - 'Maya, la ilusión del Yo' ( Spanish)",
+          "url": "https://www.youtube.com/watch?v=Hb6stHO6quE",
+          "fecha_emision": "2018-11-18",
+          "thumbnail": "https://i.ytimg.com/vi/Hb6stHO6quE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "tsIBQc9ueSQ",
+          "titulo": "Samadhi Parte 2 - 'No es lo que piensas' (Spanish)",
+          "url": "https://www.youtube.com/watch?v=tsIBQc9ueSQ",
+          "fecha_emision": "2018-11-18",
+          "thumbnail": "https://i.ytimg.com/vi/tsIBQc9ueSQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "XIXhF2XO1ow",
+          "titulo": "Samadhi Parte 3 - 'El camino sin sendero' (Spanish)",
+          "url": "https://www.youtube.com/watch?v=XIXhF2XO1ow",
+          "fecha_emision": "2022-03-28",
+          "thumbnail": "https://i.ytimg.com/vi/XIXhF2XO1ow/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Mundos Internos, Mundos Externos (Español)",
+      "slug": "mundos-internos-mundos-externos-es",
+      "descripcion": "Documental en 4 partes sobre la conexión entre mundos internos y externos: Akasha, la espiral, la serpiente y el loto, más allá del pensamiento.",
+      "thumbnail": "https://i.ytimg.com/vi/p4Bh-nuWZ7s/hqdefault.jpg",
+      "canal": "awakentheworldfilm",
+      "temas": [
+        "consciencia",
+        "no-dualidad"
+      ],
+      "formato": "documental",
+      "idioma": "es",
+      "autores": [
+        "Daniel Schmidt"
+      ],
+      "episodios": [
+        {
+          "video_id": "p4Bh-nuWZ7s",
+          "titulo": "Mundos Internos, Mundos Externos- 1ra Parte: 'Akasha'  (Spanish, Spain)",
+          "url": "https://www.youtube.com/watch?v=p4Bh-nuWZ7s",
+          "fecha_emision": "2014-04-02",
+          "thumbnail": "https://i.ytimg.com/vi/p4Bh-nuWZ7s/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "U9zVrjbCWwk",
+          "titulo": "Mundos Internos, Mundos Externos - 2da Parte: 'La espiral' (Spanish, Spain)",
+          "url": "https://www.youtube.com/watch?v=U9zVrjbCWwk",
+          "fecha_emision": "2014-04-02",
+          "thumbnail": "https://i.ytimg.com/vi/U9zVrjbCWwk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "DyDkVrdNJak",
+          "titulo": "Mundos Internos, Mundos Externos - 3ra Parte: 'La serpiente y el loto' (Spanish, Spain)",
+          "url": "https://www.youtube.com/watch?v=DyDkVrdNJak",
+          "fecha_emision": "2014-04-02",
+          "thumbnail": "https://i.ytimg.com/vi/DyDkVrdNJak/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "xE9ERhSL7TU",
+          "titulo": "Mundos Internos, Mundos Externos - 4ta Parte: 'Más allá del pensamiento' (Spanish, Spain)",
+          "url": "https://www.youtube.com/watch?v=xE9ERhSL7TU",
+          "fecha_emision": "2014-04-02",
+          "thumbnail": "https://i.ytimg.com/vi/xE9ERhSL7TU/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "El Camino Sin Sendero — Meditaciones Guiadas",
+      "slug": "el-camino-sin-sendero-meditaciones",
+      "descripcion": "Serie de 9 meditaciones guiadas introductorias en español, del proyecto Samadhi.",
+      "thumbnail": "https://i.ytimg.com/vi/FDfKm-HduLg/hqdefault.jpg",
+      "canal": "awakentheworldfilm",
+      "temas": [
+        "consciencia",
+        "no-dualidad"
+      ],
+      "formato": "meditacion-guiada",
+      "idioma": "es",
+      "autores": [
+        "Daniel Schmidt"
+      ],
+      "episodios": [
+        {
+          "video_id": "FDfKm-HduLg",
+          "titulo": "01- Meditaciones Introductorias - 'Observar la realidad tal y como es'",
+          "url": "https://www.youtube.com/watch?v=FDfKm-HduLg",
+          "fecha_emision": "2021-10-27",
+          "thumbnail": "https://i.ytimg.com/vi/FDfKm-HduLg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Eitl9kaztF4",
+          "titulo": "02- Meditaciones Introductorias - 'Profundizar en el mundo interior'",
+          "url": "https://www.youtube.com/watch?v=Eitl9kaztF4",
+          "fecha_emision": "2021-10-27",
+          "thumbnail": "https://i.ytimg.com/vi/Eitl9kaztF4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "LtOeCf1CEm4",
+          "titulo": "03- Meditaciones Introductorias - 'Quién te observa?'",
+          "url": "https://www.youtube.com/watch?v=LtOeCf1CEm4",
+          "fecha_emision": "2021-10-27",
+          "thumbnail": "https://i.ytimg.com/vi/LtOeCf1CEm4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "q_nssoI2qjs",
+          "titulo": "04- Meditaciones Introductorias - 'Ni uno, ni dos'",
+          "url": "https://www.youtube.com/watch?v=q_nssoI2qjs",
+          "fecha_emision": "2021-10-27",
+          "thumbnail": "https://i.ytimg.com/vi/q_nssoI2qjs/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "-YCX1YmHOqU",
+          "titulo": "05- Meditaciones Introductorias - Observa el campo de cambio, deja que la energía circule",
+          "url": "https://www.youtube.com/watch?v=-YCX1YmHOqU",
+          "fecha_emision": "2021-10-27",
+          "thumbnail": "https://i.ytimg.com/vi/-YCX1YmHOqU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "sA_xWnLpSUE",
+          "titulo": "06- Meditaciones Introductorias - 'Ampliar  a todo el cuerpo'",
+          "url": "https://www.youtube.com/watch?v=sA_xWnLpSUE",
+          "fecha_emision": "2021-10-27",
+          "thumbnail": "https://i.ytimg.com/vi/sA_xWnLpSUE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "RWpqtqaqwlA",
+          "titulo": "07- Meditaciones Introductorias - 'Realización de la dimensión de la quietud - la vacuidad'",
+          "url": "https://www.youtube.com/watch?v=RWpqtqaqwlA",
+          "fecha_emision": "2021-10-27",
+          "thumbnail": "https://i.ytimg.com/vi/RWpqtqaqwlA/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "vaP7pAvYDm0",
+          "titulo": "08- Meditaciones Introductorias - 'Soltar la mente y el cuerpo'",
+          "url": "https://www.youtube.com/watch?v=vaP7pAvYDm0",
+          "fecha_emision": "2021-10-27",
+          "thumbnail": "https://i.ytimg.com/vi/vaP7pAvYDm0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "-ryZfH3tl_8",
+          "titulo": "09- Meditaciones Introductorias - 'La quietud como movimiento, la forma como vacío'",
+          "url": "https://www.youtube.com/watch?v=-ryZfH3tl_8",
+          "fecha_emision": "2021-10-27",
+          "thumbnail": "https://i.ytimg.com/vi/-ryZfH3tl_8/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Samadhi (English)",
+      "slug": "samadhi-english",
+      "descripcion": "Award-winning documentary series on meditation, the illusion of self, the pathless path, and sadhana.",
+      "thumbnail": "https://i.ytimg.com/vi/Bw9zSMsKcwk/hqdefault.jpg",
+      "canal": "awakentheworldfilm",
+      "temas": [
+        "consciencia",
+        "no-dualidad"
+      ],
+      "formato": "documental",
+      "idioma": "en",
+      "autores": [
+        "Daniel Schmidt"
+      ],
+      "episodios": [
+        {
+          "video_id": "70joViWXqeo",
+          "titulo": "Samadhi Movie, 2025 - Part 4 - \"Sadhana\" (Official) | Watch the full Award-winning Film Now",
+          "url": "https://www.youtube.com/watch?v=70joViWXqeo",
+          "fecha_emision": "2025-12-21",
+          "thumbnail": "https://i.ytimg.com/vi/70joViWXqeo/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Vu-Nw_ea9N4",
+          "titulo": "Samadhi Movie, 2021- Part 3 - \"The Pathless Path\"",
+          "url": "https://www.youtube.com/watch?v=Vu-Nw_ea9N4",
+          "fecha_emision": "2021-12-21",
+          "thumbnail": "https://i.ytimg.com/vi/Vu-Nw_ea9N4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "AQL6qcGqQ0Y",
+          "titulo": "Samadhi Movie, 2018 - Part 2 (It's Not What You Think)",
+          "url": "https://www.youtube.com/watch?v=AQL6qcGqQ0Y",
+          "fecha_emision": "2018-05-04",
+          "thumbnail": "https://i.ytimg.com/vi/AQL6qcGqQ0Y/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Bw9zSMsKcwk",
+          "titulo": "Samadhi Movie, 2017 - Part 1 - \"Maya, the Illusion of the Self\"",
+          "url": "https://www.youtube.com/watch?v=Bw9zSMsKcwk",
+          "fecha_emision": "2017-04-20",
+          "thumbnail": "https://i.ytimg.com/vi/Bw9zSMsKcwk/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Inner Worlds, Outer Worlds (English)",
+      "slug": "inner-worlds-outer-worlds-en",
+      "descripcion": "2012 documentary exploring the connection between inner and outer worlds: Akasha, the Spiral, the Serpent and the Lotus, Beyond Thinking.",
+      "thumbnail": "https://i.ytimg.com/vi/aXuTt7c3Jkg/hqdefault.jpg",
+      "canal": "awakentheworldfilm",
+      "temas": [
+        "consciencia",
+        "no-dualidad"
+      ],
+      "formato": "documental",
+      "idioma": "en",
+      "autores": [
+        "Daniel Schmidt"
+      ],
+      "episodios": [
+        {
+          "video_id": "aXuTt7c3Jkg",
+          "titulo": "Inner Worlds, Outer Worlds - Part 1 - Akasha",
+          "url": "https://www.youtube.com/watch?v=aXuTt7c3Jkg",
+          "fecha_emision": "2012-10-19",
+          "thumbnail": "https://i.ytimg.com/vi/aXuTt7c3Jkg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ZIMoxXO0XvM",
+          "titulo": "Inner Worlds, Outer Worlds - Part 2 - The Spiral",
+          "url": "https://www.youtube.com/watch?v=ZIMoxXO0XvM",
+          "fecha_emision": "2012-10-19",
+          "thumbnail": "https://i.ytimg.com/vi/ZIMoxXO0XvM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "yNEruEsb5T4",
+          "titulo": "Inner Worlds, Outer Worlds - Part 3 - The Serpent and the Lotus",
+          "url": "https://www.youtube.com/watch?v=yNEruEsb5T4",
+          "fecha_emision": "2012-10-19",
+          "thumbnail": "https://i.ytimg.com/vi/yNEruEsb5T4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "qmL4CeTENtw",
+          "titulo": "Inner Worlds, Outer Worlds - Part 4 - Beyond Thinking",
+          "url": "https://www.youtube.com/watch?v=qmL4CeTENtw",
+          "fecha_emision": "2012-10-19",
+          "thumbnail": "https://i.ytimg.com/vi/qmL4CeTENtw/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Awakening Mind (English)",
+      "slug": "awakening-mind-en",
+      "descripcion": "Three-part film series: Know Thyself, The Mind Unveiled, Liberation. Exploring consciousness and self-inquiry.",
+      "thumbnail": "https://i.ytimg.com/vi/uUZJea1UnS8/hqdefault.jpg",
+      "canal": "awakentheworldfilm",
+      "temas": [
+        "consciencia",
+        "no-dualidad"
+      ],
+      "formato": "documental",
+      "idioma": "en",
+      "autores": [
+        "Daniel Schmidt"
+      ],
+      "episodios": [
+        {
+          "video_id": "6mTniMNLDwg",
+          "titulo": "Awakening Mind Part 3, \"Liberation\" (2025) - Complete HD Film",
+          "url": "https://www.youtube.com/watch?v=6mTniMNLDwg",
+          "fecha_emision": "2025-07-31",
+          "thumbnail": "https://i.ytimg.com/vi/6mTniMNLDwg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "OEqAtYEbU5Q",
+          "titulo": "Awakening Mind Part 2 - \"The Mind Unveiled\" (2024) - Complete HD Film",
+          "url": "https://www.youtube.com/watch?v=OEqAtYEbU5Q",
+          "fecha_emision": "2024-06-24",
+          "thumbnail": "https://i.ytimg.com/vi/OEqAtYEbU5Q/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "uUZJea1UnS8",
+          "titulo": "Awakening Mind Part 1, \"Know Thyself\" (2023) - Complete HD Film",
+          "url": "https://www.youtube.com/watch?v=uUZJea1UnS8",
+          "fecha_emision": "2023-06-23",
+          "thumbnail": "https://i.ytimg.com/vi/uUZJea1UnS8/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Conoce tu Carta Natal — Pablo Flores Laymuns",
+      "slug": "conoce-tu-carta-natal",
+      "descripcion": "Curso introductorio de astrología: planetas, signos, casas y aspectos para leer tu carta natal.",
+      "thumbnail": "https://i.ytimg.com/vi/ylf4PzLal5s/hqdefault.jpg",
+      "canal": "pablo-flores-laymuns",
+      "temas": [
+        "astrologia"
+      ],
+      "formato": "clase",
+      "idioma": "es",
+      "autores": [
+        "Pablo Flores Laymuns"
+      ],
+      "episodios": [
+        {
+          "video_id": "ylf4PzLal5s",
+          "titulo": "Los 3 Signos Claves en tu Vida: Sol, Luna y Ascendente",
+          "url": "https://www.youtube.com/watch?v=ylf4PzLal5s",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/ylf4PzLal5s/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "bjIT3NTu6y4",
+          "titulo": "Tu Carta Natal - el mapa para evolucionar y potenciar tu vida – Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=bjIT3NTu6y4",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/bjIT3NTu6y4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "V0ULvdAzYKY",
+          "titulo": "Las 12 Casas y su importancia para ser Felices - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=V0ULvdAzYKY",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/V0ULvdAzYKY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "lcjcKjTKXsk",
+          "titulo": "Sol por Signo y Elemento – La luz de nuestro Ser",
+          "url": "https://www.youtube.com/watch?v=lcjcKjTKXsk",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/lcjcKjTKXsk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "LgVYqjd5zTk",
+          "titulo": "La Casa de Sol y nuestro propósito de Vida",
+          "url": "https://www.youtube.com/watch?v=LgVYqjd5zTk",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/LgVYqjd5zTk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "tXSUzv5sZic",
+          "titulo": "Sol y Ascendente en el mismo Signo - ¿Qué significa?",
+          "url": "https://www.youtube.com/watch?v=tXSUzv5sZic",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/tXSUzv5sZic/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "xenp-Wgd1_k",
+          "titulo": "Sol y Luna en el mismo Signo - ¿Qué significa? -  Astrología Psicológica y Evolutiva",
+          "url": "https://www.youtube.com/watch?v=xenp-Wgd1_k",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/xenp-Wgd1_k/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "BqDSExWmJIo",
+          "titulo": "Planetas Retrógrados en la Carta Natal – Venus, Marte y Mercurio",
+          "url": "https://www.youtube.com/watch?v=BqDSExWmJIo",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/BqDSExWmJIo/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "1ChvisPXmRI",
+          "titulo": "Luna, Sol y Ascendente las Claves de tu Carta Natal - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=1ChvisPXmRI",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/1ChvisPXmRI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "6wQ1nqbU0gg",
+          "titulo": "Nodos Lunares - Los 12 Pasos Astrológicos del Despertar Espiritual",
+          "url": "https://www.youtube.com/watch?v=6wQ1nqbU0gg",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/6wQ1nqbU0gg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "UYcDOQhBbKE",
+          "titulo": "Júpiter – el Sentido de tu Vida, la Expansión y la Confianza",
+          "url": "https://www.youtube.com/watch?v=UYcDOQhBbKE",
+          "fecha_emision": "2021-04-19",
+          "thumbnail": "https://i.ytimg.com/vi/UYcDOQhBbKE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "hk98b9pNAtU",
+          "titulo": "Urano y la Libertad - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=hk98b9pNAtU",
+          "fecha_emision": "2021-04-19",
+          "thumbnail": "https://i.ytimg.com/vi/hk98b9pNAtU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "4ReBlnwWFno",
+          "titulo": "Equilibra tus 4 elementos para armonizar y transformar tu vida",
+          "url": "https://www.youtube.com/watch?v=4ReBlnwWFno",
+          "fecha_emision": "2021-04-19",
+          "thumbnail": "https://i.ytimg.com/vi/4ReBlnwWFno/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "xQ6bRFIA0io",
+          "titulo": "Significado Casa de la Luna en tu Carta Natal",
+          "url": "https://www.youtube.com/watch?v=xQ6bRFIA0io",
+          "fecha_emision": "2021-06-14",
+          "thumbnail": "https://i.ytimg.com/vi/xQ6bRFIA0io/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "B09BvpyIfaM",
+          "titulo": "[Astrología] Luna y Venus - Armonizando nuestra energía femenina interior",
+          "url": "https://www.youtube.com/watch?v=B09BvpyIfaM",
+          "fecha_emision": "2021-08-07",
+          "thumbnail": "https://i.ytimg.com/vi/B09BvpyIfaM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ARDaGg1N1Lw",
+          "titulo": "[Astrología] Masterclass de la Casa XII - Parte 1",
+          "url": "https://www.youtube.com/watch?v=ARDaGg1N1Lw",
+          "fecha_emision": "2021-09-07",
+          "thumbnail": "https://i.ytimg.com/vi/ARDaGg1N1Lw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "v8U6Lp2WLws",
+          "titulo": "[Astrología] Masterclass de la Casa XII - Parte 2",
+          "url": "https://www.youtube.com/watch?v=v8U6Lp2WLws",
+          "fecha_emision": "2021-09-07",
+          "thumbnail": "https://i.ytimg.com/vi/v8U6Lp2WLws/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "xxPD3oGRg8s",
+          "titulo": "[Astrología] El Signo de Lilith en tu Carta Natal",
+          "url": "https://www.youtube.com/watch?v=xxPD3oGRg8s",
+          "fecha_emision": "2021-09-11",
+          "thumbnail": "https://i.ytimg.com/vi/xxPD3oGRg8s/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "8Ogfuhj8FMc",
+          "titulo": "[Astrología] Tu gestación - ¿Cómo te marcó?",
+          "url": "https://www.youtube.com/watch?v=8Ogfuhj8FMc",
+          "fecha_emision": "2021-10-04",
+          "thumbnail": "https://i.ytimg.com/vi/8Ogfuhj8FMc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "e64b1i4T42M",
+          "titulo": "Quirón, su significado en las 12 Casas y en tu Carta Natal.",
+          "url": "https://www.youtube.com/watch?v=e64b1i4T42M",
+          "fecha_emision": "2021-11-05",
+          "thumbnail": "https://i.ytimg.com/vi/e64b1i4T42M/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "lpvvx4ApmPo",
+          "titulo": "Eclipse en Sagitario por CASAS",
+          "url": "https://www.youtube.com/watch?v=lpvvx4ApmPo",
+          "fecha_emision": "2021-11-29",
+          "thumbnail": "https://i.ytimg.com/vi/lpvvx4ApmPo/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "0RNhSUl82Ks",
+          "titulo": "LOS SIGNOS QUE MÁS TE GENERAN CONFLICTO... No son los que tú crees!!",
+          "url": "https://www.youtube.com/watch?v=0RNhSUl82Ks",
+          "fecha_emision": "2022-09-25",
+          "thumbnail": "https://i.ytimg.com/vi/0RNhSUl82Ks/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Casas Astrológicas — Pablo Flores Laymuns",
+      "slug": "casas-astrologicas",
+      "descripcion": "Las 12 casas astrológicas: significado psicológico y evolutivo de cada área de vida.",
+      "thumbnail": "https://i.ytimg.com/vi/V0ULvdAzYKY/hqdefault.jpg",
+      "canal": "pablo-flores-laymuns",
+      "temas": [
+        "astrologia"
+      ],
+      "formato": "clase",
+      "idioma": "es",
+      "autores": [
+        "Pablo Flores Laymuns"
+      ],
+      "episodios": [
+        {
+          "video_id": "V0ULvdAzYKY",
+          "titulo": "Las 12 Casas y su importancia para ser Felices - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=V0ULvdAzYKY",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/V0ULvdAzYKY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "LgVYqjd5zTk",
+          "titulo": "La Casa de Sol y nuestro propósito de Vida",
+          "url": "https://www.youtube.com/watch?v=LgVYqjd5zTk",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/LgVYqjd5zTk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "jFzzj_kro5Q",
+          "titulo": "CASAS AGUA y FUEGO: Claves para tu Felicidad y Realización",
+          "url": "https://www.youtube.com/watch?v=jFzzj_kro5Q",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/jFzzj_kro5Q/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "bEe_nZEY6Js",
+          "titulo": "Casas de TIERRA y AIRE: Claves para felicidad y realización - Parte 2",
+          "url": "https://www.youtube.com/watch?v=bEe_nZEY6Js",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/bEe_nZEY6Js/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "hyc86PsWwqM",
+          "titulo": "Master Class: Casa VII - Amor, Relaciones y Proyección - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=hyc86PsWwqM",
+          "fecha_emision": "2020-02-02",
+          "thumbnail": "https://i.ytimg.com/vi/hyc86PsWwqM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Qo1GKC3XZwg",
+          "titulo": "La Casa de Plutón y su Importancia – Plutón y el Poder - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=Qo1GKC3XZwg",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/Qo1GKC3XZwg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ccAKuJPIhPE",
+          "titulo": "Master Class Casa VIII - Trauma, Sombra y Dolor - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=ccAKuJPIhPE",
+          "fecha_emision": "2020-02-02",
+          "thumbnail": "https://i.ytimg.com/vi/ccAKuJPIhPE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "zh6up6uThtM",
+          "titulo": "Casa IV - Mi Familia, Hogar y Raíz Emocional - Parte 1",
+          "url": "https://www.youtube.com/watch?v=zh6up6uThtM",
+          "fecha_emision": "2020-02-02",
+          "thumbnail": "https://i.ytimg.com/vi/zh6up6uThtM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "UOzAHasukJc",
+          "titulo": "Seminario Casa IV - Parte 2 - Pablo Flores Laymuns",
+          "url": "https://www.youtube.com/watch?v=UOzAHasukJc",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/UOzAHasukJc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "keY6Ak6QLBY",
+          "titulo": "Seminario Casa IV - Parte 3 - Pablo Flores Laymuns",
+          "url": "https://www.youtube.com/watch?v=keY6Ak6QLBY",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/keY6Ak6QLBY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "uRqg3_ZRPrU",
+          "titulo": "Seminario Casa IV - Parte 4 - Pablo Flores Laymuns",
+          "url": "https://www.youtube.com/watch?v=uRqg3_ZRPrU",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/uRqg3_ZRPrU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "2vOVlPU8ndY",
+          "titulo": "Seminario Casa IV - Parte 5 - Pablo Flores Laymuns",
+          "url": "https://www.youtube.com/watch?v=2vOVlPU8ndY",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/2vOVlPU8ndY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "R_0CMvM4kTY",
+          "titulo": "Seminario Casa IV - Parte 6 - Pablo Flores Laymuns",
+          "url": "https://www.youtube.com/watch?v=R_0CMvM4kTY",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/R_0CMvM4kTY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "c9Dz3q8_Ze4",
+          "titulo": "Casa VI - Salud, Servicio, Hábitos y Auto cuidado - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=c9Dz3q8_Ze4",
+          "fecha_emision": "2020-04-06",
+          "thumbnail": "https://i.ytimg.com/vi/c9Dz3q8_Ze4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "J1oVnSvVBQw",
+          "titulo": "La Casa de Neptuno y la Conexión con tu Alma - Astrología Psicológica - Pablo Flores",
+          "url": "https://www.youtube.com/watch?v=J1oVnSvVBQw",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/J1oVnSvVBQw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "uO2kRCUdpZ8",
+          "titulo": "Significado de Neptuno en Casa I a VI - Astrología Evolutiva - Pablo Flores Laymuns",
+          "url": "https://www.youtube.com/watch?v=uO2kRCUdpZ8",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/uO2kRCUdpZ8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "pLXeM1NmCac",
+          "titulo": "Neptuno en Casa VII a XII - Astrología Evolutiva - Pablo Flores Laymuns",
+          "url": "https://www.youtube.com/watch?v=pLXeM1NmCac",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/pLXeM1NmCac/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "tXSUzv5sZic",
+          "titulo": "Sol y Ascendente en el mismo Signo - ¿Qué significa?",
+          "url": "https://www.youtube.com/watch?v=tXSUzv5sZic",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/tXSUzv5sZic/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "xQ6bRFIA0io",
+          "titulo": "Significado Casa de la Luna en tu Carta Natal",
+          "url": "https://www.youtube.com/watch?v=xQ6bRFIA0io",
+          "fecha_emision": "2021-06-14",
+          "thumbnail": "https://i.ytimg.com/vi/xQ6bRFIA0io/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ARDaGg1N1Lw",
+          "titulo": "[Astrología] Masterclass de la Casa XII - Parte 1",
+          "url": "https://www.youtube.com/watch?v=ARDaGg1N1Lw",
+          "fecha_emision": "2021-09-04",
+          "thumbnail": "https://i.ytimg.com/vi/ARDaGg1N1Lw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "v8U6Lp2WLws",
+          "titulo": "[Astrología] Masterclass de la Casa XII - Parte 2",
+          "url": "https://www.youtube.com/watch?v=v8U6Lp2WLws",
+          "fecha_emision": "2021-09-07",
+          "thumbnail": "https://i.ytimg.com/vi/v8U6Lp2WLws/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "8Ogfuhj8FMc",
+          "titulo": "[Astrología] Tu gestación - ¿Cómo te marcó?",
+          "url": "https://www.youtube.com/watch?v=8Ogfuhj8FMc",
+          "fecha_emision": "2021-10-04",
+          "thumbnail": "https://i.ytimg.com/vi/8Ogfuhj8FMc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "51CkvdHEvUw",
+          "titulo": "La Casa X: ASTROLOGÍA Y VOCACIÓN. Un Trabajo con Sentido. - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=51CkvdHEvUw",
+          "fecha_emision": "2023-08-01",
+          "thumbnail": "https://i.ytimg.com/vi/51CkvdHEvUw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "t3jdJMYA8V4",
+          "titulo": "🌸 Guía astrológica para tus RELACIONES y el AMOR 💞 - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=t3jdJMYA8V4",
+          "fecha_emision": "2024-05-03",
+          "thumbnail": "https://i.ytimg.com/vi/t3jdJMYA8V4/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Saturno — Pablo Flores Laymuns",
+      "slug": "saturno-astrologia",
+      "descripcion": "Saturno en la carta natal: el maestro, la estructura, los límites y la maduración del alma.",
+      "thumbnail": "https://i.ytimg.com/vi/P0gs5w0acKk/hqdefault.jpg",
+      "canal": "pablo-flores-laymuns",
+      "temas": [
+        "astrologia"
+      ],
+      "formato": "clase",
+      "idioma": "es",
+      "autores": [
+        "Pablo Flores Laymuns"
+      ],
+      "episodios": [
+        {
+          "video_id": "P0gs5w0acKk",
+          "titulo": "Saturno - Significado en la Carta Natal - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=P0gs5w0acKk",
+          "fecha_emision": "2019-02-21",
+          "thumbnail": "https://i.ytimg.com/vi/P0gs5w0acKk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "9V2grwjZTEY",
+          "titulo": "Estudio de Saturno por Elemento y Signo - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=9V2grwjZTEY",
+          "fecha_emision": "2019-02-21",
+          "thumbnail": "https://i.ytimg.com/vi/9V2grwjZTEY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "RH3w7asuHlo",
+          "titulo": "Estudio de Saturno de la Casa I a VI - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=RH3w7asuHlo",
+          "fecha_emision": "2019-02-26",
+          "thumbnail": "https://i.ytimg.com/vi/RH3w7asuHlo/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "UN5PT90yg1g",
+          "titulo": "Estudio de Saturno de la Casa VII a la XII - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=UN5PT90yg1g",
+          "fecha_emision": "2019-03-21",
+          "thumbnail": "https://i.ytimg.com/vi/UN5PT90yg1g/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "MEJ-g4A6dCo",
+          "titulo": "Aprendiendo a ser Libres - Saturno en Acuario - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=MEJ-g4A6dCo",
+          "fecha_emision": "2020-07-01",
+          "thumbnail": "https://i.ytimg.com/vi/MEJ-g4A6dCo/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "JE5-2TAGm88",
+          "titulo": "Crisis y Transformación Global en Chile y en la Tierra",
+          "url": "https://www.youtube.com/watch?v=JE5-2TAGm88",
+          "fecha_emision": "2020-07-01",
+          "thumbnail": "https://i.ytimg.com/vi/JE5-2TAGm88/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "0hwnrL84vds",
+          "titulo": "Saturno cuando eramos Niños - Astrología Psicológica - Pablo Flores",
+          "url": "https://www.youtube.com/watch?v=0hwnrL84vds",
+          "fecha_emision": "2020-07-01",
+          "thumbnail": "https://i.ytimg.com/vi/0hwnrL84vds/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "UN5PT90yg1g",
+          "titulo": "Estudio de Saturno de la Casa VII a la XII - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=UN5PT90yg1g",
+          "fecha_emision": "2020-07-01",
+          "thumbnail": "https://i.ytimg.com/vi/UN5PT90yg1g/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "RH3w7asuHlo",
+          "titulo": "Estudio de Saturno de la Casa I a VI - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=RH3w7asuHlo",
+          "fecha_emision": "2020-07-01",
+          "thumbnail": "https://i.ytimg.com/vi/RH3w7asuHlo/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "9V2grwjZTEY",
+          "titulo": "Estudio de Saturno por Elemento y Signo - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=9V2grwjZTEY",
+          "fecha_emision": "2020-07-01",
+          "thumbnail": "https://i.ytimg.com/vi/9V2grwjZTEY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "P0gs5w0acKk",
+          "titulo": "Saturno - Significado en la Carta Natal - Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=P0gs5w0acKk",
+          "fecha_emision": "2020-07-01",
+          "thumbnail": "https://i.ytimg.com/vi/P0gs5w0acKk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "3oyGr_LOwwk",
+          "titulo": "Saturno: Amarme a mi mismo para poder Amar a Otro - Astrología de Parejas",
+          "url": "https://www.youtube.com/watch?v=3oyGr_LOwwk",
+          "fecha_emision": "2020-07-01",
+          "thumbnail": "https://i.ytimg.com/vi/3oyGr_LOwwk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ma-MOwwp1Mk",
+          "titulo": "Clase Luna-Saturno y/o Luna Capricornio - Pablo Flores Laymuns",
+          "url": "https://www.youtube.com/watch?v=ma-MOwwp1Mk",
+          "fecha_emision": "2020-07-01",
+          "thumbnail": "https://i.ytimg.com/vi/ma-MOwwp1Mk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "yhwRO9WFcR0",
+          "titulo": "Herramientas para el Alma: \"Autosanación para el 2020\"",
+          "url": "https://www.youtube.com/watch?v=yhwRO9WFcR0",
+          "fecha_emision": "2020-08-07",
+          "thumbnail": "https://i.ytimg.com/vi/yhwRO9WFcR0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "FNLRs8HKb5A",
+          "titulo": "Saturno, Logra tus Metas con su Maestría",
+          "url": "https://www.youtube.com/watch?v=FNLRs8HKb5A",
+          "fecha_emision": "2021-10-09",
+          "thumbnail": "https://i.ytimg.com/vi/FNLRs8HKb5A/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "iG5bx4_HGIU",
+          "titulo": "SEPTENIOS. Los momentos más importantes de nuestra vida - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=iG5bx4_HGIU",
+          "fecha_emision": "2022-06-05",
+          "thumbnail": "https://i.ytimg.com/vi/iG5bx4_HGIU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "m-HlNfdJCv8",
+          "titulo": "SATURNO, EL GRAN MAESTRO DE LA REALIDAD. Estudio en los 12 Signos - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=m-HlNfdJCv8",
+          "fecha_emision": "2022-11-09",
+          "thumbnail": "https://i.ytimg.com/vi/m-HlNfdJCv8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "CFT56s2pCEc",
+          "titulo": "Taller de Saturno - Maestría de la realidad 2023",
+          "url": "https://www.youtube.com/watch?v=CFT56s2pCEc",
+          "fecha_emision": "2022-12-02",
+          "thumbnail": "https://i.ytimg.com/vi/CFT56s2pCEc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "HRkB1qwq0ZU",
+          "titulo": "Una prueba de Amor: SATURNO 🪐 EN PISCIS ♓ - Marzo 2023 a Febrero 2026 - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=HRkB1qwq0ZU",
+          "fecha_emision": "2023-03-03",
+          "thumbnail": "https://i.ytimg.com/vi/HRkB1qwq0ZU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "CineH2-zPbw",
+          "titulo": "✨ CONSEJOS ASTROLÓGICOS para el Trabajo, Abundancia y Alcanzar tus Metas",
+          "url": "https://www.youtube.com/watch?v=CineH2-zPbw",
+          "fecha_emision": "2023-06-18",
+          "thumbnail": "https://i.ytimg.com/vi/CineH2-zPbw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "QlRrlIBETRQ",
+          "titulo": "⏳ Los Momentos Claves de Tu Vida: RETORNO DE SATURNO 🪐- Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=QlRrlIBETRQ",
+          "fecha_emision": "2024-08-01",
+          "thumbnail": "https://i.ytimg.com/vi/QlRrlIBETRQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "55TS_agO8NA",
+          "titulo": "GRAN CONJUNCIÓN SATURNO–NEPTUNO! 🔥🌊 TU VIDA YA NO PUEDE SEGUIR IGUAL  | Tránsito por las 12 Casas",
+          "url": "https://www.youtube.com/watch?v=55TS_agO8NA",
+          "fecha_emision": "2026-02-17",
+          "thumbnail": "https://i.ytimg.com/vi/55TS_agO8NA/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "La Luna — Pablo Flores Laymuns",
+      "slug": "luna-astrologia",
+      "descripcion": "La Luna en la carta natal: emociones, necesidades, la madre y el mundo interior.",
+      "thumbnail": "https://i.ytimg.com/vi/6LVqXKBdO4o/hqdefault.jpg",
+      "canal": "pablo-flores-laymuns",
+      "temas": [
+        "astrologia"
+      ],
+      "formato": "clase",
+      "idioma": "es",
+      "autores": [
+        "Pablo Flores Laymuns"
+      ],
+      "episodios": [
+        {
+          "video_id": "6LVqXKBdO4o",
+          "titulo": "Luna: qué significa y su importancia en la Astrología Moderna - Pablo Flores Laymuns",
+          "url": "https://www.youtube.com/watch?v=6LVqXKBdO4o",
+          "fecha_emision": "2020-02-16",
+          "thumbnail": "https://i.ytimg.com/vi/6LVqXKBdO4o/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ip2CN3YFGgk",
+          "titulo": "Conociendo tu Mundo Emocional Lunar – Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=ip2CN3YFGgk",
+          "fecha_emision": "2020-02-16",
+          "thumbnail": "https://i.ytimg.com/vi/ip2CN3YFGgk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "LjnkTPNJMaw",
+          "titulo": "Luna por Signo: Seguridad emocional y nutrición que limitan",
+          "url": "https://www.youtube.com/watch?v=LjnkTPNJMaw",
+          "fecha_emision": "2020-02-16",
+          "thumbnail": "https://i.ytimg.com/vi/LjnkTPNJMaw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "72iD90OToao",
+          "titulo": "El Elemento de tu Luna y Cómo Procesas tus Emociones - Astrología Psicológica y Terapéutica",
+          "url": "https://www.youtube.com/watch?v=72iD90OToao",
+          "fecha_emision": "2020-02-27",
+          "thumbnail": "https://i.ytimg.com/vi/72iD90OToao/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "JDzZUb021KE",
+          "titulo": "Tu Mamá - La Importancia de Sanar la Relación con Ella",
+          "url": "https://www.youtube.com/watch?v=JDzZUb021KE",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/JDzZUb021KE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "JYbZNYF5eWg",
+          "titulo": "Nuestra Madre: Amor y Nutrición",
+          "url": "https://www.youtube.com/watch?v=JYbZNYF5eWg",
+          "fecha_emision": "2020-09-04",
+          "thumbnail": "https://i.ytimg.com/vi/JYbZNYF5eWg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ylf4PzLal5s",
+          "titulo": "Los 3 Signos Claves en tu Vida: Sol, Luna y Ascendente",
+          "url": "https://www.youtube.com/watch?v=ylf4PzLal5s",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/ylf4PzLal5s/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "zhTN1ksJR4E",
+          "titulo": "Ayuda para Niños según su Luna y  Elemento dominante",
+          "url": "https://www.youtube.com/watch?v=zhTN1ksJR4E",
+          "fecha_emision": "2020-07-01",
+          "thumbnail": "https://i.ytimg.com/vi/zhTN1ksJR4E/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "xenp-Wgd1_k",
+          "titulo": "Sol y Luna en el mismo Signo - ¿Qué significa? -  Astrología Psicológica y Evolutiva",
+          "url": "https://www.youtube.com/watch?v=xenp-Wgd1_k",
+          "fecha_emision": "2020-03-11",
+          "thumbnail": "https://i.ytimg.com/vi/xenp-Wgd1_k/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "kM6wdnOh7go",
+          "titulo": "Mamá en la carta natal - Análisis por signo",
+          "url": "https://www.youtube.com/watch?v=kM6wdnOh7go",
+          "fecha_emision": "2021-05-10",
+          "thumbnail": "https://i.ytimg.com/vi/kM6wdnOh7go/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "xQ6bRFIA0io",
+          "titulo": "Significado Casa de la Luna en tu Carta Natal",
+          "url": "https://www.youtube.com/watch?v=xQ6bRFIA0io",
+          "fecha_emision": "2021-06-14",
+          "thumbnail": "https://i.ytimg.com/vi/xQ6bRFIA0io/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "B09BvpyIfaM",
+          "titulo": "[Astrología] Luna y Venus - Armonizando nuestra energía femenina interior",
+          "url": "https://www.youtube.com/watch?v=B09BvpyIfaM",
+          "fecha_emision": "2021-08-07",
+          "thumbnail": "https://i.ytimg.com/vi/B09BvpyIfaM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "DnawXm7128A",
+          "titulo": "Astrología en el Amor - Relaciones Conscientes",
+          "url": "https://www.youtube.com/watch?v=DnawXm7128A",
+          "fecha_emision": "2022-03-19",
+          "thumbnail": "https://i.ytimg.com/vi/DnawXm7128A/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Z1xa9XipFY0",
+          "titulo": "LA LUNA - Consejos y Claves para Armonizar tus Emociones",
+          "url": "https://www.youtube.com/watch?v=Z1xa9XipFY0",
+          "fecha_emision": "2022-04-03",
+          "thumbnail": "https://i.ytimg.com/vi/Z1xa9XipFY0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "YFm5ih-cVNk",
+          "titulo": "AMOR, RELACIONES Y ASTROLOGÍA. Con Clara Abad - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=YFm5ih-cVNk",
+          "fecha_emision": "2022-09-17",
+          "thumbnail": "https://i.ytimg.com/vi/YFm5ih-cVNk/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "B1nOAKxJ2Qo",
+          "titulo": "🌛 EL PODER DE LA LUNA en tu Sanación Emocional - Con Koldo Santiago",
+          "url": "https://www.youtube.com/watch?v=B1nOAKxJ2Qo",
+          "fecha_emision": "2023-10-19",
+          "thumbnail": "https://i.ytimg.com/vi/B1nOAKxJ2Qo/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "eAimZ9UmkZY",
+          "titulo": "🌑 LA LUNA EN LOS 12 SIGNOS: Guías según tu carta natal🌙 - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=eAimZ9UmkZY",
+          "fecha_emision": "2024-02-06",
+          "thumbnail": "https://i.ytimg.com/vi/eAimZ9UmkZY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "yz42wlk55RI",
+          "titulo": "🌛 La Luna y El Amor ❤️: Guías para cada Signo Lunar - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=yz42wlk55RI",
+          "fecha_emision": "2024-07-18",
+          "thumbnail": "https://i.ytimg.com/vi/yz42wlk55RI/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Neptuno — Pablo Flores Laymuns",
+      "slug": "neptuno-astrologia",
+      "descripcion": "Neptuno en la carta natal: espiritualidad, disolución, imaginación y trascendencia.",
+      "thumbnail": "https://i.ytimg.com/vi/2OsEpWN-KZE/hqdefault.jpg",
+      "canal": "pablo-flores-laymuns",
+      "temas": [
+        "astrologia"
+      ],
+      "formato": "clase",
+      "idioma": "es",
+      "autores": [
+        "Pablo Flores Laymuns"
+      ],
+      "episodios": [
+        {
+          "video_id": "2OsEpWN-KZE",
+          "titulo": "Cómo construir una realidad que te haga feliz - Neptuno -  Charla Astrología Psicológica",
+          "url": "https://www.youtube.com/watch?v=2OsEpWN-KZE",
+          "fecha_emision": "2020-07-01",
+          "thumbnail": "https://i.ytimg.com/vi/2OsEpWN-KZE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "J1oVnSvVBQw",
+          "titulo": "La Casa de Neptuno y la Conexión con tu Alma - Astrología Psicológica - Pablo Flores",
+          "url": "https://www.youtube.com/watch?v=J1oVnSvVBQw",
+          "fecha_emision": "2019-11-28",
+          "thumbnail": "https://i.ytimg.com/vi/J1oVnSvVBQw/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "uO2kRCUdpZ8",
+          "titulo": "Significado de Neptuno en Casa I a VI - Astrología Evolutiva - Pablo Flores Laymuns",
+          "url": "https://www.youtube.com/watch?v=uO2kRCUdpZ8",
+          "fecha_emision": "2019-11-28",
+          "thumbnail": "https://i.ytimg.com/vi/uO2kRCUdpZ8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "pLXeM1NmCac",
+          "titulo": "Neptuno en Casa VII a XII - Astrología Evolutiva - Pablo Flores Laymuns",
+          "url": "https://www.youtube.com/watch?v=pLXeM1NmCac",
+          "fecha_emision": "2019-12-08",
+          "thumbnail": "https://i.ytimg.com/vi/pLXeM1NmCac/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "dN115Qanbic",
+          "titulo": "Neptuno: Amor Idealizado, Ilusión y Desilusión - Astrología Psicológica y de Parejas",
+          "url": "https://www.youtube.com/watch?v=dN115Qanbic",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/dN115Qanbic/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "8Ogfuhj8FMc",
+          "titulo": "[Astrología] Tu gestación - ¿Cómo te marcó?",
+          "url": "https://www.youtube.com/watch?v=8Ogfuhj8FMc",
+          "fecha_emision": "2021-10-03",
+          "thumbnail": "https://i.ytimg.com/vi/8Ogfuhj8FMc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "iD3dTbrOyTY",
+          "titulo": "Astrología - Vive la Espiritualidad SIN MORIR en el Intento - Piscis",
+          "url": "https://www.youtube.com/watch?v=iD3dTbrOyTY",
+          "fecha_emision": "2022-03-05",
+          "thumbnail": "https://i.ytimg.com/vi/iD3dTbrOyTY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "lhH7gfWw-7A",
+          "titulo": "💫 Donde Conecto con mi Alma 🌸: NEPTUNO EN LAS 12 CASAS - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=lhH7gfWw-7A",
+          "fecha_emision": "2024-10-14",
+          "thumbnail": "https://i.ytimg.com/vi/lhH7gfWw-7A/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "55TS_agO8NA",
+          "titulo": "GRAN CONJUNCIÓN SATURNO–NEPTUNO! 🔥🌊 TU VIDA YA NO PUEDE SEGUIR IGUAL  | Tránsito por las 12 Casas",
+          "url": "https://www.youtube.com/watch?v=55TS_agO8NA",
+          "fecha_emision": "2026-02-17",
+          "thumbnail": "https://i.ytimg.com/vi/55TS_agO8NA/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Marte — Pablo Flores Laymuns",
+      "slug": "marte-astrologia",
+      "descripcion": "Marte en la carta natal: acción, deseo, coraje y la fuerza vital.",
+      "thumbnail": "https://i.ytimg.com/vi/uaKx0TOBJNU/hqdefault.jpg",
+      "canal": "pablo-flores-laymuns",
+      "temas": [
+        "astrologia"
+      ],
+      "formato": "clase",
+      "idioma": "es",
+      "autores": [
+        "Pablo Flores Laymuns"
+      ],
+      "episodios": [
+        {
+          "video_id": "uaKx0TOBJNU",
+          "titulo": "Marte - Activando y Transformando mi Guerrero este 2020",
+          "url": "https://www.youtube.com/watch?v=uaKx0TOBJNU",
+          "fecha_emision": "2020-07-08",
+          "thumbnail": "https://i.ytimg.com/vi/uaKx0TOBJNU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "dLd8awHAkmA",
+          "titulo": "Marte - Tu Guerrero Incomprendido - Live junto a @lunalogia",
+          "url": "https://www.youtube.com/watch?v=dLd8awHAkmA",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/dLd8awHAkmA/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "BqDSExWmJIo",
+          "titulo": "Planetas Retrógrados en la Carta Natal – Venus, Marte y Mercurio",
+          "url": "https://www.youtube.com/watch?v=BqDSExWmJIo",
+          "fecha_emision": "2021-04-12",
+          "thumbnail": "https://i.ytimg.com/vi/BqDSExWmJIo/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "h1kIQbqzVk0",
+          "titulo": "Marte por signo | Guía Astrológica Completa",
+          "url": "https://www.youtube.com/watch?v=h1kIQbqzVk0",
+          "fecha_emision": "2022-01-21",
+          "thumbnail": "https://i.ytimg.com/vi/h1kIQbqzVk0/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "bbZ4b5ONlhI",
+          "titulo": "¿Qué está pasando en el mundo? …Y CÓMO LO ESTÁS COCREANDO? - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=bbZ4b5ONlhI",
+          "fecha_emision": "2022-08-07",
+          "thumbnail": "https://i.ytimg.com/vi/bbZ4b5ONlhI/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Plutón — Pablo Flores Laymuns",
+      "slug": "pluton-astrologia",
+      "descripcion": "Plutón en la carta natal: transformación profunda, poder, muerte y renacimiento.",
+      "thumbnail": "https://i.ytimg.com/vi/mmtysERt7To/hqdefault.jpg",
+      "canal": "pablo-flores-laymuns",
+      "temas": [
+        "astrologia"
+      ],
+      "formato": "clase",
+      "idioma": "es",
+      "autores": [
+        "Pablo Flores Laymuns"
+      ],
+      "episodios": [
+        {
+          "video_id": "mmtysERt7To",
+          "titulo": "El futuro llega arrasándolo todo: PLUTÓN EN ACUARIO ♒ - Desde 2023 a 2044 - Astrología Evolutiva.",
+          "url": "https://www.youtube.com/watch?v=mmtysERt7To",
+          "fecha_emision": "2023-03-17",
+          "thumbnail": "https://i.ytimg.com/vi/mmtysERt7To/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "jVcBidkbTs8",
+          "titulo": "PLUTÓN, SU SIGNIFICADO EN LAS 12 CASAS. La Raíz del Sufrimiento. - Astrología Evolutiva.",
+          "url": "https://www.youtube.com/watch?v=jVcBidkbTs8",
+          "fecha_emision": "2023-04-22",
+          "thumbnail": "https://i.ytimg.com/vi/jVcBidkbTs8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "FGXCnY48UxU",
+          "titulo": "👩🏽‍🤝‍👨🏼 Plutón y El Drama En Las Relaciones. DEL CAOS AL CRECIMIENTO. - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=FGXCnY48UxU",
+          "fecha_emision": "2023-06-30",
+          "thumbnail": "https://i.ytimg.com/vi/FGXCnY48UxU/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Ascendentes — Pablo Flores Laymuns",
+      "slug": "ascendentes-astrologia",
+      "descripcion": "Los 12 ascendentes: la máscara, el cuerpo y el camino de individuación.",
+      "thumbnail": "https://i.ytimg.com/vi/8lYe2-YBJGY/hqdefault.jpg",
+      "canal": "pablo-flores-laymuns",
+      "temas": [
+        "astrologia"
+      ],
+      "formato": "clase",
+      "idioma": "es",
+      "autores": [
+        "Pablo Flores Laymuns"
+      ],
+      "episodios": [
+        {
+          "video_id": "8lYe2-YBJGY",
+          "titulo": "Significado Ascendente Astrología - Pablo Flores Laymuns",
+          "url": "https://www.youtube.com/watch?v=8lYe2-YBJGY",
+          "fecha_emision": "2018-07-13",
+          "thumbnail": "https://i.ytimg.com/vi/8lYe2-YBJGY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "jJL_GoH23IQ",
+          "titulo": "Significado Ascendente Aries",
+          "url": "https://www.youtube.com/watch?v=jJL_GoH23IQ",
+          "fecha_emision": "2018-07-13",
+          "thumbnail": "https://i.ytimg.com/vi/jJL_GoH23IQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Zp-xahhchIA",
+          "titulo": "Significado Ascendente Tauro",
+          "url": "https://www.youtube.com/watch?v=Zp-xahhchIA",
+          "fecha_emision": "2018-07-13",
+          "thumbnail": "https://i.ytimg.com/vi/Zp-xahhchIA/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "0GsuwkVcVTU",
+          "titulo": "Significado Ascendente Géminis",
+          "url": "https://www.youtube.com/watch?v=0GsuwkVcVTU",
+          "fecha_emision": "2018-07-13",
+          "thumbnail": "https://i.ytimg.com/vi/0GsuwkVcVTU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "rmINvC1EtBM",
+          "titulo": "Significado Ascendente Cáncer",
+          "url": "https://www.youtube.com/watch?v=rmINvC1EtBM",
+          "fecha_emision": "2018-07-13",
+          "thumbnail": "https://i.ytimg.com/vi/rmINvC1EtBM/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "NABJbUkQaZg",
+          "titulo": "Significado Ascendente Leo",
+          "url": "https://www.youtube.com/watch?v=NABJbUkQaZg",
+          "fecha_emision": "2018-07-13",
+          "thumbnail": "https://i.ytimg.com/vi/NABJbUkQaZg/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "FJX2PNLbvjI",
+          "titulo": "Significado Ascendente Virgo",
+          "url": "https://www.youtube.com/watch?v=FJX2PNLbvjI",
+          "fecha_emision": "2018-07-13",
+          "thumbnail": "https://i.ytimg.com/vi/FJX2PNLbvjI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Lc0XWT6f-uI",
+          "titulo": "Significado Ascendente Escorpio",
+          "url": "https://www.youtube.com/watch?v=Lc0XWT6f-uI",
+          "fecha_emision": "2018-07-13",
+          "thumbnail": "https://i.ytimg.com/vi/Lc0XWT6f-uI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "A32zgUbXTIQ",
+          "titulo": "Significado Ascendente Sagitario",
+          "url": "https://www.youtube.com/watch?v=A32zgUbXTIQ",
+          "fecha_emision": "2018-07-13",
+          "thumbnail": "https://i.ytimg.com/vi/A32zgUbXTIQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "lEfqIkCtm9U",
+          "titulo": "Significado Ascendente Capricornio",
+          "url": "https://www.youtube.com/watch?v=lEfqIkCtm9U",
+          "fecha_emision": "2018-07-13",
+          "thumbnail": "https://i.ytimg.com/vi/lEfqIkCtm9U/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "LV_Us_Lqxco",
+          "titulo": "Significado Ascendente Acuario",
+          "url": "https://www.youtube.com/watch?v=LV_Us_Lqxco",
+          "fecha_emision": "2018-07-13",
+          "thumbnail": "https://i.ytimg.com/vi/LV_Us_Lqxco/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "vSduxuHesKU",
+          "titulo": "Significado Ascendente Piscis",
+          "url": "https://www.youtube.com/watch?v=vSduxuHesKU",
+          "fecha_emision": "2018-07-13",
+          "thumbnail": "https://i.ytimg.com/vi/vSduxuHesKU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "tXSUzv5sZic",
+          "titulo": "Sol y Ascendente en el mismo Signo - ¿Qué significa?",
+          "url": "https://www.youtube.com/watch?v=tXSUzv5sZic",
+          "fecha_emision": "2020-07-01",
+          "thumbnail": "https://i.ytimg.com/vi/tXSUzv5sZic/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ylf4PzLal5s",
+          "titulo": "Los 3 Signos Claves en tu Vida: Sol, Luna y Ascendente",
+          "url": "https://www.youtube.com/watch?v=ylf4PzLal5s",
+          "fecha_emision": "2021-04-07",
+          "thumbnail": "https://i.ytimg.com/vi/ylf4PzLal5s/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "IHClz-eG3Qs",
+          "titulo": "Consejos para ACTIVAR TU ASCENDENTE por signo y elemento.",
+          "url": "https://www.youtube.com/watch?v=IHClz-eG3Qs",
+          "fecha_emision": "2022-07-09",
+          "thumbnail": "https://i.ytimg.com/vi/IHClz-eG3Qs/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Mercurio — Pablo Flores Laymuns",
+      "slug": "mercurio-astrologia",
+      "descripcion": "Mercurio en la carta natal: comunicación, pensamiento y percepción.",
+      "thumbnail": "https://i.ytimg.com/vi/xLYEb7dmWcc/hqdefault.jpg",
+      "canal": "pablo-flores-laymuns",
+      "temas": [
+        "astrologia"
+      ],
+      "formato": "clase",
+      "idioma": "es",
+      "autores": [
+        "Pablo Flores Laymuns"
+      ],
+      "episodios": [
+        {
+          "video_id": "xLYEb7dmWcc",
+          "titulo": "💫 MERCURIO EN LOS 12 SIGNOS: 🗣️ El poder de tu palabra. ✍️ - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=xLYEb7dmWcc",
+          "fecha_emision": "2023-12-05",
+          "thumbnail": "https://i.ytimg.com/vi/xLYEb7dmWcc/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Urano — Pablo Flores Laymuns",
+      "slug": "urano-astrologia",
+      "descripcion": "Urano en la carta natal: revolución, libertad, originalidad y despertar.",
+      "thumbnail": "https://i.ytimg.com/vi/tqovzEnJZvI/hqdefault.jpg",
+      "canal": "pablo-flores-laymuns",
+      "temas": [
+        "astrologia"
+      ],
+      "formato": "clase",
+      "idioma": "es",
+      "autores": [
+        "Pablo Flores Laymuns"
+      ],
+      "episodios": [
+        {
+          "video_id": "tqovzEnJZvI",
+          "titulo": "💫Libera tu Autenticidad.💃🏼 URANO EN TU CARTA NATAL - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=tqovzEnJZvI",
+          "fecha_emision": "2023-11-17",
+          "thumbnail": "https://i.ytimg.com/vi/tqovzEnJZvI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "OcwUk9tP6TU",
+          "titulo": "💎 LA LLAVE DE TU LIBERTAD 🍃 Urano en las 12 Casas ✴️ - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=OcwUk9tP6TU",
+          "fecha_emision": "2024-04-19",
+          "thumbnail": "https://i.ytimg.com/vi/OcwUk9tP6TU/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Nodo Norte — Pablo Flores Laymuns",
+      "slug": "nodo-norte-astrologia",
+      "descripcion": "El Nodo Norte: dirección evolutiva del alma y propósito de vida.",
+      "thumbnail": "https://i.ytimg.com/vi/x3ACFq2FJTg/hqdefault.jpg",
+      "canal": "pablo-flores-laymuns",
+      "temas": [
+        "astrologia"
+      ],
+      "formato": "clase",
+      "idioma": "es",
+      "autores": [
+        "Pablo Flores Laymuns"
+      ],
+      "episodios": [
+        {
+          "video_id": "x3ACFq2FJTg",
+          "titulo": "El Nodo Norte entra en Aries ♈ Julio 2023 a Enero 2025. - Astrología Evolutiva",
+          "url": "https://www.youtube.com/watch?v=x3ACFq2FJTg",
+          "fecha_emision": "2023-07-14",
+          "thumbnail": "https://i.ytimg.com/vi/x3ACFq2FJTg/hqdefault.jpg",
+          "descripcion": ""
+        }
+      ]
+    }
+  ]
+}

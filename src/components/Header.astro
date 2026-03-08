@@ -1,0 +1,80 @@
+---
+import { getAllTemas, getSeriesByTema } from '../lib/datos';
+
+const currentPath = Astro.url.pathname;
+
+const temaItems = getAllTemas()
+  .filter(t => getSeriesByTema(t.slug).length > 0)
+  .map(t => ({ label: t.nombre, href: `/${t.slug}/` }));
+
+const navItems = [
+  { label: 'Inicio', href: '/' },
+  ...temaItems,
+];
+---
+
+<header class="bg-brand-900 text-white shadow-md relative z-50">
+  <nav class="container mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3 hover:opacity-100 opacity-90 transition">
+      <svg class="w-7 h-7" viewBox="0 0 512 512" fill="currentColor"><path d="M256 20C200 20 164 60 164 110C164 158 206 192 230 212L112 212L112 268L230 268L224 268L210 480C210 496 230 500 256 500C282 500 302 496 302 480L288 268L282 268L400 268L400 212L282 212C306 192 348 158 348 110C348 60 312 20 256 20ZM256 72C292 72 308 94 308 116C308 142 280 166 260 182L252 182C232 166 204 142 204 116C204 94 220 72 256 72Z"/></svg>
+      <span class="text-xl font-bold text-white">Biblioteca</span>
+    </a>
+
+    <!-- Hamburguesa (solo móvil) -->
+    <button id="menu-toggle" class="md:hidden flex flex-col gap-[5px] p-1" aria-label="Abrir menú">
+      <span class="block w-6 h-[2px] bg-white transition-transform duration-300" id="bar1"></span>
+      <span class="block w-6 h-[2px] bg-white transition-opacity duration-300" id="bar2"></span>
+      <span class="block w-6 h-[2px] bg-white transition-transform duration-300" id="bar3"></span>
+    </button>
+
+    <!-- Links desktop -->
+    <div class="hidden md:flex items-center gap-1">
+      {navItems.map(item => (
+        <a
+          href={item.href}
+          class:list={[
+            "px-3 py-2 rounded-lg text-sm opacity-90 hover:opacity-100 hover:text-brand-400 transition",
+            { "text-brand-400": item.href === '/' ? currentPath === '/' : currentPath.startsWith(item.href) }
+          ]}
+        >
+          {item.label}
+        </a>
+      ))}
+    </div>
+  </nav>
+
+  <!-- Menú móvil desplegable -->
+  <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 transition-[max-height] duration-300 bg-brand-900">
+    <div class="px-4 pb-4 flex flex-col">
+      {navItems.map(item => (
+        <a href={item.href} class="py-3 text-lg opacity-90 hover:opacity-100 hover:text-brand-400 transition border-b border-white/10">
+          {item.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  const bar1 = document.getElementById('bar1');
+  const bar2 = document.getElementById('bar2');
+  const bar3 = document.getElementById('bar3');
+  let open = false;
+
+  toggle?.addEventListener('click', () => {
+    open = !open;
+    if (open) {
+      menu!.style.maxHeight = menu!.scrollHeight + 'px';
+      bar1!.style.transform = 'rotate(45deg) translate(5px, 5px)';
+      bar2!.style.opacity = '0';
+      bar3!.style.transform = 'rotate(-45deg) translate(5px, -5px)';
+    } else {
+      menu!.style.maxHeight = '0';
+      bar1!.style.transform = '';
+      bar2!.style.opacity = '1';
+      bar3!.style.transform = '';
+    }
+  });
+</script>

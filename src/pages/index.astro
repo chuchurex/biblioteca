@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TemaCard from '../components/TemaCard.astro';
+import { getAllTemas, getSeriesByTema } from '../lib/datos';
+
+const temas = getAllTemas().filter(t => getSeriesByTema(t.slug).length > 0);
+---
+
+<Layout title="Biblioteca — Videoteca curada de YouTube">
+  <section class="bg-brand-900 text-white py-16 md:py-24">
+    <div class="container mx-auto px-4 md:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Biblioteca</h1>
+      <p class="text-lg md:text-xl text-brand-200 max-w-2xl mx-auto">
+        Videoteca curada de YouTube. Audiolibros, workshops, conferencias y documentales sobre consciencia y espiritualidad.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-12">
+    <div class="container mx-auto px-4 md:px-8">
+      <h2 class="text-2xl font-bold text-brand-800 mb-6">Temas</h2>
+      <div class="grid gap-4 md:grid-cols-2">
+        {temas.map(tema => (
+          <TemaCard tema={tema} />
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

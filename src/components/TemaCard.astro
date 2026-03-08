@@ -1,0 +1,36 @@
+---
+import type { Tema } from '../lib/types';
+import { getSeriesByTema, contarEpisodiosPorTema } from '../lib/datos';
+
+interface Props {
+  tema: Tema;
+}
+
+const { tema } = Astro.props;
+const series = getSeriesByTema(tema.slug);
+const totalEpisodios = contarEpisodiosPorTema(tema.slug);
+---
+
+<a
+  href={`/${tema.slug}/`}
+  class="group block bg-white rounded-xl shadow-card overflow-hidden hover:-translate-y-0.5 hover:shadow-card-hover transition-all duration-300"
+>
+  <div class="p-6 flex items-center gap-4">
+    <div class="flex-shrink-0 w-14 h-14 bg-brand-900 rounded-xl flex items-center justify-center text-2xl">
+      {tema.icono || tema.nombre.charAt(0)}
+    </div>
+    <div class="flex-1 min-w-0">
+      <h3 class="font-bold text-lg text-brand-800 group-hover:text-brand-600 transition truncate">
+        {tema.nombre}
+      </h3>
+      <p class="text-sm text-brand-500 mt-0.5 line-clamp-1">{tema.descripcion}</p>
+      <div class="flex flex-wrap gap-x-4 gap-y-1 mt-1 text-xs text-brand-400">
+        <span>{series.length} {series.length === 1 ? 'serie' : 'series'}</span>
+        <span>{totalEpisodios} episodios</span>
+      </div>
+    </div>
+    <svg class="w-5 h-5 text-brand-300 group-hover:text-brand-600 transition flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  </div>
+</a>
