@@ -1,0 +1,62 @@
+---
+import type { Serie } from '../lib/types';
+import { getCanalDeSerie, getFormatoBySlug, getSerieEpisodios } from '../lib/datos';
+
+interface Props {
+  serie: Serie;
+  href: string;
+}
+
+const { serie, href } = Astro.props;
+const canal = getCanalDeSerie(serie);
+const formato = getFormatoBySlug(serie.formato);
+const episodios = getSerieEpisodios(serie);
+---
+
+<a
+  href={href}
+  class="group block bg-white rounded-xl shadow-card overflow-hidden hover:-translate-y-0.5 hover:shadow-card-hover transition-all duration-300"
+>
+  {serie.thumbnail && (
+    <div class="aspect-video bg-brand-100 overflow-hidden relative">
+      <img
+        src={serie.thumbnail}
+        alt={serie.nombre}
+        class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+        loading="lazy"
+      />
+      <div class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+        {episodios.length} {episodios.length === 1 ? 'episodio' : 'episodios'}
+      </div>
+    </div>
+  )}
+  <div class="p-4">
+    <div class="flex flex-wrap gap-1.5 mb-2">
+      {formato && (
+        <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-brand-100 text-brand-600">
+          {formato.nombre}
+        </span>
+      )}
+      {serie.idioma && serie.idioma !== 'es' && (
+        <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 uppercase">
+          {serie.idioma}
+        </span>
+      )}
+    </div>
+    <h3 class="font-semibold text-brand-800 group-hover:text-brand-600 transition line-clamp-2">
+      {serie.nombre}
+    </h3>
+    {serie.descripcion && (
+      <p class="text-sm text-brand-500 mt-1 line-clamp-2">{serie.descripcion}</p>
+    )}
+    <div class="flex items-center gap-2 mt-2 text-xs text-brand-400">
+      {canal && <span>{canal.nombre}</span>}
+      {!serie.thumbnail && (
+        <>
+          <span>&middot;</span>
+          <span>{episodios.length} {episodios.length === 1 ? 'episodio' : 'episodios'}</span>
+        </>
+      )}
+    </div>
+  </div>
+</a>

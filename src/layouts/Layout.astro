@@ -1,0 +1,71 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  ogType?: string;
+  canonicalPath?: string;
+  jsonLd?: Record<string, any> | Record<string, any>[];
+}
+
+const { title, description = 'Biblioteca — Videoteca multi-canal de YouTube', image, ogType = 'website', canonicalPath, jsonLd } = Astro.props;
+const canonicalURL = new URL(canonicalPath || Astro.url.pathname, Astro.site);
+const ogImage = image || new URL('/img/biblioteca-og.jpg', Astro.site).href;
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Biblioteca',
+  url: 'https://biblioteca.chuchurex.cl',
+  description: 'Videoteca multi-canal de YouTube curada.',
+};
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalURL.href} />
+  <!-- Open Graph -->
+  <meta name="theme-color" content="#1E3A5F" />
+  <meta property="og:type" content={ogType} />
+  <meta property="og:url" content={canonicalURL.href} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:site_name" content="Biblioteca" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="preconnect" href="https://www.youtube.com" />
+  <link rel="preconnect" href="https://i.ytimg.com" />
+  <title>{title}</title>
+  <!-- JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+  {jsonLd && (
+    Array.isArray(jsonLd)
+      ? jsonLd.map(schema => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)
+      : <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  )}
+</head>
+<body class="min-h-screen flex flex-col bg-brand-50 text-brand-800 font-body">
+  <Header />
+  <main class="flex-1">
+    <slot />
+  </main>
+  <Footer />
+</body>
+</html>

@@ -1,0 +1,123 @@
+---
+interface Props {
+  videoId: string;
+  title?: string;
+  embeddable?: boolean;
+  thumbnail?: string;
+}
+
+const { videoId, title = '', embeddable = true, thumbnail } = Astro.props;
+const isBlocked = embeddable === false;
+const embedUrl = `https://www.youtube.com/embed/${videoId}?enablejsapi=1&rel=0`;
+const youtubeUrl = `https://www.youtube.com/watch?v=${videoId}`;
+const thumbSrc = thumbnail || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+---
+
+<section class="bg-black">
+  <div class="max-w-5xl mx-auto">
+    <div class="relative w-full aspect-video" id="player-container" data-video-id={videoId} data-embeddable={String(embeddable)}>
+      {isBlocked ? (
+        <a
+          href={youtubeUrl}
+          target="_blank"
+          rel="noopener"
+          class="block absolute inset-0 group"
+        >
+          <img
+            src={thumbSrc}
+            alt={title}
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors flex flex-col items-center justify-center gap-3">
+            <svg class="w-16 h-16 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            <span class="bg-red-600 text-white text-base font-semibold px-4 py-2 rounded-lg shadow-lg group-hover:bg-red-500 transition-colors">
+              Ver en YouTube
+            </span>
+          </div>
+        </a>
+      ) : (
+        <iframe
+          id="main-player"
+          src={embedUrl}
+          title={title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="absolute inset-0 w-full h-full"
+          loading="lazy"
+        ></iframe>
+      )}
+    </div>
+  </div>
+</section>
+
+{!isBlocked && (
+  <script define:vars={{ videoId, youtubeUrl, thumbSrc, title }}>
+    var container = document.getElementById('player-container');
+    var iframe = document.getElementById('main-player');
+    if (container && iframe) {
+      var resolved = false;
+
+      function showFallback() {
+        if (resolved) return;
+        resolved = true;
+        var link = document.createElement('a');
+        link.href = youtubeUrl;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.className = 'block absolute inset-0 group';
+        link.innerHTML =
+          '<img src="' + thumbSrc + '" alt="' + title + '" class="w-full h-full object-cover" />' +
+          '<div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors flex flex-col items-center justify-center gap-3">' +
+            '<svg class="w-16 h-16 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">' +
+              '<path d="M8 5v14l11-7z"/>' +
+            '</svg>' +
+            '<span class="bg-red-600 text-white text-base font-semibold px-4 py-2 rounded-lg shadow-lg group-hover:bg-red-500 transition-colors">' +
+              'Ver en YouTube' +
+            '</span>' +
+          '</div>';
+        container.innerHTML = '';
+        container.appendChild(link);
+      }
+
+      function initPlayer() {
+        var player = new window.YT.Player(iframe, {
+          events: {
+            onReady: function(e) {
+              setTimeout(function() {
+                if (resolved) return;
+                var duration = 0;
+                try { duration = e.target.getDuration(); } catch(err) {}
+                if (duration > 0) {
+                  resolved = true;
+                } else {
+                  showFallback();
+                }
+              }, 1500);
+            },
+            onError: showFallback
+          }
+        });
+      }
+
+      if (window.YT && window.YT.Player) {
+        initPlayer();
+      } else {
+        var tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        document.head.appendChild(tag);
+
+        var prevCallback = window.onYouTubeIframeAPIReady;
+        window.onYouTubeIframeAPIReady = function() {
+          if (prevCallback) prevCallback();
+          initPlayer();
+        };
+      }
+
+      setTimeout(function() {
+        if (!resolved) showFallback();
+      }, 6000);
+    }
+  </script>
+)}
