@@ -211,6 +211,12 @@
       "nombre": "Luisa Jiménez y Ramiro Calle",
       "canal_id": "UCAJFNezXh9CzU5g9l_kx_8w",
       "suscriptores": 20600
+    },
+    {
+      "slug": "luisa-jimenez-ramiro-calle",
+      "nombre": "Luisa Jiménez y Ramiro Calle",
+      "canal_id": "UCAJFNezXh9CzU5g9l_kx_8w",
+      "suscriptores": 20600
     }
   ],
   "series": [
@@ -15709,6 +15715,127 @@
           "fecha_emision": "2026-03-08",
           "thumbnail": "https://i.ytimg.com/vi/Jo81g_8VsO0/hqdefault.jpg",
           "descripcion": "¿Dónde estás poniendo tu atención hoy? \nEn esta meditación guiada de Sudja Meditación, nos enfocamos en CONECTAR CON TU VERDADERA ESENCIA PERSONAL. \nNo se trata de negar la realidad, sino de elegir conscientemente la frecuencia desde la cual la observamos. \nHoy entrenamos la mirada del alma para ver"
+        }
+      ]
+    },
+    {
+      "nombre": "Meditaciones Guiadas — Ramiro Calle",
+      "slug": "meditaciones-guiadas-ramiro-calle",
+      "descripcion": "Ejercicios de meditación guiados por Ramiro Calle, pionero del yoga en España. Una progresión desde la atención a la respiración hasta la meditación en el Ser, pasando por la contemplación del cuerpo, las sensaciones y los contenidos mentales.",
+      "thumbnail": "https://i.ytimg.com/vi/eb9iNxpy3I4/hqdefault.jpg",
+      "canal": "luisa-jimenez-ramiro-calle",
+      "temas": [
+        "budismo"
+      ],
+      "formato": "meditacion",
+      "idioma": "es",
+      "autores": [
+        "Ramiro Calle"
+      ],
+      "episodios": [
+        {
+          "video_id": "eb9iNxpy3I4",
+          "titulo": "Ramiro Calle: Meditación guiada hacia el puro Ser interior",
+          "url": "https://www.youtube.com/watch?v=eb9iNxpy3I4",
+          "fecha_emision": "2019-02-17",
+          "thumbnail": "https://i.ytimg.com/vi/eb9iNxpy3I4/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "H4md-9ZJUVc",
+          "titulo": "Ramiro Calle: Meditación contra la ansiedad",
+          "url": "https://www.youtube.com/watch?v=H4md-9ZJUVc",
+          "fecha_emision": "2019-08-22",
+          "thumbnail": "https://i.ytimg.com/vi/H4md-9ZJUVc/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "lmyPqIW1sm4",
+          "titulo": "Ramiro Calle: Ejercicio de meditación - “La atención a la respiración”",
+          "url": "https://www.youtube.com/watch?v=lmyPqIW1sm4",
+          "fecha_emision": "2020-04-05",
+          "thumbnail": "https://i.ytimg.com/vi/lmyPqIW1sm4/hqdefault.jpg",
+          "descripcion": "Ejercicios de meditación"
+        },
+        {
+          "video_id": "SaPS0ER27hQ",
+          "titulo": "Ramiro Calle: Ejercicio de meditación - \"La atención a la sensación táctil del aire\"",
+          "url": "https://www.youtube.com/watch?v=SaPS0ER27hQ",
+          "fecha_emision": "2020-04-07",
+          "thumbnail": "https://i.ytimg.com/vi/SaPS0ER27hQ/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "lVBjW3hRlYE",
+          "titulo": "Ramiro Calle: Ejercicio de meditación- \"La atención al cuerpo y sus sensaciones\"",
+          "url": "https://www.youtube.com/watch?v=lVBjW3hRlYE",
+          "fecha_emision": "2020-04-08",
+          "thumbnail": "https://i.ytimg.com/vi/lVBjW3hRlYE/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Ri6F-pPke_k",
+          "titulo": "Ramiro Calle: Ejercicio de meditación - \"La atención al cuerpo, las sensaciones y la respiración\"",
+          "url": "https://www.youtube.com/watch?v=Ri6F-pPke_k",
+          "fecha_emision": "2020-04-09",
+          "thumbnail": "https://i.ytimg.com/vi/Ri6F-pPke_k/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "5v3qxhZZqu8",
+          "titulo": "Ramiro Calle: Ejercicio de meditación - \"La contemplación de los contenidos mentales y emocionales\"",
+          "url": "https://www.youtube.com/watch?v=5v3qxhZZqu8",
+          "fecha_emision": "2020-04-10",
+          "thumbnail": "https://i.ytimg.com/vi/5v3qxhZZqu8/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "3G0oPY6_P9s",
+          "titulo": "Ramiro Calle: Ejercicio de meditación - \"La erradicación de los pensamientos\"",
+          "url": "https://www.youtube.com/watch?v=3G0oPY6_P9s",
+          "fecha_emision": "2020-04-11",
+          "thumbnail": "https://i.ytimg.com/vi/3G0oPY6_P9s/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "Mn92ZQxjXWY",
+          "titulo": "Ramiro Calle: Ejercicio de Meditación - “La meditación en el Ser”",
+          "url": "https://www.youtube.com/watch?v=Mn92ZQxjXWY",
+          "fecha_emision": "2020-04-13",
+          "thumbnail": "https://i.ytimg.com/vi/Mn92ZQxjXWY/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "FXoXypp_E0s",
+          "titulo": "Ramiro Calle: Ejercicio de meditación - \"La meditación amorosa\"",
+          "url": "https://www.youtube.com/watch?v=FXoXypp_E0s",
+          "fecha_emision": "2020-04-14",
+          "thumbnail": "https://i.ytimg.com/vi/FXoXypp_E0s/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "YPKXJF1HvyI",
+          "titulo": "Ramiro Calle: Ejercicio de meditación - \"Hallar refugio en el propio corazón\"",
+          "url": "https://www.youtube.com/watch?v=YPKXJF1HvyI",
+          "fecha_emision": "2020-04-14",
+          "thumbnail": "https://i.ytimg.com/vi/YPKXJF1HvyI/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "vsK907QHlXU",
+          "titulo": "Ramiro Calle: Ejercicio de meditación - \"Meditación en acción\"",
+          "url": "https://www.youtube.com/watch?v=vsK907QHlXU",
+          "fecha_emision": "2020-04-21",
+          "thumbnail": "https://i.ytimg.com/vi/vsK907QHlXU/hqdefault.jpg",
+          "descripcion": ""
+        },
+        {
+          "video_id": "ckWSDCR_fKA",
+          "titulo": "Ramiro Calle: “Relajación profunda guiada por Ramiro Calle, para la dicha del alma”",
+          "url": "https://www.youtube.com/watch?v=ckWSDCR_fKA",
+          "fecha_emision": "2024-03-01",
+          "thumbnail": "https://i.ytimg.com/vi/ckWSDCR_fKA/hqdefault.jpg",
+          "descripcion": ""
         }
       ]
     }
