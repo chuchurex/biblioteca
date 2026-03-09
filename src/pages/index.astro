@@ -1,9 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import TemaCard from '../components/TemaCard.astro';
-import { getAllTemas, getSeriesByTema } from '../lib/datos';
+import { getAllTemas, getContenidoPorTema } from '../lib/datos';
 
-const temas = getAllTemas().filter(t => getSeriesByTema(t.slug).length > 0);
+const temas = getAllTemas().filter(t => {
+  const { obras, series } = getContenidoPorTema(t.slug);
+  return obras.length > 0 || series.length > 0;
+});
 ---
 
 <Layout title="Biblioteca — Videoteca curada de YouTube">

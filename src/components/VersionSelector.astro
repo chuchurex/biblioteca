@@ -1,0 +1,95 @@
+---
+import type { Serie, Canal, Episode } from '../lib/types';
+import { getCanalDeSerie, getSerieEpisodios } from '../lib/datos';
+import EpisodeCard from './EpisodeCard.astro';
+
+interface VersionData {
+  serie: Serie;
+  canal: Canal | undefined;
+  episodios: Episode[];
+}
+
+interface Props {
+  versiones: VersionData[];
+  basePath: string; // ej: "/chamanismo-tolteca/las-ensenanzas-de-don-juan"
+}
+
+const { versiones, basePath } = Astro.props;
+const multiVersion = versiones.length > 1;
+---
+
+{multiVersion ? (
+  <div class="version-selector">
+    <div class="flex flex-wrap gap-2 mb-6" role="tablist">
+      {versiones.map((v, i) => (
+        <button
+          role="tab"
+          aria-selected={i === 0 ? "true" : "false"}
+          data-tab={i}
+          class:list={[
+            "px-4 py-2 rounded-lg text-sm font-medium transition-colors",
+            i === 0
+              ? "bg-brand-600 text-white"
+              : "bg-brand-100 text-brand-600 hover:bg-brand-200"
+          ]}
+        >
+          {v.canal?.nombre ?? 'Versión'} ({v.episodios.length} eps)
+        </button>
+      ))}
+    </div>
+
+    {versiones.map((v, i) => (
+      <div
+        role="tabpanel"
+        data-panel={i}
+        class:list={[i !== 0 && "hidden"]}
+      >
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {v.episodios.map(ep => (
+            <EpisodeCard
+              episode={ep}
+              href={`${basePath}/${ep.video_id}`}
+              canalNombre={v.canal?.nombre}
+            />
+          ))}
+        </div>
+      </div>
+    ))}
+
+    <script>
+      document.querySelectorAll('.version-selector').forEach(selector => {
+        const tabs = selector.querySelectorAll('[role="tab"]');
+        const panels = selector.querySelectorAll('[role="tabpanel"]');
+
+        tabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+            const idx = tab.getAttribute('data-tab');
+
+            tabs.forEach(t => {
+              t.setAttribute('aria-selected', 'false');
+              t.classList.remove('bg-brand-600', 'text-white');
+              t.classList.add('bg-brand-100', 'text-brand-600');
+            });
+            tab.setAttribute('aria-selected', 'true');
+            tab.classList.remove('bg-brand-100', 'text-brand-600');
+            tab.classList.add('bg-brand-600', 'text-white');
+
+            panels.forEach(p => {
+              p.classList.toggle('hidden', p.getAttribute('data-panel') !== idx);
+            });
+          });
+        });
+      });
+    </script>
+  </div>
+) : (
+  <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    {versiones[0]?.episodios.map(ep => (
+      <EpisodeCard
+        episode={ep}
+        href={`${basePath}/${ep.video_id}`}
+        canalNombre={versiones[0]?.canal?.nombre}
+      />
+    ))}
+  </div>
+)}

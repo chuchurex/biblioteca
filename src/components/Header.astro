@@ -1,10 +1,10 @@
 ---
-import { getAllTemas, getSeriesByTema } from '../lib/datos';
+import { getAllTemas, getContenidoPorTema } from '../lib/datos';
 
 const currentPath = Astro.url.pathname;
 
 const temaItems = getAllTemas()
-  .filter(t => getSeriesByTema(t.slug).length > 0)
+  .filter(t => { const c = getContenidoPorTema(t.slug); return c.obras.length > 0 || c.series.length > 0; })
   .map(t => ({ label: t.nombre, href: `/${t.slug}/` }));
 
 const navItems = [

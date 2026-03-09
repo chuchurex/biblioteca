@@ -23,6 +23,20 @@ export interface Canal {
 }
 
 // ---------------------------------------------------------------------------
+// Obras (audiolibros agrupados)
+// ---------------------------------------------------------------------------
+
+export interface Obra {
+  slug: string;           // ej: "las-ensenanzas-de-don-juan"
+  titulo: string;         // "Las Enseñanzas de Don Juan"
+  autor: string;          // "Carlos Castaneda"
+  descripcion: string;
+  thumbnail?: string;
+  temas: string[];        // slugs de temas
+  versiones: string[];    // slugs de series que son versiones de esta obra
+}
+
+// ---------------------------------------------------------------------------
 // Contenido
 // ---------------------------------------------------------------------------
 
@@ -49,6 +63,7 @@ export interface Serie {
   formato: string;     // slug del formato
   idioma?: string;     // "es" | "en" | "multi"
   autores?: string[];  // nombres libres (Castaneda, Steiner, etc.)
+  obra?: string;       // slug de la obra a la que pertenece (si es versión de un audiolibro)
   episodios: Episode[];
 }
 
@@ -60,5 +75,6 @@ export interface Biblioteca {
   temas: Tema[];
   formatos: Formato[];
   canales: Canal[];
+  obras: Obra[];
   series: Serie[];
 }

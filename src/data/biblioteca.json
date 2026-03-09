@@ -25,46 +25,28 @@
       "icono": "⚙"
     },
     {
-      "slug": "no-dualidad",
-      "nombre": "No-dualidad",
-      "descripcion": "Advaita Vedanta, auto-indagación, Nisargadatta, Ramana Maharshi: la naturaleza del Ser.",
-      "icono": "◯"
-    },
-    {
-      "slug": "ayurveda",
-      "nombre": "Ayurveda",
-      "descripcion": "Medicina tradicional de la India: doshas, alimentación consciente, mente y autoconocimiento a través del cuerpo.",
-      "icono": "🪷"
-    },
-    {
       "slug": "astrologia",
       "nombre": "Astrología evolutiva",
       "descripcion": "Carta natal, tránsitos, casas y planetas como herramienta de autoconocimiento y evolución personal.",
       "icono": "♄"
     },
     {
-      "slug": "budismo",
-      "nombre": "Budismo y filosofía oriental",
-      "descripcion": "Zen, filosofía budista, estoicismo, meditación vipassana y caminos contemplativos.",
-      "icono": "☸"
-    },
-    {
       "slug": "hermetismo",
-      "nombre": "Hermetismo y metafísica",
-      "descripcion": "El Kybalión, principios herméticos, Conny Méndez, Saint Germain, decretos y la ley de atracción.",
+      "nombre": "Hermetismo y geometría sagrada",
+      "descripcion": "Las leyes universales del hermetismo, la geometría sagrada y los patrones ocultos de la creación.",
       "icono": "⚗"
     },
     {
-      "slug": "geometria-sagrada",
-      "nombre": "Geometría sagrada",
-      "descripcion": "La Flor de la Vida, Drunvalo Melchizedek, Mer-Ka-Ba, consciencia planetaria y civilizaciones antiguas.",
-      "icono": "✡"
+      "slug": "consciencia",
+      "nombre": "Consciencia y no-dualidad",
+      "descripcion": "Exploración de la consciencia, el despertar interior y las enseñanzas no-duales. Documentales, meditaciones y prácticas contemplativas.",
+      "icono": "✦"
     },
     {
-      "slug": "consciencia",
-      "nombre": "Consciencia y despertar",
-      "descripcion": "Samadhi, meditación, auto-indagación, el despertar de la consciencia y la exploración interior.",
-      "icono": "✦"
+      "slug": "tradiciones-orientales",
+      "nombre": "Tradiciones orientales",
+      "descripcion": "Budismo, ayurveda y filosofías orientales. Audiolibros, cursos y meditaciones de las grandes tradiciones de Oriente.",
+      "icono": "☸"
     }
   ],
   "formatos": [
@@ -205,12 +187,6 @@
       "nombre": "FranK Merkaba",
       "canal_id": "UCESqo56tux5NgOEi-bWYyKQ",
       "suscriptores": 6290
-    },
-    {
-      "slug": "luisa-jimenez-y-ramiro-calle",
-      "nombre": "Luisa Jiménez y Ramiro Calle",
-      "canal_id": "UCAJFNezXh9CzU5g9l_kx_8w",
-      "suscriptores": 20600
     },
     {
       "slug": "luisa-jimenez-ramiro-calle",
@@ -470,7 +446,8 @@
           "thumbnail": "https://i.ytimg.com/vi/MssJNvkaUg4/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "la-ley-del-uno-libro-1"
     },
     {
       "nombre": "La Ley del Uno - Libro I",
@@ -698,7 +675,8 @@
           "thumbnail": "https://i.ytimg.com/vi/WLVbNB8BKpY/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "la-ley-del-uno-libro-1"
     },
     {
       "nombre": "La Ley del Uno - Libro II",
@@ -894,7 +872,8 @@
           "thumbnail": "https://i.ytimg.com/vi/aCiGeOY1PcM/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "la-ley-del-uno-libro-2"
     },
     {
       "nombre": "La Ley del Uno - Libro III",
@@ -1114,7 +1093,8 @@
           "thumbnail": "https://i.ytimg.com/vi/oWivKEYoWgA/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "la-ley-del-uno-libro-3"
     },
     {
       "nombre": "La Ley del Uno - Libro IV",
@@ -1342,7 +1322,8 @@
           "thumbnail": "https://i.ytimg.com/vi/ImH4-eRwB_g/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "la-ley-del-uno-libro-4"
     },
     {
       "nombre": "La Ley del Uno - Libro V",
@@ -1402,7 +1383,8 @@
           "thumbnail": "https://i.ytimg.com/vi/e3IIjg7GRPE/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "la-ley-del-uno-libro-5"
     },
     {
       "nombre": "The Flower Of Life - Drunvalo Melchizedek",
@@ -1411,7 +1393,7 @@
       "thumbnail": "https://i.ytimg.com/vi/SYd4ll_4kgk/hqdefault.jpg",
       "canal": "sutil-densidad",
       "temas": [
-        "geometria-sagrada",
+        "hermetismo",
         "consciencia"
       ],
       "formato": "curso",
@@ -1517,7 +1499,7 @@
       "thumbnail": "https://i.ytimg.com/vi/sRCFAEDDeho/hqdefault.jpg",
       "canal": "sutil-densidad",
       "temas": [
-        "geometria-sagrada",
+        "hermetismo",
         "consciencia"
       ],
       "formato": "conferencia",
@@ -1559,7 +1541,7 @@
       "thumbnail": "https://i.ytimg.com/vi/YcUY8RvPLYQ/hqdefault.jpg",
       "canal": "sutil-densidad",
       "temas": [
-        "geometria-sagrada",
+        "hermetismo",
         "consciencia"
       ],
       "formato": "conferencia",
@@ -1593,7 +1575,7 @@
       "thumbnail": "https://i.ytimg.com/vi/dLXbdbxFIgQ/hqdefault.jpg",
       "canal": "sutil-densidad",
       "temas": [
-        "geometria-sagrada",
+        "hermetismo",
         "consciencia"
       ],
       "formato": "conferencia",
@@ -1627,7 +1609,7 @@
       "thumbnail": "https://i.ytimg.com/vi/DJIpjIX5bLs/hqdefault.jpg",
       "canal": "sutil-densidad",
       "temas": [
-        "geometria-sagrada",
+        "hermetismo",
         "consciencia"
       ],
       "formato": "documental",
@@ -1677,7 +1659,7 @@
       "thumbnail": "https://i.ytimg.com/vi/3yEl1lHm_f4/hqdefault.jpg",
       "canal": "sutil-densidad",
       "temas": [
-        "geometria-sagrada",
+        "hermetismo",
         "consciencia"
       ],
       "formato": "documental",
@@ -1733,7 +1715,7 @@
       "thumbnail": "https://i.ytimg.com/vi/Dsfd6sD54iY/hqdefault.jpg",
       "canal": "ayurveda-maria-de-ezcurra",
       "temas": [
-        "ayurveda"
+        "tradiciones-orientales"
       ],
       "formato": "curso",
       "idioma": "es",
@@ -1942,7 +1924,7 @@
       "thumbnail": "https://i.ytimg.com/vi/kroA8mKbtvA/hqdefault.jpg",
       "canal": "ayurveda-maria-de-ezcurra",
       "temas": [
-        "ayurveda"
+        "tradiciones-orientales"
       ],
       "formato": "curso",
       "idioma": "es",
@@ -2039,7 +2021,8 @@
           "thumbnail": "https://i.ytimg.com/vi/3qjxbQKCA-s/hqdefault.jpg",
           "descripcion": "Conferencia donde Steiner desvela los misterios ocultos tras La Última Cena y explora la mente de da Vinci desde una perspectiva esotérica."
         }
-      ]
+      ],
+      "obra": "rudolf-steiner-doblando-realidades"
     },
     {
       "nombre": "Secrets of the UFO — Don Elkins & Carla Rueckert (1978)",
@@ -2219,7 +2202,8 @@
           "thumbnail": "https://i.ytimg.com/vi/bGvbF1Pm8PU/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "las-ensenanzas-de-don-juan"
     },
     {
       "nombre": "Una Realidad Aparte — Carlos Castaneda",
@@ -2268,7 +2252,8 @@
           "thumbnail": "https://i.ytimg.com/vi/ChJ9kBUDXpc/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "una-realidad-aparte"
     },
     {
       "nombre": "Viaje a Ixtlán — Carlos Castaneda",
@@ -2317,7 +2302,8 @@
           "thumbnail": "https://i.ytimg.com/vi/M1Qk17q7LZw/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "viaje-a-ixtlan"
     },
     {
       "nombre": "Relatos de Poder — Carlos Castaneda",
@@ -2366,7 +2352,8 @@
           "thumbnail": "https://i.ytimg.com/vi/v-tRZLem69E/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "relatos-de-poder"
     },
     {
       "nombre": "El Segundo Anillo de Poder — Carlos Castaneda",
@@ -2415,7 +2402,8 @@
           "thumbnail": "https://i.ytimg.com/vi/kmxVa_4JdnA/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "el-segundo-anillo-de-poder"
     },
     {
       "nombre": "El Don del Águila — Carlos Castaneda",
@@ -2464,7 +2452,8 @@
           "thumbnail": "https://i.ytimg.com/vi/aeYdr6JhYrg/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "el-don-del-aguila"
     },
     {
       "nombre": "El Fuego Interno — Carlos Castaneda",
@@ -2513,7 +2502,8 @@
           "thumbnail": "https://i.ytimg.com/vi/ermHYGYhUfA/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "el-fuego-interno"
     },
     {
       "nombre": "El Conocimiento Silencioso — Carlos Castaneda",
@@ -2562,7 +2552,8 @@
           "thumbnail": "https://i.ytimg.com/vi/F0csS5UG1p4/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "el-conocimiento-silencioso"
     },
     {
       "nombre": "El Arte de Ensoñar — Carlos Castaneda",
@@ -2611,7 +2602,8 @@
           "thumbnail": "https://i.ytimg.com/vi/oMFwpvQqkdU/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "el-arte-de-ensonar"
     },
     {
       "nombre": "El Lado Activo del Infinito — Carlos Castaneda",
@@ -2652,7 +2644,8 @@
           "thumbnail": "https://i.ytimg.com/vi/9R5J4Dya2YY/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "el-lado-activo-del-infinito"
     },
     {
       "nombre": "La Rueda del Tiempo — Carlos Castaneda",
@@ -2685,7 +2678,8 @@
           "thumbnail": "https://i.ytimg.com/vi/7qAkEddtA6w/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "la-rueda-del-tiempo"
     },
     {
       "nombre": "El Silencio Interno — Carlos Castaneda",
@@ -2718,7 +2712,8 @@
           "thumbnail": "https://i.ytimg.com/vi/m7c74pz56Ms/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "el-silencio-interno"
     },
     {
       "nombre": "Shabono — Florinda Donner",
@@ -2743,7 +2738,8 @@
           "thumbnail": "https://i.ytimg.com/vi/CcSGQ3PElU0/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "shabono"
     },
     {
       "nombre": "Ser en el Ensueño — Florinda Donner",
@@ -2784,7 +2780,8 @@
           "thumbnail": "https://i.ytimg.com/vi/Kmdvyj_CW80/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "ser-en-el-ensueno"
     },
     {
       "nombre": "El Sueño de la Bruja — Florinda Donner",
@@ -2825,7 +2822,8 @@
           "thumbnail": "https://i.ytimg.com/vi/7MhwKYI99kA/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "el-sueno-de-la-bruja"
     },
     {
       "nombre": "Textos Inéditos — Taisha Abelar",
@@ -2874,7 +2872,8 @@
           "thumbnail": "https://i.ytimg.com/vi/MIylTKyPzb8/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "textos-ineditos-taisha"
     },
     {
       "nombre": "Donde Cruzan los Brujos — Taisha Abelar",
@@ -2931,7 +2930,8 @@
           "thumbnail": "https://i.ytimg.com/vi/T7NxQiBmnY4/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "donde-cruzan-los-brujos"
     },
     {
       "nombre": "El Kybalión — Tres Iniciados",
@@ -2964,7 +2964,8 @@
           "thumbnail": "https://i.ytimg.com/vi/26j6FH2DEXI/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "el-kybalion"
     },
     {
       "nombre": "Samadhi (Español)",
@@ -2973,8 +2974,7 @@
       "thumbnail": "https://i.ytimg.com/vi/Hb6stHO6quE/hqdefault.jpg",
       "canal": "awakentheworldfilm",
       "temas": [
-        "consciencia",
-        "no-dualidad"
+        "consciencia"
       ],
       "formato": "documental",
       "idioma": "es",
@@ -3015,8 +3015,7 @@
       "thumbnail": "https://i.ytimg.com/vi/p4Bh-nuWZ7s/hqdefault.jpg",
       "canal": "awakentheworldfilm",
       "temas": [
-        "consciencia",
-        "no-dualidad"
+        "consciencia"
       ],
       "formato": "documental",
       "idioma": "es",
@@ -3065,8 +3064,7 @@
       "thumbnail": "https://i.ytimg.com/vi/FDfKm-HduLg/hqdefault.jpg",
       "canal": "awakentheworldfilm",
       "temas": [
-        "consciencia",
-        "no-dualidad"
+        "consciencia"
       ],
       "formato": "meditacion-guiada",
       "idioma": "es",
@@ -3155,8 +3153,7 @@
       "thumbnail": "https://i.ytimg.com/vi/Bw9zSMsKcwk/hqdefault.jpg",
       "canal": "awakentheworldfilm",
       "temas": [
-        "consciencia",
-        "no-dualidad"
+        "consciencia"
       ],
       "formato": "documental",
       "idioma": "en",
@@ -3205,8 +3202,7 @@
       "thumbnail": "https://i.ytimg.com/vi/aXuTt7c3Jkg/hqdefault.jpg",
       "canal": "awakentheworldfilm",
       "temas": [
-        "consciencia",
-        "no-dualidad"
+        "consciencia"
       ],
       "formato": "documental",
       "idioma": "en",
@@ -3255,8 +3251,7 @@
       "thumbnail": "https://i.ytimg.com/vi/uUZJea1UnS8/hqdefault.jpg",
       "canal": "awakentheworldfilm",
       "temas": [
-        "consciencia",
-        "no-dualidad"
+        "consciencia"
       ],
       "formato": "documental",
       "idioma": "en",
@@ -4740,7 +4735,8 @@
           "thumbnail": "https://i.ytimg.com/vi/EVGHd_acamk/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "mundos-superiores-crisol"
     },
     {
       "nombre": "La Vida entre la Muerte y el Nuevo Nacimiento — Rudolf Steiner",
@@ -5013,7 +5009,8 @@
           "thumbnail": "https://i.ytimg.com/vi/xs1yL3IncWo/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "vida-muerte-nacimiento-crisol"
     },
     {
       "nombre": "El Evangelio de Mateo — Rudolf Steiner",
@@ -5270,7 +5267,8 @@
           "thumbnail": "https://i.ytimg.com/vi/NIAACb9z-E0/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "evangelio-mateo-crisol"
     },
     {
       "nombre": "Teosofía — Rudolf Steiner",
@@ -5447,7 +5445,8 @@
           "thumbnail": "https://i.ytimg.com/vi/HQ30N9b6LA8/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "teosofia-crisol"
     },
     {
       "nombre": "La Ciencia Oculta — Rudolf Steiner",
@@ -5568,7 +5567,8 @@
           "thumbnail": "https://i.ytimg.com/vi/foPnODmsNCw/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "ciencia-oculta-crisol"
     },
     {
       "nombre": "Filosofía de la Libertad — Rudolf Steiner",
@@ -5681,7 +5681,8 @@
           "thumbnail": "https://i.ytimg.com/vi/TFjwoRiXSa8/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "filosofia-libertad-crisol"
     },
     {
       "nombre": "El Evangelio de Marcos — Rudolf Steiner",
@@ -5794,7 +5795,8 @@
           "thumbnail": "https://i.ytimg.com/vi/VDB_e5F8SW0/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "evangelio-marcos-crisol"
     },
     {
       "nombre": "El Evangelio de Lucas — Rudolf Steiner",
@@ -5891,7 +5893,8 @@
           "thumbnail": "https://i.ytimg.com/vi/PrtjNNphtKI/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "evangelio-lucas-crisol"
     },
     {
       "nombre": "La Encarnación de Ahriman — Rudolf Steiner",
@@ -5980,7 +5983,8 @@
           "thumbnail": "https://i.ytimg.com/vi/Cj07ri1TPHc/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "encarnacion-ahriman-crisol"
     },
     {
       "nombre": "Gnoseología (GA2) — Rudolf Steiner",
@@ -6037,7 +6041,8 @@
           "thumbnail": "https://i.ytimg.com/vi/W87CdguYLNU/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "gnoseologia-crisol"
     },
     {
       "nombre": "La Vida Después de la Muerte (GA153) — Rudolf Steiner",
@@ -6078,7 +6083,8 @@
           "thumbnail": "https://i.ytimg.com/vi/1-ubXBh0bRM/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "vida-despues-muerte-crisol"
     },
     {
       "nombre": "El Evangelio de Juan — Rudolf Steiner",
@@ -6103,7 +6109,8 @@
           "thumbnail": "https://i.ytimg.com/vi/u_rdJnhv7vo/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "evangelio-juan-crisol"
     },
     {
       "nombre": "Relatos de Belcebú a su Nieto — Gurdjieff",
@@ -6832,7 +6839,8 @@
           "thumbnail": "https://i.ytimg.com/vi/4NVNbzHYrI0/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "relatos-de-belcebu"
     },
     {
       "nombre": "La Realidad del Ser — Jeanne de Salzmann",
@@ -7625,7 +7633,8 @@
           "thumbnail": "https://i.ytimg.com/vi/IqNCaznI86g/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "la-realidad-del-ser"
     },
     {
       "nombre": "Recordando a Gurdjieff — Fritz Peters",
@@ -8170,7 +8179,8 @@
           "thumbnail": "https://i.ytimg.com/vi/fAdLYywdYdA/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "recordando-a-gurdjieff"
     },
     {
       "nombre": "Gurdjieff, Anatomía de un Mito",
@@ -8619,7 +8629,8 @@
           "thumbnail": "https://i.ytimg.com/vi/dxAjm8QBFlY/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "gurdjieff-anatomia-mito"
     },
     {
       "nombre": "Carlos Matchelajovic — Cuarto Camino",
@@ -8972,7 +8983,8 @@
           "thumbnail": "https://i.ytimg.com/vi/CYZ87q5sW58/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "carlos-matchelajovic"
     },
     {
       "nombre": "Conversaciones — Cuarto Camino",
@@ -9277,7 +9289,8 @@
           "thumbnail": "https://i.ytimg.com/vi/t3to2RU9_cE/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "conversaciones-cuarto-camino"
     },
     {
       "nombre": "Diario de un Alumno — Cuarto Camino",
@@ -9510,7 +9523,8 @@
           "thumbnail": "https://i.ytimg.com/vi/Epq08BqJ-y8/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "diario-de-un-alumno"
     },
     {
       "nombre": "Hacia el Despertar a Sí Mismo — J. Vyasse",
@@ -9735,7 +9749,8 @@
           "thumbnail": "https://i.ytimg.com/vi/Dx8iFqiV9w4/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "hacia-el-despertar"
     },
     {
       "nombre": "40 Años tras los Pasos de Gurdjieff",
@@ -9952,7 +9967,8 @@
           "thumbnail": "https://i.ytimg.com/vi/BsirevZRzD0/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "40-anos-gurdjieff"
     },
     {
       "nombre": "Perspectivas sobre Gurdjieff",
@@ -10169,7 +10185,8 @@
           "thumbnail": "https://i.ytimg.com/vi/rB9m4rZRYdY/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "perspectivas-gurdjieff"
     },
     {
       "nombre": "Ensayos sobre la Enseñanza de Gurdjieff",
@@ -10386,7 +10403,8 @@
           "thumbnail": "https://i.ytimg.com/vi/MwoEPMK63o8/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "ensayos-gurdjieff"
     },
     {
       "nombre": "Comentarios Psicológicos — Maurice Nicoll",
@@ -10547,7 +10565,8 @@
           "thumbnail": "https://i.ytimg.com/vi/nX4yh1KHZ80/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "comentarios-psicologicos-nicoll"
     },
     {
       "nombre": "Un Corazón sin Medida — Ravi Ravindra",
@@ -10684,7 +10703,8 @@
           "thumbnail": "https://i.ytimg.com/vi/-yai5KZy3VY/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "corazon-sin-medida"
     },
     {
       "nombre": "La Creación de la Experiencia",
@@ -10821,7 +10841,8 @@
           "thumbnail": "https://i.ytimg.com/vi/EGQiVbHd3Us/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "creacion-experiencia"
     },
     {
       "nombre": "De la Atención — Christopher Fremantle",
@@ -10942,7 +10963,8 @@
           "thumbnail": "https://i.ytimg.com/vi/3-q1xA4xb0Q/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "de-la-atencion"
     },
     {
       "nombre": "Nuestra Vida con el Sr. Gurdjieff",
@@ -11055,7 +11077,8 @@
           "thumbnail": "https://i.ytimg.com/vi/mU-Y5Aw54Fk/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "nuestra-vida-con-gurdjieff"
     },
     {
       "nombre": "¿Quién es Usted Sr. Gurdjieff?",
@@ -11144,7 +11167,8 @@
           "thumbnail": "https://i.ytimg.com/vi/0EnxXqrr_o0/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "quien-es-usted-gurdjieff"
     },
     {
       "nombre": "Gurdjieff, El Incognoscible",
@@ -11257,7 +11281,8 @@
           "thumbnail": "https://i.ytimg.com/vi/DCWMNvz52Nc/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "gurdjieff-incognoscible"
     },
     {
       "nombre": "Gurdjieff — John Shirley",
@@ -11322,7 +11347,8 @@
           "thumbnail": "https://i.ytimg.com/vi/1yIN7nn7vuQ/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "gurdjieff-john-shirley"
     },
     {
       "nombre": "James George — Cuarto Camino",
@@ -11387,7 +11413,8 @@
           "thumbnail": "https://i.ytimg.com/vi/qhcpTajA3XI/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "james-george"
     },
     {
       "nombre": "J.G. Bennett — Cuarto Camino",
@@ -11428,7 +11455,8 @@
           "thumbnail": "https://i.ytimg.com/vi/9R2g_DaFqig/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "jg-bennett"
     },
     {
       "nombre": "Maurice Nicoll — Cuarto Camino",
@@ -11461,7 +11489,8 @@
           "thumbnail": "https://i.ytimg.com/vi/0yYTlteZHcY/hqdefault.jpg",
           "descripcion": ""
         }
-      ]
+      ],
+      "obra": "maurice-nicoll"
     },
     {
       "nombre": "La Ley del Uno — Gabriel Lugo",
@@ -13447,7 +13476,8 @@
           "thumbnail": "https://i.ytimg.com/vi/LVI-eLfGHr0/hqdefault.jpg",
           "descripcion": "Las enseñanzas de don Juan - Una forma Yaqui de conocimiento.\nAutor: Carlos Castaneda\nEpisodio 15 -  Un analisis estructural\nNarración: Chavenato\nContacto: chavenatomx@gmail.com \n\nA continuación te presento los temas de este capítulo para que tu puedas administrar tu tiempo para escucharlos, y hacer"
         }
-      ]
+      ],
+      "obra": "las-ensenanzas-de-don-juan"
     },
     {
       "nombre": "Una realidad aparte — Carlos Castaneda",
@@ -13600,7 +13630,8 @@
           "thumbnail": "https://i.ytimg.com/vi/CHCz3DrN28o/hqdefault.jpg",
           "descripcion": "Una realidad aparte - Nuevas charlas con don Juan\nAutor: Carlos Castaneda\nEpisodio 17 - Los 8 centros de radiación - Capítulo Final\nNarración: Chavenato\nGracias por tu visita.\nContacto: chavenatomx@gmail.com \n¡Fuerza en ti!\n-------------------------\nMIS REDES\n-------------------------\n○ Facebook \"el"
         }
-      ]
+      ],
+      "obra": "una-realidad-aparte"
     },
     {
       "nombre": "Viaje a Ixtlán — Carlos Castaneda",
@@ -13777,7 +13808,8 @@
           "thumbnail": "https://i.ytimg.com/vi/ffEI5f1lJyU/hqdefault.jpg",
           "descripcion": "Viaje a Ixtlán - Las lecciones de don Juan\nAutor: Carlos Castaneda\nSEGUNDA PARTE : EL VIAJE A IXTLÁN\nCap. XX. EL VIAJE A IXTLÁN\nNarración: Chavenato\nGracias por tu visita.\nContacto: chavenatomx@gmail.com \n¡Fuerza en ti!\n-------------------------\nMIS REDES\n-------------------------\n○ Facebook \"el jar"
         }
-      ]
+      ],
+      "obra": "viaje-a-ixtlan"
     },
     {
       "nombre": "Relatos de poder — Carlos Castaneda",
@@ -13906,7 +13938,8 @@
           "thumbnail": "https://i.ytimg.com/vi/S-IuIB0KayE/hqdefault.jpg",
           "descripcion": "Libro: Relatos de poder\nAutor: Carlos Castaneda\nTERCERA PARTE - LA ESTRATEGIA DEL BRUJO\nCAPÍTULO FINAL\nEp. 14 LA PREDILECCIÓN DE LOS GUERREROS\nNarración: Chavenato\nGracias por tu visita.\nContacto: chavenatomx@gmail.com \n¡Fuerza en ti!\n#carloscastaneda #audiolibro #relatosdepoder\n--------------------"
         }
-      ]
+      ],
+      "obra": "relatos-de-poder"
     },
     {
       "nombre": "El segundo anillo de poder — Carlos Castaneda",
@@ -13971,7 +14004,8 @@
           "thumbnail": "https://i.ytimg.com/vi/Uq9R0QhNShQ/hqdefault.jpg",
           "descripcion": "EL SEGUNDO ANILLO DE PODER\nAutor: Carlos Castaneda\nEn este video encontrarás el Cap. 6 La segunda atención\nVoz: Chavenato\nGracias por tu visita.\nContacto: chavenatomx@gmail.com \n¡Fuerza en ti!\n#carloscastaneda #audiolibro #elsegundoanillodepoder\n-------------------------\nMIS REDES\n------------------"
         }
-      ]
+      ],
+      "obra": "el-segundo-anillo-de-poder"
     },
     {
       "nombre": "El don del Águila — Carlos Castaneda",
@@ -14116,7 +14150,8 @@
           "thumbnail": "https://i.ytimg.com/vi/RbR64jMdHeI/hqdefault.jpg",
           "descripcion": "En esta sexta obra, Carlos Castaneda prosigue relatando sus encuentros con los restantes nueve aprendices de don Juan y don Genaro, así como con su grupo de guerreros. A lo largo de estos encuentros se le revela la regla del nagual y es instruido en los principios y prácticas del arte de ensoñar y d"
         }
-      ]
+      ],
+      "obra": "el-don-del-aguila"
     },
     {
       "nombre": "El fuego interno — Carlos Castaneda",
@@ -14277,7 +14312,8 @@
           "thumbnail": "https://i.ytimg.com/vi/ggL1XX63-Ls/hqdefault.jpg",
           "descripcion": "Audiolibro: El fuego interno\nAutor: Carlos Castaneda\nEn este video encontrarás: 🔥18. Romper la baerra de la percepción/Epílogo\nGracias por tu visita.\nContacto: chavenatomx@gmail.com \n¡Fuerza en ti!\n#carloscastaneda #audiolibro #elfuegointerno\n-------------------------\nMIS REDES\n---------------------"
         }
-      ]
+      ],
+      "obra": "el-fuego-interno"
     },
     {
       "nombre": "El conocimiento silencioso — Carlos Castaneda",
@@ -14414,7 +14450,8 @@
           "thumbnail": "https://i.ytimg.com/vi/APPthBdM2Hg/hqdefault.jpg",
           "descripcion": "\"El Conocimiento Silencioso\", de Carlos Castaneda, explora la brujería como un estado de conciencia y un proceso de aprendizaje que va más allá de la lógica y el lenguaje. Se describe como un poder interior que se manifiesta como una percepción acrecentada, una intuición profunda, donde se conoce si"
         }
-      ]
+      ],
+      "obra": "el-conocimiento-silencioso"
     },
     {
       "nombre": "El arte de ensoñar — Carlos Castaneda",
@@ -14543,7 +14580,8 @@
           "thumbnail": "https://i.ytimg.com/vi/3gk8kAWCGWY/hqdefault.jpg",
           "descripcion": "Audiolibro: EL ARTE DE ENSOÑAR\nAutor: Carlos Castaneda\nEn este video encontrarás:\n⭐13. Volando en alas del intento\nGracias por tu visita.\nContacto: chavenatomx@gmail.com \n¡Fuerza en ti!\n#carloscastaneda #audiolibro #elartedeensoñar\n-------------------------\nMIS REDES\n-------------------------\n○ Pági"
         }
-      ]
+      ],
+      "obra": "el-arte-de-ensonar"
     },
     {
       "nombre": "El lado activo del infinito — Carlos Castaneda",
@@ -14720,7 +14758,8 @@
           "thumbnail": "https://i.ytimg.com/vi/cHi6A0FNSio/hqdefault.jpg",
           "descripcion": "El lado activo del infinito\nAutor: Carlos Castaneda\nEp.20 - El viaje de regreso  \nNarración: Chavenato\nGracias por tu visita.\nContacto: chavenatomx@gmail.com \n¡Fuerza en ti!\n-------------------------\nMIS REDES\n-------------------------\n○ Facebook Página \nhttps://www.facebook.com/Chavenato-40...\n\n○ F"
         }
-      ]
+      ],
+      "obra": "el-lado-activo-del-infinito"
     },
     {
       "nombre": "El Tercer Ojo — Lobsang Rampa",
@@ -14729,7 +14768,7 @@
       "thumbnail": "https://i.ytimg.com/vi/AU2VBfkStdc/hqdefault.jpg",
       "canal": "ciencia-del-saber",
       "temas": [
-        "budismo"
+        "tradiciones-orientales"
       ],
       "formato": "audiolibro",
       "idioma": "es",
@@ -14881,7 +14920,8 @@
           "thumbnail": "https://i.ytimg.com/vi/xrlDEjiG6Xg/hqdefault.jpg",
           "descripcion": "Audiolibro - El Tercer Ojo - Lobsang Rampa\nCapítulo 18: Final - ¡ADIÓS, TIBET! \nNarrador: Juan José Palanca\n“Soy tibetano, uno de los pocos que han llegado a este extraño mundo occidental”– escribe el autor en el prólogo del libro-“Me aseguran que algunas de mis afirmaciones es posible que no sean c"
         }
-      ]
+      ],
+      "obra": "el-tercer-ojo-lobsang-rampa"
     },
     {
       "nombre": "El Médico de Lhasa — Lobsang Rampa",
@@ -14890,7 +14930,7 @@
       "thumbnail": "https://i.ytimg.com/vi/md2qgT-OgL8/hqdefault.jpg",
       "canal": "ciencia-del-saber",
       "temas": [
-        "budismo"
+        "tradiciones-orientales"
       ],
       "formato": "audiolibro",
       "idioma": "es",
@@ -14994,7 +15034,8 @@
           "thumbnail": "https://i.ytimg.com/vi/VEVOFZBFi6g/hqdefault.jpg",
           "descripcion": "Audiolibro - El Médico de Lasha\nLobsang Rampa\nCapítulo 11 - Final: La Bomba\nNarrador: Juan José palanca\nMúsica libre de derechos:\nDrone in D de Kevin MacLeod está sujeta a una licencia de Creative Commons Attribution (https://creativecommons.org/licenses/by/4.0/) \nFuente: http://incompetech.com/musi"
         }
-      ]
+      ],
+      "obra": "el-medico-de-lhasa-lobsang-rampa"
     },
     {
       "nombre": "La Caverna de los Antepasados — Lobsang Rampa",
@@ -15003,7 +15044,7 @@
       "thumbnail": "https://i.ytimg.com/vi/EDUAkBGeucA/hqdefault.jpg",
       "canal": "ciencia-del-saber",
       "temas": [
-        "budismo"
+        "tradiciones-orientales"
       ],
       "formato": "audiolibro",
       "idioma": "es",
@@ -15107,7 +15148,8 @@
           "thumbnail": "https://i.ytimg.com/vi/OvZvyc_Ccos/hqdefault.jpg",
           "descripcion": "Voz Humana.-\nLa caverna de los antepasados en sus doce capítulos describe las costumbres y prácticas de los lamas e invita a la comprensión metafísica y ética de las mismas. Este es un libro que habla de lo oculto, del conocimiento que dejaron nuestros antepasados y que plasmaron en las montañas del"
         }
-      ]
+      ],
+      "obra": "la-caverna-de-los-antepasados-lobsang-rampa"
     },
     {
       "nombre": "Vive Meditación Diariamente 2026 — Sudja Meditación",
@@ -15725,7 +15767,7 @@
       "thumbnail": "https://i.ytimg.com/vi/eb9iNxpy3I4/hqdefault.jpg",
       "canal": "luisa-jimenez-ramiro-calle",
       "temas": [
-        "budismo"
+        "tradiciones-orientales"
       ],
       "formato": "meditacion",
       "idioma": "es",
@@ -15838,6 +15880,812 @@
           "descripcion": ""
         }
       ]
+    }
+  ],
+  "obras": [
+    {
+      "slug": "las-ensenanzas-de-don-juan",
+      "titulo": "Las Enseñanzas de Don Juan",
+      "autor": "Carlos Castaneda",
+      "descripcion": "Primer libro de Carlos Castaneda. Relata su aprendizaje con el chamán yaqui don Juan Matus y las experiencias con plantas de poder.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "las-ensenanzas-de-don-juan",
+        "castaneda-las-ensenanzas-de-don-juan"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/CPA-WJxxXUQ/hqdefault.jpg"
+    },
+    {
+      "slug": "una-realidad-aparte",
+      "titulo": "Una Realidad Aparte",
+      "autor": "Carlos Castaneda",
+      "descripcion": "Segundo libro. Castaneda profundiza en las enseñanzas de don Juan sobre el «ver» y la percepción de realidades no ordinarias.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "una-realidad-aparte",
+        "castaneda-una-realidad-aparte"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/C27e_hGx-qk/hqdefault.jpg"
+    },
+    {
+      "slug": "viaje-a-ixtlan",
+      "titulo": "Viaje a Ixtlán",
+      "autor": "Carlos Castaneda",
+      "descripcion": "Tercer libro. Castaneda desanda camino hasta los primeros tratos con su maestro, revelando enseñanzas fundamentales sobre el camino del guerrero.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "viaje-a-ixtlan",
+        "castaneda-viaje-a-ixtlan"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/-FOGGSnRcoc/hqdefault.jpg"
+    },
+    {
+      "slug": "relatos-de-poder",
+      "titulo": "Relatos de Poder",
+      "autor": "Carlos Castaneda",
+      "descripcion": "Cuarto libro. Don Juan y don Genaro guían a Castaneda hacia la comprensión del tonal y el nagual.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "relatos-de-poder",
+        "castaneda-relatos-de-poder"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/9C7X5wgRzoo/hqdefault.jpg"
+    },
+    {
+      "slug": "el-segundo-anillo-de-poder",
+      "titulo": "El Segundo Anillo de Poder",
+      "autor": "Carlos Castaneda",
+      "descripcion": "Quinto libro. Tras la partida de don Juan, Castaneda se encuentra con las aprendices mujeres del linaje.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "el-segundo-anillo-de-poder",
+        "castaneda-el-segundo-anillo-de-poder"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/oodZt00ESWk/hqdefault.jpg"
+    },
+    {
+      "slug": "el-don-del-aguila",
+      "titulo": "El Don del Águila",
+      "autor": "Carlos Castaneda",
+      "descripcion": "Sexto libro. Castaneda explora el sistema de creencias y prácticas de los videntes del México antiguo.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "el-don-del-aguila",
+        "castaneda-el-don-del-aguila"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/_QWD6qkbZw4/hqdefault.jpg"
+    },
+    {
+      "slug": "el-fuego-interno",
+      "titulo": "El Fuego Interno",
+      "autor": "Carlos Castaneda",
+      "descripcion": "Séptimo libro. Profundiza en el conocimiento de los nuevos videntes sobre el punto de encaje y la percepción.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "el-fuego-interno",
+        "castaneda-el-fuego-interno"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/pkAt5NhuscE/hqdefault.jpg"
+    },
+    {
+      "slug": "el-conocimiento-silencioso",
+      "titulo": "El Conocimiento Silencioso",
+      "autor": "Carlos Castaneda",
+      "descripcion": "Octavo libro. Explora la brujería como un estado de conciencia y el proceso de aprendizaje del conocimiento silencioso.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "el-conocimiento-silencioso",
+        "castaneda-el-conocimiento-silencioso"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/BTdo4wUHSd8/hqdefault.jpg"
+    },
+    {
+      "slug": "el-arte-de-ensonar",
+      "titulo": "El Arte de Ensoñar",
+      "autor": "Carlos Castaneda",
+      "descripcion": "Noveno libro. Castaneda presenta las técnicas del ensoñar como práctica para explorar otros mundos de percepción.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "el-arte-de-ensonar",
+        "castaneda-el-arte-de-ensonar"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/Oe1ddMbxWxY/hqdefault.jpg"
+    },
+    {
+      "slug": "el-lado-activo-del-infinito",
+      "titulo": "El Lado Activo del Infinito",
+      "autor": "Carlos Castaneda",
+      "descripcion": "Décimo libro. El álbum de sucesos memorables de Castaneda, recapitulando eventos clave de su aprendizaje.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "el-lado-activo-del-infinito",
+        "castaneda-el-lado-activo-del-infinito"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/jaKvrrQ_kCk/hqdefault.jpg"
+    },
+    {
+      "slug": "la-ley-del-uno-libro-1",
+      "titulo": "La Ley del Uno — Libro I",
+      "autor": "Ra, Don Elkins, Carla Rueckert, Jim McCarty",
+      "descripcion": "Primer libro del Material de Ra. Las sesiones de canalización que presentan la cosmología de la Ley del Uno.",
+      "temas": [
+        "ley-del-uno"
+      ],
+      "versiones": [
+        "ra-la-ley-del-uno",
+        "la-ley-del-uno-libro-1"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/avQHJs9IN4Q/hqdefault.jpg"
+    },
+    {
+      "slug": "la-ley-del-uno-libro-2",
+      "titulo": "La Ley del Uno - Libro II",
+      "autor": "Ra",
+      "descripcion": "Audiolibro del Libro II de La Ley del Uno.",
+      "temas": [
+        "ley-del-uno"
+      ],
+      "versiones": [
+        "la-ley-del-uno-libro-2"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/c6qhXAE99nI/hqdefault.jpg"
+    },
+    {
+      "slug": "la-ley-del-uno-libro-3",
+      "titulo": "La Ley del Uno - Libro III",
+      "autor": "Ra",
+      "descripcion": "Audiolibro del Libro III de La Ley del Uno.",
+      "temas": [
+        "ley-del-uno"
+      ],
+      "versiones": [
+        "la-ley-del-uno-libro-3"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/tCVS_WpX_v4/hqdefault.jpg"
+    },
+    {
+      "slug": "la-ley-del-uno-libro-4",
+      "titulo": "La Ley del Uno - Libro IV",
+      "autor": "Ra",
+      "descripcion": "Audiolibro del Libro IV de La Ley del Uno.",
+      "temas": [
+        "ley-del-uno"
+      ],
+      "versiones": [
+        "la-ley-del-uno-libro-4"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/Mg7Vgj78Tjg/hqdefault.jpg"
+    },
+    {
+      "slug": "la-ley-del-uno-libro-5",
+      "titulo": "La Ley del Uno - Libro V",
+      "autor": "Ra",
+      "descripcion": "Audiolibro del Libro V de La Ley del Uno.",
+      "temas": [
+        "ley-del-uno"
+      ],
+      "versiones": [
+        "la-ley-del-uno-libro-5"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/bd7PgMhIS_M/hqdefault.jpg"
+    },
+    {
+      "slug": "rudolf-steiner-doblando-realidades",
+      "titulo": "Rudolf Steiner",
+      "autor": "Rudolf Steiner",
+      "descripcion": "Obras de Rudolf Steiner traducidas y narradas por el canal Doblando Realidades: Ciencia Oculta y conferencias.",
+      "temas": [
+        "antroposofia"
+      ],
+      "versiones": [
+        "rudolf-steiner-doblando-realidades"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/rpnZtZAA_qM/hqdefault.jpg"
+    },
+    {
+      "slug": "la-rueda-del-tiempo",
+      "titulo": "La Rueda del Tiempo",
+      "autor": "Carlos Castaneda",
+      "descripcion": "Audiolibro completo de «La Rueda del Tiempo» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "la-rueda-del-tiempo"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/HSBjA92rRe0/hqdefault.jpg"
+    },
+    {
+      "slug": "el-silencio-interno",
+      "titulo": "El Silencio Interno",
+      "autor": "Carlos Castaneda",
+      "descripcion": "Audiolibro completo de «El Silencio Interno» de Carlos Castaneda, narrado por Pablo Andrés.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "el-silencio-interno"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/325WIPY_H4I/hqdefault.jpg"
+    },
+    {
+      "slug": "shabono",
+      "titulo": "Shabono",
+      "autor": "Florinda Donner",
+      "descripcion": "Audiolibro completo narrado por Pablo Andrés.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "shabono"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/CcSGQ3PElU0/hqdefault.jpg"
+    },
+    {
+      "slug": "ser-en-el-ensueno",
+      "titulo": "Ser en el Ensueño",
+      "autor": "Florinda Donner",
+      "descripcion": "Audiolibro completo narrado por Pablo Andrés.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "ser-en-el-ensueno"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/qZMrDKZkrsk/hqdefault.jpg"
+    },
+    {
+      "slug": "el-sueno-de-la-bruja",
+      "titulo": "El Sueño de la Bruja",
+      "autor": "Florinda Donner",
+      "descripcion": "Audiolibro completo narrado por Pablo Andrés.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "el-sueno-de-la-bruja"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/ITaMNtbSDTE/hqdefault.jpg"
+    },
+    {
+      "slug": "textos-ineditos-taisha",
+      "titulo": "Textos Inéditos",
+      "autor": "Taisha Abelar",
+      "descripcion": "Audiolibro completo narrado por Pablo Andrés.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "textos-ineditos-taisha"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/bIBy0uLMog8/hqdefault.jpg"
+    },
+    {
+      "slug": "donde-cruzan-los-brujos",
+      "titulo": "Donde Cruzan los Brujos",
+      "autor": "Taisha Abelar",
+      "descripcion": "Audiolibro completo narrado por Pablo Andrés.",
+      "temas": [
+        "chamanismo-tolteca"
+      ],
+      "versiones": [
+        "donde-cruzan-los-brujos"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/KAURRWjqxUs/hqdefault.jpg"
+    },
+    {
+      "slug": "el-kybalion",
+      "titulo": "El Kybalión",
+      "autor": "Tres Iniciados",
+      "descripcion": "Audiolibro completo de El Kybalión, texto fundamental del hermetismo, narrado por Pablo Andrés.",
+      "temas": [
+        "hermetismo"
+      ],
+      "versiones": [
+        "el-kybalion"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/jVfQn_HZp4k/hqdefault.jpg"
+    },
+    {
+      "slug": "mundos-superiores-crisol",
+      "titulo": "Cómo Conocer los Mundos Superiores",
+      "autor": "Rudolf Steiner",
+      "descripcion": "Audiolibro completo de «Cómo se adquiere el conocimiento de los mundos superiores» (GA10) de Rudolf Steiner.",
+      "temas": [
+        "antroposofia"
+      ],
+      "versiones": [
+        "mundos-superiores-crisol"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/fUjbab22QHk/hqdefault.jpg"
+    },
+    {
+      "slug": "vida-muerte-nacimiento-crisol",
+      "titulo": "La Vida entre la Muerte y el Nuevo Nacimiento",
+      "autor": "Rudolf Steiner",
+      "descripcion": "Audiolibro completo sobre la vida del alma entre la muerte y el nuevo nacimiento según Rudolf Steiner.",
+      "temas": [
+        "antroposofia"
+      ],
+      "versiones": [
+        "vida-muerte-nacimiento-crisol"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/gY0wvwngByM/hqdefault.jpg"
+    },
+    {
+      "slug": "evangelio-mateo-crisol",
+      "titulo": "El Evangelio de Mateo",
+      "autor": "Rudolf Steiner",
+      "descripcion": "Audiolibro del ciclo de conferencias de Rudolf Steiner sobre el Evangelio de Mateo.",
+      "temas": [
+        "antroposofia"
+      ],
+      "versiones": [
+        "evangelio-mateo-crisol"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/JFctup8Cfbc/hqdefault.jpg"
+    },
+    {
+      "slug": "teosofia-crisol",
+      "titulo": "Teosofía",
+      "autor": "Rudolf Steiner",
+      "descripcion": "Audiolibro completo de «Teosofía» de Rudolf Steiner: cuerpo, alma, espíritu y reencarnación.",
+      "temas": [
+        "antroposofia"
+      ],
+      "versiones": [
+        "teosofia-crisol"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/IEddhHU4TDM/hqdefault.jpg"
+    },
+    {
+      "slug": "ciencia-oculta-crisol",
+      "titulo": "La Ciencia Oculta",
+      "autor": "Rudolf Steiner",
+      "descripcion": "Audiolibro completo de «La Ciencia Oculta» (GA13) de Rudolf Steiner.",
+      "temas": [
+        "antroposofia"
+      ],
+      "versiones": [
+        "ciencia-oculta-crisol"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/Ws4hJYcgFNU/hqdefault.jpg"
+    },
+    {
+      "slug": "filosofia-libertad-crisol",
+      "titulo": "Filosofía de la Libertad",
+      "autor": "Rudolf Steiner",
+      "descripcion": "Audiolibro completo de «La Filosofía de la Libertad» de Rudolf Steiner.",
+      "temas": [
+        "antroposofia"
+      ],
+      "versiones": [
+        "filosofia-libertad-crisol"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/2ogqlzOlLw0/hqdefault.jpg"
+    },
+    {
+      "slug": "evangelio-marcos-crisol",
+      "titulo": "El Evangelio de Marcos",
+      "autor": "Rudolf Steiner",
+      "descripcion": "Audiolibro del ciclo de conferencias de Rudolf Steiner sobre el Evangelio de Marcos.",
+      "temas": [
+        "antroposofia"
+      ],
+      "versiones": [
+        "evangelio-marcos-crisol"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/y11AU95Vs8g/hqdefault.jpg"
+    },
+    {
+      "slug": "evangelio-lucas-crisol",
+      "titulo": "El Evangelio de Lucas",
+      "autor": "Rudolf Steiner",
+      "descripcion": "Audiolibro del ciclo de conferencias de Rudolf Steiner sobre el Evangelio de Lucas.",
+      "temas": [
+        "antroposofia"
+      ],
+      "versiones": [
+        "evangelio-lucas-crisol"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/7RbSDuLqVTw/hqdefault.jpg"
+    },
+    {
+      "slug": "encarnacion-ahriman-crisol",
+      "titulo": "La Encarnación de Ahriman",
+      "autor": "Rudolf Steiner",
+      "descripcion": "Audiolibro sobre la encarnación de Ahriman según Rudolf Steiner.",
+      "temas": [
+        "antroposofia"
+      ],
+      "versiones": [
+        "encarnacion-ahriman-crisol"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/H9ElUTVnZXE/hqdefault.jpg"
+    },
+    {
+      "slug": "gnoseologia-crisol",
+      "titulo": "Gnoseología (GA2)",
+      "autor": "Rudolf Steiner",
+      "descripcion": "Audiolibro de «Fundamentos de una gnoseología de la concepción goetheana del mundo» (GA2) de Rudolf Steiner.",
+      "temas": [
+        "antroposofia"
+      ],
+      "versiones": [
+        "gnoseologia-crisol"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/lRgdgJZvjAc/hqdefault.jpg"
+    },
+    {
+      "slug": "vida-despues-muerte-crisol",
+      "titulo": "La Vida Después de la Muerte (GA153)",
+      "autor": "Rudolf Steiner",
+      "descripcion": "Audiolibro de conferencias de Rudolf Steiner sobre la vida después de la muerte (GA153).",
+      "temas": [
+        "antroposofia"
+      ],
+      "versiones": [
+        "vida-despues-muerte-crisol"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/0MJM5dbEFLI/hqdefault.jpg"
+    },
+    {
+      "slug": "evangelio-juan-crisol",
+      "titulo": "El Evangelio de Juan",
+      "autor": "Rudolf Steiner",
+      "descripcion": "Audiolibro del ciclo de conferencias de Rudolf Steiner sobre el Evangelio de Juan.",
+      "temas": [
+        "antroposofia"
+      ],
+      "versiones": [
+        "evangelio-juan-crisol"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/u_rdJnhv7vo/hqdefault.jpg"
+    },
+    {
+      "slug": "relatos-de-belcebu",
+      "titulo": "Relatos de Belcebú a su Nieto",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro completo de «Relatos de Belcebú a su Nieto», la obra magna de G.I. Gurdjieff.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "relatos-de-belcebu"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/ARYm9rgZKbc/hqdefault.jpg"
+    },
+    {
+      "slug": "la-realidad-del-ser",
+      "titulo": "La Realidad del Ser",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro de «La Realidad del Ser» de Jeanne de Salzmann, sucesora directa de Gurdjieff.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "la-realidad-del-ser"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/B3HwPKADPXc/hqdefault.jpg"
+    },
+    {
+      "slug": "recordando-a-gurdjieff",
+      "titulo": "Recordando a Gurdjieff",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro de las memorias de Fritz Peters sobre su vida con Gurdjieff en el Prieuré.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "recordando-a-gurdjieff"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/lV82SuuBcSg/hqdefault.jpg"
+    },
+    {
+      "slug": "gurdjieff-anatomia-mito",
+      "titulo": "Gurdjieff, Anatomía de un Mito",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro de «Gurdjieff: Anatomía de un Mito», análisis exhaustivo de la vida y enseñanza.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "gurdjieff-anatomia-mito"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/gCsVwjpbFUg/hqdefault.jpg"
+    },
+    {
+      "slug": "carlos-matchelajovic",
+      "titulo": "Carlos Matchelajovic",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Lecturas y enseñanzas de Carlos Matchelajovic sobre el Cuarto Camino.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "carlos-matchelajovic"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/ug1jmi8PgHc/hqdefault.jpg"
+    },
+    {
+      "slug": "conversaciones-cuarto-camino",
+      "titulo": "Conversaciones",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Conversaciones sobre el Cuarto Camino y la enseñanza de Gurdjieff.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "conversaciones-cuarto-camino"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/FwX7Xv17T5M/hqdefault.jpg"
+    },
+    {
+      "slug": "diario-de-un-alumno",
+      "titulo": "Diario de un Alumno",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro del diario de un alumno del Cuarto Camino.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "diario-de-un-alumno"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/Hw0jUJj6zmA/hqdefault.jpg"
+    },
+    {
+      "slug": "hacia-el-despertar",
+      "titulo": "Hacia el Despertar a Sí Mismo",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro de «Hacia el Despertar a Sí Mismo» de J. Vyasse sobre el trabajo interior.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "hacia-el-despertar"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/69QdQ3lSUu4/hqdefault.jpg"
+    },
+    {
+      "slug": "40-anos-gurdjieff",
+      "titulo": "40 Años tras los Pasos de Gurdjieff",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro sobre cuatro décadas siguiendo la enseñanza de Gurdjieff.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "40-anos-gurdjieff"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/aIzoUYVyJ60/hqdefault.jpg"
+    },
+    {
+      "slug": "perspectivas-gurdjieff",
+      "titulo": "Perspectivas sobre Gurdjieff",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro de «Perspectivas» sobre G.I. Gurdjieff y su enseñanza.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "perspectivas-gurdjieff"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/xA7KYbu25yM/hqdefault.jpg"
+    },
+    {
+      "slug": "ensayos-gurdjieff",
+      "titulo": "Ensayos sobre la Enseñanza de Gurdjieff",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Ensayos, artículos y comentarios sobre la enseñanza de Gurdjieff.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "ensayos-gurdjieff"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/atv07_vs1Rg/hqdefault.jpg"
+    },
+    {
+      "slug": "comentarios-psicologicos-nicoll",
+      "titulo": "Comentarios Psicológicos",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro de los «Comentarios Psicológicos sobre la Enseñanza de Gurdjieff y Ouspensky» de Maurice Nicoll.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "comentarios-psicologicos-nicoll"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/UEdcRh8waao/hqdefault.jpg"
+    },
+    {
+      "slug": "corazon-sin-medida",
+      "titulo": "Un Corazón sin Medida",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro de «Un Corazón sin Medida» de Ravi Ravindra sobre Krishnamurti y el Cuarto Camino.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "corazon-sin-medida"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/ErOuPwdf4qo/hqdefault.jpg"
+    },
+    {
+      "slug": "creacion-experiencia",
+      "titulo": "La Creación de la Experiencia",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro sobre la creación de la experiencia desde la perspectiva del Cuarto Camino.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "creacion-experiencia"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/eJpupTAoTIg/hqdefault.jpg"
+    },
+    {
+      "slug": "de-la-atencion",
+      "titulo": "De la Atención",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro de «De la Atención» de Christopher Fremantle, alumno directo de Gurdjieff.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "de-la-atencion"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/ncOPQ5XkFmc/hqdefault.jpg"
+    },
+    {
+      "slug": "nuestra-vida-con-gurdjieff",
+      "titulo": "Nuestra Vida con el Sr. Gurdjieff",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro de memorias sobre la convivencia con Gurdjieff.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "nuestra-vida-con-gurdjieff"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/NBS1vkAfNIk/hqdefault.jpg"
+    },
+    {
+      "slug": "quien-es-usted-gurdjieff",
+      "titulo": "¿Quién es Usted Sr. Gurdjieff?",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro que explora la figura enigmática de G.I. Gurdjieff.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "quien-es-usted-gurdjieff"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/VjILvO3i5nw/hqdefault.jpg"
+    },
+    {
+      "slug": "gurdjieff-incognoscible",
+      "titulo": "Gurdjieff, El Incognoscible",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro de «Gurdjieff: El Incognoscible».",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "gurdjieff-incognoscible"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/6bAIDh4Ujrs/hqdefault.jpg"
+    },
+    {
+      "slug": "gurdjieff-john-shirley",
+      "titulo": "Gurdjieff",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Audiolibro de la biografía de Gurdjieff por John Shirley.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "gurdjieff-john-shirley"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/S6ISly59J8o/hqdefault.jpg"
+    },
+    {
+      "slug": "james-george",
+      "titulo": "James George",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Lecturas de James George sobre el Cuarto Camino.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "james-george"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/BESwvlnxxaw/hqdefault.jpg"
+    },
+    {
+      "slug": "jg-bennett",
+      "titulo": "J.G. Bennett",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Lecturas de J.G. Bennett, alumno directo de Gurdjieff y Ouspensky.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "jg-bennett"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/1qKvOYDT83w/hqdefault.jpg"
+    },
+    {
+      "slug": "maurice-nicoll",
+      "titulo": "Maurice Nicoll",
+      "autor": "G.I. Gurdjieff",
+      "descripcion": "Lecturas sobre Maurice Nicoll y su trabajo en el Cuarto Camino.",
+      "temas": [
+        "cuarto-camino"
+      ],
+      "versiones": [
+        "maurice-nicoll"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/GPufXy_mQ2M/hqdefault.jpg"
+    },
+    {
+      "slug": "el-tercer-ojo-lobsang-rampa",
+      "titulo": "El Tercer Ojo",
+      "autor": "Tuesday Lobsang Rampa",
+      "descripcion": "Primer libro de la trilogía de Tuesday Lobsang Rampa. Narra su infancia en el Tíbet, su formación como lama en el monasterio de Potala y la apertura de su tercer ojo.",
+      "temas": [
+        "tradiciones-orientales"
+      ],
+      "versiones": [
+        "el-tercer-ojo-lobsang-rampa"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/AU2VBfkStdc/hqdefault.jpg"
+    },
+    {
+      "slug": "el-medico-de-lhasa-lobsang-rampa",
+      "titulo": "El Médico de Lhasa",
+      "autor": "Tuesday Lobsang Rampa",
+      "descripcion": "Segundo libro de la trilogía. Lobsang Rampa relata su formación como médico en Lhasa, sus experiencias con la clarividencia y sus viajes fuera del Tíbet.",
+      "temas": [
+        "tradiciones-orientales"
+      ],
+      "versiones": [
+        "el-medico-de-lhasa-lobsang-rampa"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/md2qgT-OgL8/hqdefault.jpg"
+    },
+    {
+      "slug": "la-caverna-de-los-antepasados-lobsang-rampa",
+      "titulo": "La Caverna de los Antepasados",
+      "autor": "Tuesday Lobsang Rampa",
+      "descripcion": "Tercer libro de la trilogía. Lobsang Rampa describe su viaje a una caverna secreta bajo el Potala donde se guardan registros de civilizaciones antiguas.",
+      "temas": [
+        "tradiciones-orientales"
+      ],
+      "versiones": [
+        "la-caverna-de-los-antepasados-lobsang-rampa"
+      ],
+      "thumbnail": "https://i.ytimg.com/vi/EDUAkBGeucA/hqdefault.jpg"
     }
   ]
 }
