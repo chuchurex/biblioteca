@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import ObraCard from '../../components/ObraCard.astro';
 import SerieCard from '../../components/SerieCard.astro';
-import { getAllTemas, getTemaBySlug, getContenidoPorTema, contarEpisodiosPorTema } from '../../lib/datos';
+import { getAllTemas, getTemaBySlug, getContenidoPorAutor, contarEpisodiosPorTema, contarEpisodiosObra, getSerieEpisodios } from '../../lib/datos';
 import type { Tema } from '../../lib/types';
 
 export function getStaticPaths() {
@@ -13,9 +13,9 @@ export function getStaticPaths() {
 
 const { tema: temaSlug } = Astro.params;
 const tema = getTemaBySlug(temaSlug!) as Tema;
-const { obras, series } = getContenidoPorTema(temaSlug!);
+const grupos = getContenidoPorAutor(temaSlug!);
 const totalEpisodios = contarEpisodiosPorTema(temaSlug!);
-const totalItems = obras.length + series.length;
+const totalTitulos = grupos.reduce((sum, g) => sum + g.obras.length + g.series.length, 0);
 ---
 
 <Layout
@@ -35,44 +35,33 @@ const totalItems = obras.length + series.length;
       </div>
       <p class="mt-2 text-brand-200 max-w-3xl">{tema.descripcion}</p>
       <p class="mt-2 text-sm text-brand-300">
-        {totalItems} {totalItems === 1 ? 'título' : 'títulos'} &middot; {totalEpisodios} episodios
+        {totalTitulos} {totalTitulos === 1 ? 'título' : 'títulos'} &middot; {totalEpisodios} episodios
       </p>
     </div>
   </section>
 
-  {obras.length > 0 && (
-    <section class="py-10">
-      <div class="container mx-auto px-4 md:px-8">
-        {series.length > 0 && (
-          <h2 class="text-xl font-bold text-brand-800 mb-6">Audiolibros</h2>
-        )}
-        <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-          {obras.map(obra => (
-            <ObraCard
-              obra={obra}
-              href={`/${temaSlug}/${obra.slug}/`}
-            />
-          ))}
+  {grupos.map((grupo, i) => {
+    const autorEps = grupo.obras.reduce((sum, o) => sum + contarEpisodiosObra(o), 0)
+      + grupo.series.reduce((sum, s) => sum + getSerieEpisodios(s).length, 0);
+    return (
+      <section class:list={["py-10", i > 0 && "border-t border-brand-200"]}>
+        <div class="container mx-auto px-4 md:px-8">
+          <div class="mb-6">
+            <h2 class="text-xl font-bold text-brand-800">{grupo.autor}</h2>
+            <p class="text-sm text-brand-400 mt-1">
+              {grupo.obras.length + grupo.series.length} {(grupo.obras.length + grupo.series.length) === 1 ? 'título' : 'títulos'} &middot; {autorEps} episodios
+            </p>
+          </div>
+          <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+            {grupo.obras.map(obra => (
+              <ObraCard obra={obra} href={`/${temaSlug}/${obra.slug}/`} />
+            ))}
+            {grupo.series.map(serie => (
+              <SerieCard serie={serie} href={`/${temaSlug}/${serie.slug}/`} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-  )}
-
-  {series.length > 0 && (
-    <section class:list={["py-10", obras.length > 0 && "border-t border-brand-200"]}>
-      <div class="container mx-auto px-4 md:px-8">
-        {obras.length > 0 && (
-          <h2 class="text-xl font-bold text-brand-800 mb-6">Cursos, clases y más</h2>
-        )}
-        <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-          {series.map(serie => (
-            <SerieCard
-              serie={serie}
-              href={`/${temaSlug}/${serie.slug}/`}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
-  )}
+      </section>
+    );
+  })}
 </Layout>
