@@ -1,7 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import ObraCard from '../../components/ObraCard.astro';
 import SerieCard from '../../components/SerieCard.astro';
-import { getAllTemas, getTemaBySlug, getSeriesByTema, contarEpisodiosPorTema } from '../../lib/datos';
+import { getAllTemas, getTemaBySlug, getContenidoPorTema, contarEpisodiosPorTema } from '../../lib/datos';
 import type { Tema } from '../../lib/types';
 
 export function getStaticPaths() {
@@ -12,8 +13,9 @@ export function getStaticPaths() {
 
 const { tema: temaSlug } = Astro.params;
 const tema = getTemaBySlug(temaSlug!) as Tema;
-const series = getSeriesByTema(temaSlug!);
+const { obras, series } = getContenidoPorTema(temaSlug!);
 const totalEpisodios = contarEpisodiosPorTema(temaSlug!);
+const totalItems = obras.length + series.length;
 ---
 
 <Layout
@@ -33,21 +35,44 @@ const totalEpisodios = contarEpisodiosPorTema(temaSlug!);
       </div>
       <p class="mt-2 text-brand-200 max-w-3xl">{tema.descripcion}</p>
       <p class="mt-2 text-sm text-brand-300">
-        {series.length} {series.length === 1 ? 'serie' : 'series'} &middot; {totalEpisodios} episodios
+        {totalItems} {totalItems === 1 ? 'título' : 'títulos'} &middot; {totalEpisodios} episodios
       </p>
     </div>
   </section>
 
-  <section class="py-10">
-    <div class="container mx-auto px-4 md:px-8">
-      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-        {series.map(serie => (
-          <SerieCard
-            serie={serie}
-            href={`/${temaSlug}/${serie.slug}/`}
-          />
-        ))}
+  {obras.length > 0 && (
+    <section class="py-10">
+      <div class="container mx-auto px-4 md:px-8">
+        {series.length > 0 && (
+          <h2 class="text-xl font-bold text-brand-800 mb-6">Audiolibros</h2>
+        )}
+        <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+          {obras.map(obra => (
+            <ObraCard
+              obra={obra}
+              href={`/${temaSlug}/${obra.slug}/`}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  )}
+
+  {series.length > 0 && (
+    <section class:list={["py-10", obras.length > 0 && "border-t border-brand-200"]}>
+      <div class="container mx-auto px-4 md:px-8">
+        {obras.length > 0 && (
+          <h2 class="text-xl font-bold text-brand-800 mb-6">Cursos, clases y más</h2>
+        )}
+        <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+          {series.map(serie => (
+            <SerieCard
+              serie={serie}
+              href={`/${temaSlug}/${serie.slug}/`}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 </Layout>

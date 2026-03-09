@@ -1,13 +1,14 @@
 ---
 import type { Tema } from '../lib/types';
-import { getSeriesByTema, contarEpisodiosPorTema } from '../lib/datos';
+import { getContenidoPorTema, contarEpisodiosPorTema } from '../lib/datos';
 
 interface Props {
   tema: Tema;
 }
 
 const { tema } = Astro.props;
-const series = getSeriesByTema(tema.slug);
+const { obras, series } = getContenidoPorTema(tema.slug);
+const totalTitulos = obras.length + series.length;
 const totalEpisodios = contarEpisodiosPorTema(tema.slug);
 ---
 
@@ -25,7 +26,7 @@ const totalEpisodios = contarEpisodiosPorTema(tema.slug);
       </h3>
       <p class="text-sm text-brand-500 mt-0.5 line-clamp-1">{tema.descripcion}</p>
       <div class="flex flex-wrap gap-x-4 gap-y-1 mt-1 text-xs text-brand-400">
-        <span>{series.length} {series.length === 1 ? 'serie' : 'series'}</span>
+        <span>{totalTitulos} {totalTitulos === 1 ? 'título' : 'títulos'}</span>
         <span>{totalEpisodios} episodios</span>
       </div>
     </div>

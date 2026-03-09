@@ -2,43 +2,60 @@
 import Layout from '../../../layouts/Layout.astro';
 import VideoPlayer from '../../../components/VideoPlayer.astro';
 import EpisodeCard from '../../../components/EpisodeCard.astro';
-import { getAllSeries, getSerieBySlug, getSerieEpisodios, getTemaPrincipal, getCanalDeSerie } from '../../../lib/datos';
+import {
+  getAllSeries, getAllObras, getSerieBySlug, getSerieEpisodios,
+  getCanalDeSerie, seriePertenecAObra, getObraBySlug, getTemaBySlug,
+  getVersionesDeLaObra,
+} from '../../../lib/datos';
 import { formatDate } from '../../../lib/utils';
 
 export function getStaticPaths() {
-  const series = getAllSeries();
-  const paths: { params: { tema: string; serie: string; episodio: string } }[] = [];
+  const paths: { params: { tema: string; contenido: string; episodio: string }; props: { contenidoNombre: string; serieSlug: string } }[] = [];
 
-  for (const s of series) {
+  // Episodios de series independientes (sin obra)
+  for (const s of getAllSeries()) {
+    if (seriePertenecAObra(s.slug)) continue;
     for (const ep of s.episodios) {
       if (ep.titulo === 'Deleted video' || ep.titulo === 'Private video') continue;
       paths.push({
-        params: {
-          tema: s.temas[0],
-          serie: s.slug,
-          episodio: ep.video_id,
-        },
+        params: { tema: s.temas[0], contenido: s.slug, episodio: ep.video_id },
+        props: { contenidoNombre: s.nombre, serieSlug: s.slug },
       });
+    }
+  }
+
+  // Episodios de obras (agrupados bajo el slug de la obra)
+  for (const obra of getAllObras()) {
+    for (const serieSlug of obra.versiones) {
+      const serie = getSerieBySlug(serieSlug);
+      if (!serie) continue;
+      for (const ep of serie.episodios) {
+        if (ep.titulo === 'Deleted video' || ep.titulo === 'Private video') continue;
+        paths.push({
+          params: { tema: obra.temas[0], contenido: obra.slug, episodio: ep.video_id },
+          props: { contenidoNombre: obra.titulo, serieSlug: serie.slug },
+        });
+      }
     }
   }
 
   return paths;
 }
 
-const { tema: temaSlug, serie: serieSlug, episodio: videoId } = Astro.params;
-const serie = getSerieBySlug(serieSlug!)!;
-const tema = getTemaPrincipal(serie)!;
+const { tema: temaSlug, contenido: contenidoSlug, episodio: videoId } = Astro.params;
+const { contenidoNombre, serieSlug } = Astro.props;
+const tema = getTemaBySlug(temaSlug!)!;
+const serie = getSerieBySlug(serieSlug)!;
 const canal = getCanalDeSerie(serie);
 const episodios = getSerieEpisodios(serie);
 const episode = episodios.find(ep => ep.video_id === videoId)!;
-
 const relacionados = episodios.filter(ep => ep.video_id !== videoId).slice(0, 8);
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'VideoObject',
   name: episode.titulo,
-  description: episode.descripcion || `${episode.titulo} — ${serie.nombre}`,
+  description: episode.descripcion || `${episode.titulo} — ${contenidoNombre}`,
   thumbnailUrl: episode.thumbnail,
   uploadDate: episode.fecha_emision,
   embedUrl: `https://www.youtube.com/embed/${episode.video_id}`,
@@ -48,7 +65,7 @@ const jsonLd = {
 
 <Layout
   title={`${episode.titulo} — Biblioteca`}
-  description={episode.descripcion || `${episode.titulo} — ${serie.nombre}`}
+  description={episode.descripcion || `${episode.titulo} — ${contenidoNombre}`}
   image={episode.thumbnail}
   ogType="video.other"
   jsonLd={jsonLd}
@@ -67,7 +84,7 @@ const jsonLd = {
         <span class="mx-2 text-brand-300">/</span>
         <a href={`/${temaSlug}/`} class="hover:text-brand-600 transition">{tema.nombre}</a>
         <span class="mx-2 text-brand-300">/</span>
-        <a href={`/${temaSlug}/${serieSlug}/`} class="hover:text-brand-600 transition">{serie.nombre}</a>
+        <a href={`/${temaSlug}/${contenidoSlug}/`} class="hover:text-brand-600 transition">{contenidoNombre}</a>
       </nav>
 
       <h1 class="text-2xl md:text-3xl font-bold text-brand-800">{episode.titulo}</h1>
@@ -93,12 +110,12 @@ const jsonLd = {
   {relacionados.length > 0 && (
     <section class="py-8 bg-brand-100">
       <div class="container mx-auto px-4 md:px-8">
-        <h2 class="text-xl font-bold text-brand-800 mb-6">Más de {serie.nombre}</h2>
+        <h2 class="text-xl font-bold text-brand-800 mb-6">Más de {contenidoNombre}</h2>
         <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {relacionados.map(ep => (
             <EpisodeCard
               episode={ep}
-              href={`/${temaSlug}/${serieSlug}/${ep.video_id}`}
+              href={`/${temaSlug}/${contenidoSlug}/${ep.video_id}`}
             />
           ))}
         </div>
