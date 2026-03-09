@@ -171,6 +171,39 @@ export function getContenidoPorTema(temaSlug: string): { obras: Obra[]; series: 
   };
 }
 
+export interface AutorGroup {
+  autor: string;
+  obras: Obra[];
+  series: Serie[];
+}
+
+/** Agrupa todo el contenido de un tema por autor. */
+export function getContenidoPorAutor(temaSlug: string): AutorGroup[] {
+  const { obras, series } = getContenidoPorTema(temaSlug);
+  const map = new Map<string, AutorGroup>();
+
+  for (const o of obras) {
+    const key = o.autor;
+    if (!map.has(key)) map.set(key, { autor: key, obras: [], series: [] });
+    map.get(key)!.obras.push(o);
+  }
+
+  for (const s of series) {
+    const key = s.autores?.[0] ?? 'Otros';
+    if (!map.has(key)) map.set(key, { autor: key, obras: [], series: [] });
+    map.get(key)!.series.push(s);
+  }
+
+  // Sort by total episode count descending
+  return [...map.values()].sort((a, b) => {
+    const countA = a.obras.reduce((sum, o) => sum + contarEpisodiosObra(o), 0)
+      + a.series.reduce((sum, s) => sum + getSerieEpisodios(s).length, 0);
+    const countB = b.obras.reduce((sum, o) => sum + contarEpisodiosObra(o), 0)
+      + b.series.reduce((sum, s) => sum + getSerieEpisodios(s).length, 0);
+    return countB - countA;
+  });
+}
+
 export function getSeriesByFormato(formatoSlug: string): Serie[] {
   return SERIES_POR_FORMATO.get(formatoSlug) ?? [];
 }
