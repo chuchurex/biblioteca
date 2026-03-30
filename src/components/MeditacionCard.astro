@@ -1,0 +1,46 @@
+---
+import type { Meditacion } from '../lib/types';
+import { contarEpisodiosMeditacion } from '../lib/datos';
+
+interface Props {
+  meditacion: Meditacion;
+  href: string;
+}
+
+const { meditacion, href } = Astro.props;
+const totalEps = contarEpisodiosMeditacion(meditacion);
+---
+
+<a
+  href={href}
+  class="group block bg-white rounded-xl shadow-card overflow-hidden border border-brand-200/40 hover:border-brand-400/30 hover:shadow-card-hover transition-all duration-500"
+>
+  {meditacion.thumbnail && (
+    <div class="aspect-video bg-brand-100 overflow-hidden relative">
+      <img
+        src={meditacion.thumbnail}
+        alt={meditacion.titulo}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        loading="lazy"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-900/50 via-transparent to-transparent"></div>
+      <span class="absolute bottom-2.5 right-3 bg-brand-900/70 text-white text-xs px-2 py-1 rounded backdrop-blur-sm">
+        {totalEps} eps
+      </span>
+    </div>
+  )}
+  <div class="p-4">
+    <span class="text-[10px] font-semibold tracking-[0.12em] uppercase text-brand-400">
+      Meditación{meditacion.tipo ? ` ${meditacion.tipo}` : ''}
+    </span>
+    <h3 class="font-display text-lg font-bold text-brand-800 group-hover:text-brand-600 transition-colors duration-300 mt-1 line-clamp-2 leading-snug">
+      {meditacion.titulo}
+    </h3>
+    <p class="text-sm text-brand-500 mt-1.5">{meditacion.guia}</p>
+    {!meditacion.thumbnail && (
+      <p class="text-xs text-brand-500/70 mt-1.5">
+        {totalEps} {totalEps === 1 ? 'episodio' : 'episodios'}
+      </p>
+    )}
+  </div>
+</a>

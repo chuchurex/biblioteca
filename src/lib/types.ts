@@ -9,12 +9,6 @@ export interface Tema {
   icono?: string;
 }
 
-export interface Formato {
-  slug: string;
-  nombre: string;
-  descripcion: string;
-}
-
 export interface Canal {
   slug: string;
   nombre: string;
@@ -23,21 +17,60 @@ export interface Canal {
 }
 
 // ---------------------------------------------------------------------------
-// Obras (audiolibros agrupados)
+// Libros (cualquier contenido de aprendizaje)
 // ---------------------------------------------------------------------------
 
-export interface Obra {
-  slug: string;           // ej: "las-ensenanzas-de-don-juan"
-  titulo: string;         // "Las Enseñanzas de Don Juan"
-  autor: string;          // "Carlos Castaneda"
+export type TipoEdicion =
+  | 'audiolibro'
+  | 'curso'
+  | 'documental'
+  | 'conferencia'
+  | 'clase'
+  | 'lectura-comentada'
+  | 'pdf'
+  | 'ebook';
+
+export interface Edicion {
+  tipo: TipoEdicion;
+  nombre: string;        // "Narrado por Chavenato", "Curso completo"
+  serie?: string;        // slug → Serie (YouTube)
+  url?: string;          // recurso externo (futuro)
+}
+
+export interface Libro {
+  slug: string;
+  titulo: string;
+  autor: string;
   descripcion: string;
   thumbnail?: string;
-  temas: string[];        // slugs de temas
-  versiones: string[];    // slugs de series que son versiones de esta obra
+  temas: string[];
+  ediciones: Edicion[];
 }
 
 // ---------------------------------------------------------------------------
-// Contenido
+// Meditaciones (contenido de práctica)
+// ---------------------------------------------------------------------------
+
+export interface VersionMeditacion {
+  formato: 'video-youtube' | 'audio' | 'texto';
+  nombre: string;
+  serie?: string;        // slug → Serie (YouTube)
+  url?: string;          // recurso externo (futuro)
+}
+
+export interface Meditacion {
+  slug: string;
+  titulo: string;
+  guia: string;          // nombre del guía (equivale a "autor")
+  descripcion: string;
+  thumbnail?: string;
+  temas: string[];
+  tipo?: string;         // "guiada", "silencio", etc.
+  versiones: VersionMeditacion[];
+}
+
+// ---------------------------------------------------------------------------
+// Contenido YouTube (capa interna)
 // ---------------------------------------------------------------------------
 
 export interface Episode {
@@ -58,12 +91,11 @@ export interface Serie {
   slug: string;
   descripcion: string;
   thumbnail?: string;
-  canal: string;       // slug del canal
-  temas: string[];     // slugs de temas (mínimo 1)
-  formato: string;     // slug del formato
-  idioma?: string;     // "es" | "en" | "multi"
-  autores?: string[];  // nombres libres (Castaneda, Steiner, etc.)
-  obra?: string;       // slug de la obra a la que pertenece (si es versión de un audiolibro)
+  canal: string;         // slug del canal
+  temas: string[];
+  formato: string;       // tipo original (para referencia)
+  idioma?: string;       // "es" | "en" | "multi"
+  autores?: string[];
   episodios: Episode[];
 }
 
@@ -73,8 +105,8 @@ export interface Serie {
 
 export interface Biblioteca {
   temas: Tema[];
-  formatos: Formato[];
   canales: Canal[];
-  obras: Obra[];
+  libros: Libro[];
+  meditaciones: Meditacion[];
   series: Serie[];
 }

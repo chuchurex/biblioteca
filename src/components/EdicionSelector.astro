@@ -1,55 +1,49 @@
 ---
-import type { Serie, Canal, Episode } from '../lib/types';
-import { getCanalDeSerie, getSerieEpisodios } from '../lib/datos';
+import type { Canal, Episode } from '../lib/types';
+import type { EdicionData } from '../lib/datos';
 import EpisodeCard from './EpisodeCard.astro';
 
-interface VersionData {
-  serie: Serie;
-  canal: Canal | undefined;
-  episodios: Episode[];
-}
-
 interface Props {
-  versiones: VersionData[];
-  basePath: string; // ej: "/chamanismo-tolteca/las-ensenanzas-de-don-juan"
+  ediciones: EdicionData[];
+  basePath: string;
 }
 
-const { versiones, basePath } = Astro.props;
-const multiVersion = versiones.length > 1;
+const { ediciones, basePath } = Astro.props;
+const multiEdicion = ediciones.length > 1;
 ---
 
-{multiVersion ? (
-  <div class="version-selector">
-    <div class="flex flex-wrap gap-2 mb-6" role="tablist">
-      {versiones.map((v, i) => (
+{multiEdicion ? (
+  <div class="edicion-selector">
+    <div class="flex flex-wrap gap-2 mb-8" role="tablist">
+      {ediciones.map((ed, i) => (
         <button
           role="tab"
           aria-selected={i === 0 ? "true" : "false"}
           data-tab={i}
           class:list={[
-            "px-4 py-2 rounded-lg text-sm font-medium transition-colors",
+            "px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-300",
             i === 0
-              ? "bg-brand-600 text-white"
+              ? "bg-brand-400 text-brand-900 shadow-[0_0_12px_rgba(212,160,90,0.25)]"
               : "bg-brand-100 text-brand-600 hover:bg-brand-200"
           ]}
         >
-          {v.canal?.nombre ?? 'Versión'} ({v.episodios.length} eps)
+          {ed.edicion.nombre} ({ed.episodios.length} eps)
         </button>
       ))}
     </div>
 
-    {versiones.map((v, i) => (
+    {ediciones.map((ed, i) => (
       <div
         role="tabpanel"
         data-panel={i}
         class:list={[i !== 0 && "hidden"]}
       >
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {v.episodios.map(ep => (
+          {ed.episodios.map(ep => (
             <EpisodeCard
               episode={ep}
               href={`${basePath}/${ep.video_id}`}
-              canalNombre={v.canal?.nombre}
+              canalNombre={ed.canal?.nombre}
             />
           ))}
         </div>
@@ -57,7 +51,7 @@ const multiVersion = versiones.length > 1;
     ))}
 
     <script>
-      document.querySelectorAll('.version-selector').forEach(selector => {
+      document.querySelectorAll('.edicion-selector').forEach(selector => {
         const tabs = selector.querySelectorAll('[role="tab"]');
         const panels = selector.querySelectorAll('[role="tabpanel"]');
 
@@ -67,12 +61,12 @@ const multiVersion = versiones.length > 1;
 
             tabs.forEach(t => {
               t.setAttribute('aria-selected', 'false');
-              t.classList.remove('bg-brand-600', 'text-white');
+              t.classList.remove('bg-brand-400', 'text-brand-900', 'shadow-[0_0_12px_rgba(212,160,90,0.25)]');
               t.classList.add('bg-brand-100', 'text-brand-600');
             });
             tab.setAttribute('aria-selected', 'true');
             tab.classList.remove('bg-brand-100', 'text-brand-600');
-            tab.classList.add('bg-brand-600', 'text-white');
+            tab.classList.add('bg-brand-400', 'text-brand-900', 'shadow-[0_0_12px_rgba(212,160,90,0.25)]');
 
             panels.forEach(p => {
               p.classList.toggle('hidden', p.getAttribute('data-panel') !== idx);
@@ -84,11 +78,11 @@ const multiVersion = versiones.length > 1;
   </div>
 ) : (
   <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-    {versiones[0]?.episodios.map(ep => (
+    {ediciones[0]?.episodios.map(ep => (
       <EpisodeCard
         episode={ep}
         href={`${basePath}/${ep.video_id}`}
-        canalNombre={versiones[0]?.canal?.nombre}
+        canalNombre={ediciones[0]?.canal?.nombre}
       />
     ))}
   </div>

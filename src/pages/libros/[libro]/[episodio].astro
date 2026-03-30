@@ -1,0 +1,109 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import VideoPlayer from '../../../components/VideoPlayer.astro';
+import EpisodeCard from '../../../components/EpisodeCard.astro';
+import { getAllLibros, getLibroBySlug, getEdicionesDeLLibro, getSerieEpisodios, getCanalDeSerie, getSerieBySlug } from '../../../lib/datos';
+import { formatDate, isVideoAvailable } from '../../../lib/utils';
+
+export function getStaticPaths() {
+  const paths: { params: { libro: string; episodio: string }; props: { libroSlug: string; serieSlug: string } }[] = [];
+
+  for (const libro of getAllLibros()) {
+    for (const edicion of libro.ediciones) {
+      if (!edicion.serie) continue;
+      const serie = getSerieBySlug(edicion.serie);
+      if (!serie) continue;
+      for (const ep of serie.episodios) {
+        if (!isVideoAvailable(ep)) continue;
+        paths.push({
+          params: { libro: libro.slug, episodio: ep.video_id },
+          props: { libroSlug: libro.slug, serieSlug: serie.slug },
+        });
+      }
+    }
+  }
+
+  return paths;
+}
+
+const { libro: libroSlug, episodio: videoId } = Astro.params;
+const { serieSlug } = Astro.props;
+const libro = getLibroBySlug(libroSlug!)!;
+const serie = getSerieBySlug(serieSlug)!;
+const canal = getCanalDeSerie(serie);
+const episodios = getSerieEpisodios(serie);
+const episode = episodios.find(ep => ep.video_id === videoId)!;
+const relacionados = episodios.filter(ep => ep.video_id !== videoId).slice(0, 8);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: episode.titulo,
+  description: episode.descripcion || `${episode.titulo} — ${libro.titulo}`,
+  thumbnailUrl: episode.thumbnail,
+  uploadDate: episode.fecha_emision,
+  embedUrl: `https://www.youtube.com/embed/${episode.video_id}`,
+  contentUrl: `https://www.youtube.com/watch?v=${episode.video_id}`,
+};
+---
+
+<Layout
+  title={`${episode.titulo} — Biblioteca`}
+  description={episode.descripcion || `${episode.titulo} — ${libro.titulo}`}
+  image={episode.thumbnail}
+  ogType="video.other"
+  jsonLd={jsonLd}
+>
+  <VideoPlayer
+    videoId={episode.video_id}
+    title={episode.titulo}
+    embeddable={episode.embeddable}
+    thumbnail={episode.thumbnail}
+  />
+
+  <section class="py-8">
+    <div class="container mx-auto px-4 md:px-8 max-w-5xl">
+      <nav class="text-sm text-brand-500/70 mb-4">
+        <a href="/" class="hover:text-brand-400 transition-colors duration-300">Inicio</a>
+        <span class="mx-2 text-brand-300/40">/</span>
+        <a href="/libros/" class="hover:text-brand-400 transition-colors duration-300">Libros</a>
+        <span class="mx-2 text-brand-300/40">/</span>
+        <a href={`/libros/${libroSlug}/`} class="hover:text-brand-400 transition-colors duration-300">{libro.titulo}</a>
+      </nav>
+
+      <h1 class="text-2xl md:text-3xl font-display font-bold text-brand-800">{episode.titulo}</h1>
+
+      <div class="flex flex-wrap items-center gap-3 mt-3 text-sm text-brand-500/70">
+        <span>{formatDate(episode.fecha_emision)}</span>
+        {canal && (
+          <>
+            <span class="w-1 h-1 rounded-full bg-brand-400/40"></span>
+            <span>{canal.nombre}</span>
+          </>
+        )}
+      </div>
+
+      {episode.descripcion && (
+        <div class="mt-5 text-brand-700 whitespace-pre-line max-w-3xl leading-relaxed">
+          {episode.descripcion}
+        </div>
+      )}
+    </div>
+  </section>
+
+  {relacionados.length > 0 && (
+    <section class="py-8 bg-brand-100/50">
+      <div class="container mx-auto px-4 md:px-8">
+        <h2 class="text-2xl font-display font-bold text-brand-800 mb-6">Más de {libro.titulo}</h2>
+        <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {relacionados.map(ep => (
+            <EpisodeCard
+              episode={ep}
+              href={`/libros/${libroSlug}/${ep.video_id}`}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+</Layout>

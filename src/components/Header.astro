@@ -1,40 +1,35 @@
 ---
-import { getAllTemas, getContenidoPorTema } from '../lib/datos';
-
 const currentPath = Astro.url.pathname;
-
-const temaItems = getAllTemas()
-  .filter(t => { const c = getContenidoPorTema(t.slug); return c.obras.length > 0 || c.series.length > 0; })
-  .map(t => ({ label: t.nombre, href: `/${t.slug}/` }));
 
 const navItems = [
   { label: 'Inicio', href: '/' },
-  ...temaItems,
+  { label: 'Libros', href: '/libros/' },
+  { label: 'Meditaciones', href: '/meditaciones/' },
 ];
 ---
 
-<header class="bg-brand-900 text-white shadow-md relative z-50">
+<header class="bg-brand-900 text-white relative z-50 border-b border-white/[0.06]">
   <nav class="container mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-3 hover:opacity-100 opacity-90 transition">
-      <svg class="w-7 h-7" viewBox="0 0 512 512" fill="currentColor"><path d="M256 20C200 20 164 60 164 110C164 158 206 192 230 212L112 212L112 268L230 268L224 268L210 480C210 496 230 500 256 500C282 500 302 496 302 480L288 268L282 268L400 268L400 212L282 212C306 192 348 158 348 110C348 60 312 20 256 20ZM256 72C292 72 308 94 308 116C308 142 280 166 260 182L252 182C232 166 204 142 204 116C204 94 220 72 256 72Z"/></svg>
-      <span class="text-xl font-bold text-white">Biblioteca</span>
+    <a href="/" class="flex items-center gap-3 group">
+      <svg class="w-7 h-7 text-brand-400" viewBox="0 0 512 512" fill="currentColor"><path d="M256 20C200 20 164 60 164 110C164 158 206 192 230 212L112 212L112 268L230 268L224 268L210 480C210 496 230 500 256 500C282 500 302 496 302 480L288 268L282 268L400 268L400 212L282 212C306 192 348 158 348 110C348 60 312 20 256 20ZM256 72C292 72 308 94 308 116C308 142 280 166 260 182L252 182C232 166 204 142 204 116C204 94 220 72 256 72Z"/></svg>
+      <span class="text-xl font-display font-bold text-white group-hover:text-brand-400 transition-colors duration-300">Biblioteca</span>
     </a>
 
-    <!-- Hamburguesa (solo móvil) -->
     <button id="menu-toggle" class="md:hidden flex flex-col gap-[5px] p-1" aria-label="Abrir menú">
       <span class="block w-6 h-[2px] bg-white transition-transform duration-300" id="bar1"></span>
       <span class="block w-6 h-[2px] bg-white transition-opacity duration-300" id="bar2"></span>
       <span class="block w-6 h-[2px] bg-white transition-transform duration-300" id="bar3"></span>
     </button>
 
-    <!-- Links desktop -->
     <div class="hidden md:flex items-center gap-1">
       {navItems.map(item => (
         <a
           href={item.href}
           class:list={[
-            "px-3 py-2 rounded-lg text-sm opacity-90 hover:opacity-100 hover:text-brand-400 transition",
-            { "text-brand-400": item.href === '/' ? currentPath === '/' : currentPath.startsWith(item.href) }
+            "px-3 py-2 rounded-lg text-sm transition-colors duration-300",
+            (item.href === '/' ? currentPath === '/' : currentPath.startsWith(item.href))
+              ? "text-brand-400"
+              : "text-white/70 hover:text-brand-400"
           ]}
         >
           {item.label}
@@ -43,11 +38,10 @@ const navItems = [
     </div>
   </nav>
 
-  <!-- Menú móvil desplegable -->
   <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 transition-[max-height] duration-300 bg-brand-900">
     <div class="px-4 pb-4 flex flex-col">
       {navItems.map(item => (
-        <a href={item.href} class="py-3 text-lg opacity-90 hover:opacity-100 hover:text-brand-400 transition border-b border-white/10">
+        <a href={item.href} class="py-3 text-lg text-white/80 hover:text-brand-400 transition-colors duration-300 border-b border-white/[0.06]">
           {item.label}
         </a>
       ))}

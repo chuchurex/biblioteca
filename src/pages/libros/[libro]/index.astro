@@ -1,0 +1,65 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import EdicionSelector from '../../../components/EdicionSelector.astro';
+import { getAllLibros, getLibroBySlug, getEdicionesDeLLibro, contarEpisodiosLibro } from '../../../lib/datos';
+
+export function getStaticPaths() {
+  return getAllLibros().map(libro => ({
+    params: { libro: libro.slug },
+  }));
+}
+
+const { libro: libroSlug } = Astro.params;
+const libro = getLibroBySlug(libroSlug!)!;
+const ediciones = getEdicionesDeLLibro(libro);
+const totalEps = contarEpisodiosLibro(libro);
+const multiEdicion = ediciones.length > 1;
+
+const TIPO_LABELS: Record<string, string> = {
+  audiolibro: 'Audiolibro',
+  curso: 'Curso',
+  documental: 'Documental',
+  conferencia: 'Conferencia',
+  clase: 'Clase',
+  'lectura-comentada': 'Lectura comentada',
+};
+const tipoBadge = TIPO_LABELS[libro.ediciones[0]?.tipo] ?? libro.ediciones[0]?.tipo;
+---
+
+<Layout
+  title={`${libro.titulo} — Biblioteca`}
+  description={libro.descripcion || `${libro.titulo} — ${libro.autor}`}
+>
+  <section class="bg-brand-900 text-white py-10 relative overflow-hidden">
+    <div class="absolute top-1/2 right-0 -translate-y-1/2 w-48 h-48 border border-brand-400/[0.06] rounded-full translate-x-1/2"></div>
+    <div class="container mx-auto px-4 md:px-8 relative z-10">
+      <nav class="text-sm text-brand-300/60 mb-5">
+        <a href="/" class="hover:text-brand-400 transition-colors duration-300">Inicio</a>
+        <span class="mx-2 text-brand-300/30">/</span>
+        <a href="/libros/" class="hover:text-brand-400 transition-colors duration-300">Libros</a>
+        <span class="mx-2 text-brand-300/30">/</span>
+        <span class="text-white/90">{libro.titulo}</span>
+      </nav>
+
+      <span class="text-[10px] font-semibold tracking-[0.15em] uppercase text-brand-400">{tipoBadge}</span>
+      <h1 class="text-3xl md:text-4xl font-display font-bold mt-1">{libro.titulo}</h1>
+      <p class="mt-2 text-brand-300/80 text-lg">{libro.autor}</p>
+      {libro.descripcion && <p class="mt-3 text-brand-300/60 max-w-3xl leading-relaxed">{libro.descripcion}</p>}
+      <div class="flex items-center gap-4 mt-4 text-[11px] text-brand-300/50 tracking-[0.1em] uppercase">
+        <span>{totalEps} episodios</span>
+        {multiEdicion && (
+          <>
+            <span class="w-1 h-1 rounded-full bg-brand-400/40"></span>
+            <span>{ediciones.length} ediciones</span>
+          </>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10">
+    <div class="container mx-auto px-4 md:px-8">
+      <EdicionSelector ediciones={ediciones} basePath={`/libros/${libroSlug}`} />
+    </div>
+  </section>
+</Layout>

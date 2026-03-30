@@ -1,20 +1,64 @@
-# Temas fusionados
-/no-dualidad/* /consciencia/:splat 301
-/geometria-sagrada/* /hermetismo/:splat 301
-/budismo/* /tradiciones-orientales/:splat 301
-/ayurveda/* /tradiciones-orientales/:splat 301
+# =============================================
+# Meditaciones específicas (antes del catch-all de temas)
+# =============================================
+/consciencia/sudja-meditacion-diaria-2026/* /meditaciones/sudja-meditacion-diaria-2026/:splat 301
+/consciencia/el-camino-sin-sendero-meditaciones/* /meditaciones/el-camino-sin-sendero-meditaciones/:splat 301
+/tradiciones-orientales/meditaciones-guiadas-ramiro-calle/* /meditaciones/meditaciones-guiadas-ramiro-calle/:splat 301
 
-# Series Castaneda de Chavenato absorbidas por obras
-/chamanismo-tolteca/castaneda-las-ensenanzas-de-don-juan/* /chamanismo-tolteca/las-ensenanzas-de-don-juan/:splat 301
-/chamanismo-tolteca/castaneda-una-realidad-aparte/* /chamanismo-tolteca/una-realidad-aparte/:splat 301
-/chamanismo-tolteca/castaneda-viaje-a-ixtlan/* /chamanismo-tolteca/viaje-a-ixtlan/:splat 301
-/chamanismo-tolteca/castaneda-relatos-de-poder/* /chamanismo-tolteca/relatos-de-poder/:splat 301
-/chamanismo-tolteca/castaneda-el-segundo-anillo-de-poder/* /chamanismo-tolteca/el-segundo-anillo-de-poder/:splat 301
-/chamanismo-tolteca/castaneda-el-don-del-aguila/* /chamanismo-tolteca/el-don-del-aguila/:splat 301
-/chamanismo-tolteca/castaneda-el-fuego-interno/* /chamanismo-tolteca/el-fuego-interno/:splat 301
-/chamanismo-tolteca/castaneda-el-conocimiento-silencioso/* /chamanismo-tolteca/el-conocimiento-silencioso/:splat 301
-/chamanismo-tolteca/castaneda-el-arte-de-ensonar/* /chamanismo-tolteca/el-arte-de-ensonar/:splat 301
-/chamanismo-tolteca/castaneda-el-lado-activo-del-infinito/* /chamanismo-tolteca/el-lado-activo-del-infinito/:splat 301
+# =============================================
+# Documentales bilingües (slugs nuevos agrupados)
+# =============================================
+/consciencia/samadhi-espanol/* /libros/samadhi/:splat 301
+/consciencia/samadhi-english/* /libros/samadhi/:splat 301
+/consciencia/mundos-internos-mundos-externos-es/* /libros/mundos-internos-mundos-externos/:splat 301
+/consciencia/inner-worlds-outer-worlds-en/* /libros/mundos-internos-mundos-externos/:splat 301
+
+# =============================================
+# Temas fusionados históricos → /temas/
+# =============================================
+/no-dualidad/* /temas/consciencia/:splat 301
+/geometria-sagrada/* /temas/hermetismo/:splat 301
+/budismo/* /temas/tradiciones-orientales/:splat 301
+/ayurveda/* /temas/tradiciones-orientales/:splat 301
+
+# =============================================
+# Series Castaneda de Chavenato → /libros/
+# =============================================
+/chamanismo-tolteca/castaneda-las-ensenanzas-de-don-juan/* /libros/las-ensenanzas-de-don-juan/:splat 301
+/chamanismo-tolteca/castaneda-una-realidad-aparte/* /libros/una-realidad-aparte/:splat 301
+/chamanismo-tolteca/castaneda-viaje-a-ixtlan/* /libros/viaje-a-ixtlan/:splat 301
+/chamanismo-tolteca/castaneda-relatos-de-poder/* /libros/relatos-de-poder/:splat 301
+/chamanismo-tolteca/castaneda-el-segundo-anillo-de-poder/* /libros/el-segundo-anillo-de-poder/:splat 301
+/chamanismo-tolteca/castaneda-el-don-del-aguila/* /libros/el-don-del-aguila/:splat 301
+/chamanismo-tolteca/castaneda-el-fuego-interno/* /libros/el-fuego-interno/:splat 301
+/chamanismo-tolteca/castaneda-el-conocimiento-silencioso/* /libros/el-conocimiento-silencioso/:splat 301
+/chamanismo-tolteca/castaneda-el-arte-de-ensonar/* /libros/el-arte-de-ensonar/:splat 301
+/chamanismo-tolteca/castaneda-el-lado-activo-del-infinito/* /libros/el-lado-activo-del-infinito/:splat 301
 
 # La Ley del Uno Libro I (Sutil Densidad version)
-/ley-del-uno/ra-la-ley-del-uno/* /ley-del-uno/la-ley-del-uno-libro-1/:splat 301
+/ley-del-uno/ra-la-ley-del-uno/* /libros/la-ley-del-uno-libro-1/:splat 301
+
+# =============================================
+# Tema index → /temas/
+# =============================================
+/ley-del-uno/ /temas/ley-del-uno/ 301
+/antroposofia/ /temas/antroposofia/ 301
+/chamanismo-tolteca/ /temas/chamanismo-tolteca/ 301
+/cuarto-camino/ /temas/cuarto-camino/ 301
+/astrologia/ /temas/astrologia/ 301
+/hermetismo/ /temas/hermetismo/ 301
+/consciencia/ /temas/consciencia/ 301
+/tradiciones-orientales/ /temas/tradiciones-orientales/ 301
+
+# =============================================
+# Catch-all: /{tema}/* → /libros/:splat
+# (último, porque es el más general)
+# =============================================
+/ley-del-uno/* /libros/:splat 301
+/antroposofia/* /libros/:splat 301
+/chamanismo-tolteca/* /libros/:splat 301
+/cuarto-camino/* /libros/:splat 301
+/astrologia/* /libros/:splat 301
+/hermetismo/* /libros/:splat 301
+/consciencia/* /libros/:splat 301
+/tradiciones-orientales/* /libros/:splat 301

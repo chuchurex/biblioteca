@@ -7,12 +7,12 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: '#F5F7FA',   // Gris muy claro (bg-light)
-          100: '#E8ECF1',  // Gris claro (bg-warm)
-          200: '#C9D1DC',  // Gris azulado
-          300: '#8A9BB5',  // Gris medio
-          400: '#1E6B52',  // Verde acento (marcapáginas)
-          500: '#2C4A6E',  // Azul medio
+          50:  '#FAF7F2',  // Pergamino cálido (bg-light)
+          100: '#EDE8E0',  // Crema suave (bg-warm)
+          200: '#D5CBBF',  // Gris cálido
+          300: '#8A9BB5',  // Gris azulado (texto sutil en fondos oscuros)
+          400: '#D4A05A',  // Dorado (acento principal)
+          500: '#2C4A6E',  // Azul medio (texto secundario)
           600: '#1E3A5F',  // Azul primario (tinta)
           700: '#152C4A',  // Azul oscuro
           800: '#0F1F35',  // Azul muy oscuro (text-primary)
@@ -20,11 +20,13 @@ export default {
         },
       },
       fontFamily: {
-        body: ['Inter', ...defaultTheme.fontFamily.sans],
+        display: ['"Cormorant Garamond"', ...defaultTheme.fontFamily.serif],
+        body: ['"Nunito Sans"', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: {
-        'card': '0 2px 8px rgba(15, 31, 53, 0.08)',
-        'card-hover': '0 8px 24px rgba(15, 31, 53, 0.12)',
+        'card': '0 2px 8px rgba(15, 31, 53, 0.06)',
+        'card-hover': '0 16px 40px rgba(15, 31, 53, 0.14)',
+        'glow': '0 0 20px rgba(212, 160, 90, 0.15)',
       }
     },
   },

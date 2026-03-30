@@ -1,35 +1,31 @@
 ---
-import { getAllTemas, getContenidoPorTema } from '../lib/datos';
-
 const year = new Date().getFullYear();
-const temaItems = getAllTemas()
-  .filter(t => { const c = getContenidoPorTema(t.slug); return c.obras.length > 0 || c.series.length > 0; })
-  .map(t => ({ label: t.nombre, href: `/${t.slug}/` }));
 ---
 
-<footer class="bg-brand-900 text-brand-50/70">
+<footer class="bg-brand-900 text-brand-300/60 border-t border-white/[0.06]">
   <div class="container mx-auto px-4 md:px-8 py-10">
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
       <div>
-        <span class="text-xl font-bold text-white flex items-center gap-2"><svg class="w-6 h-6" viewBox="0 0 512 512" fill="currentColor"><path d="M256 20C200 20 164 60 164 110C164 158 206 192 230 212L112 212L112 268L230 268L224 268L210 480C210 496 230 500 256 500C282 500 302 496 302 480L288 268L282 268L400 268L400 212L282 212C306 192 348 158 348 110C348 60 312 20 256 20ZM256 72C292 72 308 94 308 116C308 142 280 166 260 182L252 182C232 166 204 142 204 116C204 94 220 72 256 72Z"/></svg> Biblioteca</span>
-        <p class="text-sm mt-1">Videoteca curada de YouTube</p>
+        <span class="text-xl font-display font-bold text-white flex items-center gap-2">
+          <svg class="w-6 h-6 text-brand-400" viewBox="0 0 512 512" fill="currentColor"><path d="M256 20C200 20 164 60 164 110C164 158 206 192 230 212L112 212L112 268L230 268L224 268L210 480C210 496 230 500 256 500C282 500 302 496 302 480L288 268L282 268L400 268L400 212L282 212C306 192 348 158 348 110C348 60 312 20 256 20ZM256 72C292 72 308 94 308 116C308 142 280 166 260 182L252 182C232 166 204 142 204 116C204 94 220 72 256 72Z"/></svg>
+          Biblioteca
+        </span>
+        <p class="text-sm mt-1">Libros, meditaciones y crecimiento personal</p>
       </div>
       <nav class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
-        <a href="/" class="hover:text-white transition">Inicio</a>
-        {temaItems.map(item => (
-          <>
-            <span class="text-brand-50/20 hidden md:inline">&middot;</span>
-            <a href={item.href} class="hover:text-white transition">{item.label}</a>
-          </>
-        ))}
+        <a href="/" class="hover:text-brand-400 transition-colors duration-300">Inicio</a>
+        <span class="text-white/10 hidden md:inline">&middot;</span>
+        <a href="/libros/" class="hover:text-brand-400 transition-colors duration-300">Libros</a>
+        <span class="text-white/10 hidden md:inline">&middot;</span>
+        <a href="/meditaciones/" class="hover:text-brand-400 transition-colors duration-300">Meditaciones</a>
       </nav>
     </div>
   </div>
 
-  <div class="border-t border-brand-50/10">
+  <div class="border-t border-white/[0.06]">
     <div class="container mx-auto px-4 md:px-8 py-4">
-      <p class="text-sm text-brand-50/40">
-        &copy; {year} Biblioteca. Por <a href="https://chuchurex.cl" target="_blank" rel="noopener" class="text-brand-400 hover:text-white transition">chuchu</a>.
+      <p class="text-sm text-brand-300/30">
+        &copy; {year} Biblioteca. Por <a href="https://chuchurex.cl" target="_blank" rel="noopener" class="text-brand-400/70 hover:text-brand-400 transition-colors duration-300">chuchu</a>.
       </p>
     </div>
   </div>

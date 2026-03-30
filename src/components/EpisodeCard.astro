@@ -13,26 +13,26 @@ const { episode, href, canalNombre } = Astro.props;
 
 <a
   href={href}
-  class="group block bg-white rounded-xl shadow-card overflow-hidden hover:-translate-y-0.5 hover:shadow-card-hover transition-all duration-300"
+  class="group block bg-white rounded-xl shadow-card overflow-hidden border border-brand-200/40 hover:border-brand-400/30 hover:shadow-card-hover transition-all duration-500"
 >
   <div class="aspect-video bg-brand-100 overflow-hidden relative">
     <img
       src={episode.thumbnail}
       alt={episode.titulo}
-      class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
       loading="lazy"
     />
-    <div class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition">
-      <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+      <svg class="w-14 h-14 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
         <path d="M8 5v14l11-7z"/>
       </svg>
     </div>
   </div>
   <div class="p-4">
     {canalNombre && (
-      <span class="text-xs text-brand-400 font-semibold uppercase tracking-wider">{canalNombre}</span>
+      <span class="text-[10px] font-semibold tracking-[0.1em] uppercase text-brand-400">{canalNombre}</span>
     )}
-    <h3 class="font-semibold text-brand-800 line-clamp-2 mt-1">{episode.titulo}</h3>
-    <p class="text-sm text-brand-500 mt-1">{formatDate(episode.fecha_emision)}</p>
+    <h3 class="font-semibold text-brand-800 line-clamp-2 mt-1 leading-snug">{episode.titulo}</h3>
+    <p class="text-sm text-brand-500/70 mt-1.5">{formatDate(episode.fecha_emision)}</p>
   </div>
 </a>

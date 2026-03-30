@@ -1,37 +1,38 @@
 ---
 import type { Tema } from '../lib/types';
-import { getContenidoPorTema, contarEpisodiosPorTema } from '../lib/datos';
+import { getLibrosByTema, getMeditacionesByTema, contarEpisodiosPorTema } from '../lib/datos';
 
 interface Props {
   tema: Tema;
 }
 
 const { tema } = Astro.props;
-const { obras, series } = getContenidoPorTema(tema.slug);
-const totalTitulos = obras.length + series.length;
+const libros = getLibrosByTema(tema.slug);
+const meditaciones = getMeditacionesByTema(tema.slug);
+const totalTitulos = libros.length + meditaciones.length;
 const totalEpisodios = contarEpisodiosPorTema(tema.slug);
 ---
 
 <a
-  href={`/${tema.slug}/`}
-  class="group block bg-white rounded-xl shadow-card overflow-hidden hover:-translate-y-0.5 hover:shadow-card-hover transition-all duration-300"
+  href={`/temas/${tema.slug}/`}
+  class="group block relative bg-brand-900 rounded-xl overflow-hidden hover:shadow-glow transition-all duration-500"
 >
-  <div class="p-6 flex items-center gap-4">
-    <div class="flex-shrink-0 w-14 h-14 bg-brand-900 rounded-xl flex items-center justify-center text-2xl">
-      {tema.icono || tema.nombre.charAt(0)}
-    </div>
-    <div class="flex-1 min-w-0">
-      <h3 class="font-bold text-lg text-brand-800 group-hover:text-brand-600 transition truncate">
-        {tema.nombre}
-      </h3>
-      <p class="text-sm text-brand-500 mt-0.5 line-clamp-1">{tema.descripcion}</p>
-      <div class="flex flex-wrap gap-x-4 gap-y-1 mt-1 text-xs text-brand-400">
+  <div class="absolute top-0 left-0 w-1 h-full bg-brand-400 transition-all duration-500 group-hover:w-1.5 group-hover:shadow-[0_0_8px_rgba(212,160,90,0.4)]"></div>
+
+  <div class="pl-7 pr-5 py-6">
+    <h3 class="font-display text-[1.35rem] font-bold text-white group-hover:text-brand-400 transition-colors duration-300">
+      {tema.nombre}
+    </h3>
+    <p class="text-sm text-brand-300/80 mt-1.5 line-clamp-2 leading-relaxed">{tema.descripcion}</p>
+
+    <div class="flex items-center justify-between mt-5 pt-3.5 border-t border-white/[0.06]">
+      <div class="flex gap-5 text-[11px] text-brand-300/50 tracking-[0.1em] uppercase">
         <span>{totalTitulos} {totalTitulos === 1 ? 'título' : 'títulos'}</span>
         <span>{totalEpisodios} episodios</span>
       </div>
+      <svg class="w-4 h-4 text-brand-300/30 group-hover:text-brand-400 group-hover:translate-x-0.5 transition-all duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
     </div>
-    <svg class="w-5 h-5 text-brand-300 group-hover:text-brand-600 transition flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-    </svg>
   </div>
 </a>

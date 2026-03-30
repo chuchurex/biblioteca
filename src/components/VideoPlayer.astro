@@ -59,16 +59,24 @@ const thumbSrc = thumbnail || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
     if (container && iframe) {
       var resolved = false;
 
+      function escapeHtml(str) {
+        var div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+      }
+
       function showFallback() {
         if (resolved) return;
         resolved = true;
+        var safeTitle = escapeHtml(title);
+        var safeSrc = escapeHtml(thumbSrc);
         var link = document.createElement('a');
         link.href = youtubeUrl;
         link.target = '_blank';
         link.rel = 'noopener';
         link.className = 'block absolute inset-0 group';
         link.innerHTML =
-          '<img src="' + thumbSrc + '" alt="' + title + '" class="w-full h-full object-cover" />' +
+          '<img src="' + safeSrc + '" alt="' + safeTitle + '" class="w-full h-full object-cover" />' +
           '<div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors flex flex-col items-center justify-center gap-3">' +
             '<svg class="w-16 h-16 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">' +
               '<path d="M8 5v14l11-7z"/>' +
