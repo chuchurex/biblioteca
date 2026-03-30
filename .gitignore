@@ -20,3 +20,4 @@ venv/
 
 # Backup
 backup/
+*.backup.json

@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import EdicionSelector from '../../../components/EdicionSelector.astro';
 import { getAllLibros, getLibroBySlug, getEdicionesDeLLibro, contarEpisodiosLibro } from '../../../lib/datos';
+import { TIPO_LABELS } from '../../../lib/utils';
 
 export function getStaticPaths() {
   return getAllLibros().map(libro => ({
@@ -14,15 +15,6 @@ const libro = getLibroBySlug(libroSlug!)!;
 const ediciones = getEdicionesDeLLibro(libro);
 const totalEps = contarEpisodiosLibro(libro);
 const multiEdicion = ediciones.length > 1;
-
-const TIPO_LABELS: Record<string, string> = {
-  audiolibro: 'Audiolibro',
-  curso: 'Curso',
-  documental: 'Documental',
-  conferencia: 'Conferencia',
-  clase: 'Clase',
-  'lectura-comentada': 'Lectura comentada',
-};
 const tipoBadge = TIPO_LABELS[libro.ediciones[0]?.tipo] ?? libro.ediciones[0]?.tipo;
 ---
 

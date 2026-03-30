@@ -15,7 +15,7 @@ const navItems = [
       <span class="text-xl font-display font-bold text-white group-hover:text-brand-400 transition-colors duration-300">Biblioteca</span>
     </a>
 
-    <button id="menu-toggle" class="md:hidden flex flex-col gap-[5px] p-1" aria-label="Abrir menú">
+    <button id="menu-toggle" class="md:hidden flex flex-col gap-[5px] p-1" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
       <span class="block w-6 h-[2px] bg-white transition-transform duration-300" id="bar1"></span>
       <span class="block w-6 h-[2px] bg-white transition-opacity duration-300" id="bar2"></span>
       <span class="block w-6 h-[2px] bg-white transition-transform duration-300" id="bar3"></span>
@@ -59,6 +59,8 @@ const navItems = [
 
   toggle?.addEventListener('click', () => {
     open = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
     if (open) {
       menu!.style.maxHeight = menu!.scrollHeight + 'px';
       bar1!.style.transform = 'rotate(45deg) translate(5px, 5px)';

@@ -1,6 +1,7 @@
 ---
 import type { Libro } from '../lib/types';
 import { contarEpisodiosLibro } from '../lib/datos';
+import { TIPO_LABELS } from '../lib/utils';
 
 interface Props {
   libro: Libro;
@@ -11,14 +12,6 @@ const { libro, href } = Astro.props;
 const totalEps = contarEpisodiosLibro(libro);
 const multiEdicion = libro.ediciones.length > 1;
 const tipoBadge = libro.ediciones[0]?.tipo ?? 'audiolibro';
-const TIPO_LABELS: Record<string, string> = {
-  audiolibro: 'Audiolibro',
-  curso: 'Curso',
-  documental: 'Documental',
-  conferencia: 'Conferencia',
-  clase: 'Clase',
-  'lectura-comentada': 'Lectura comentada',
-};
 const badgeLabel = TIPO_LABELS[tipoBadge] ?? tipoBadge;
 ---
 
