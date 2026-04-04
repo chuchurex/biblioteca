@@ -1,0 +1,53 @@
+---
+import type { Ruta } from '../lib/types';
+import { getTemaBySlug } from '../lib/datos';
+
+interface Props {
+  ruta: Ruta;
+  href: string;
+}
+
+const { ruta, href } = Astro.props;
+const temas = ruta.temas.map(s => getTemaBySlug(s)).filter(Boolean);
+
+const nivelLabels: Record<string, string> = {
+  principiante: 'Principiante',
+  intermedio: 'Intermedio',
+  avanzado: 'Avanzado',
+};
+---
+
+<a
+  href={href}
+  class="group block relative bg-brand-900 rounded-xl overflow-hidden hover:shadow-glow transition-all duration-500"
+>
+  <div class="absolute top-0 left-0 w-1 h-full bg-brand-400 transition-all duration-500 group-hover:w-1.5 group-hover:shadow-[0_0_8px_rgba(212,160,90,0.4)]"></div>
+
+  <div class="pl-7 pr-5 py-6">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="text-[10px] font-semibold tracking-[0.12em] uppercase text-brand-400">
+        {nivelLabels[ruta.nivel] ?? ruta.nivel}
+      </span>
+      {ruta.duracion_estimada && (
+        <span class="text-[10px] text-brand-300/50">&middot; {ruta.duracion_estimada}</span>
+      )}
+    </div>
+
+    <h3 class="font-display text-[1.35rem] font-bold text-white group-hover:text-brand-400 transition-colors duration-300">
+      {ruta.titulo}
+    </h3>
+    <p class="text-sm text-brand-300/80 mt-1.5 line-clamp-2 leading-relaxed">{ruta.descripcion}</p>
+
+    <div class="flex items-center justify-between mt-5 pt-3.5 border-t border-white/[0.06]">
+      <div class="flex gap-5 text-[11px] text-brand-300/50 tracking-[0.1em] uppercase">
+        <span>{ruta.pasos.length} {ruta.pasos.length === 1 ? 'paso' : 'pasos'}</span>
+        {temas.length > 0 && (
+          <span>{temas.map(t => t!.nombre).join(', ')}</span>
+        )}
+      </div>
+      <svg class="w-4 h-4 text-brand-300/30 group-hover:text-brand-400 group-hover:translate-x-0.5 transition-all duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </div>
+  </div>
+</a>

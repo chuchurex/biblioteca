@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "camino-guerrero-tolteca",
+    "titulo": "El camino del guerrero tolteca",
+    "descripcion": "Los cinco libros esenciales de Carlos Castaneda para entender el mundo tolteca: desde el primer encuentro con Don Juan hasta las emanaciones del Águila.",
+    "nivel": "principiante",
+    "temas": ["chamanismo-tolteca"],
+    "duracion_estimada": "2 meses",
+    "pasos": [
+      { "orden": 1, "tipo": "libro", "ref": "las-ensenanzas-de-don-juan", "nota": "Primer libro. Introduce a Don Juan y el mundo tolteca." },
+      { "orden": 2, "tipo": "libro", "ref": "una-realidad-aparte", "nota": "Profundiza en el 'ver' vs 'mirar'." },
+      { "orden": 3, "tipo": "libro", "ref": "viaje-a-ixtlan", "nota": "Las técnicas del acecho y el guerrero." },
+      { "orden": 4, "tipo": "libro", "ref": "relatos-de-poder", "nota": "El tonal y el nagual. Cierra la primera tetralogía." },
+      { "orden": 5, "tipo": "libro", "ref": "el-fuego-interno", "nota": "Las emanaciones del Águila. Nivel intermedio." }
+    ]
+  },
+  {
+    "slug": "introduccion-consciencia",
+    "titulo": "Introducción a la consciencia",
+    "descripcion": "Documentales y meditaciones guiadas de Daniel Schmidt para entender qué es la consciencia y experimentarla en primera persona.",
+    "nivel": "principiante",
+    "temas": ["consciencia"],
+    "duracion_estimada": "2 semanas",
+    "pasos": [
+      { "orden": 1, "tipo": "libro", "ref": "samadhi", "nota": "Qué es la consciencia y la ilusión del ego." },
+      { "orden": 2, "tipo": "libro", "ref": "mundos-internos-mundos-externos", "nota": "Conecta tradiciones: desde el Akasha hasta la física cuántica." },
+      { "orden": 3, "tipo": "meditacion", "ref": "el-camino-sin-sendero-meditaciones", "nota": "Práctica guiada para experimentar lo visto en los documentales." }
+    ]
+  },
+  {
+    "slug": "astrologia-carta-natal",
+    "titulo": "Astrología evolutiva: tu carta natal",
+    "descripcion": "Curso progresivo de Pablo Flores Laymuns para aprender a leer tu carta natal: desde los fundamentos hasta las casas astrológicas.",
+    "nivel": "principiante",
+    "temas": ["astrologia"],
+    "duracion_estimada": "1 mes",
+    "pasos": [
+      { "orden": 1, "tipo": "libro", "ref": "conoce-tu-carta-natal", "nota": "Base: qué es una carta natal y cómo leerla." },
+      { "orden": 2, "tipo": "libro", "ref": "luna-astrologia", "nota": "El mundo emocional, el punto de partida más personal." },
+      { "orden": 3, "tipo": "libro", "ref": "ascendentes-astrologia", "nota": "Cómo te perciben los demás, la máscara." },
+      { "orden": 4, "tipo": "libro", "ref": "casas-astrologicas", "nota": "Las áreas de vida donde se manifiesta todo." }
+    ]
+  },
+  {
+    "slug": "fundamentos-antroposofia",
+    "titulo": "Fundamentos de la Antroposofía",
+    "descripcion": "El camino clásico para iniciarse en Rudolf Steiner: desde la base filosófica hasta la cosmología completa, pasando por la práctica del desarrollo espiritual.",
+    "nivel": "principiante",
+    "temas": ["antroposofia"],
+    "duracion_estimada": "3 meses",
+    "pasos": [
+      { "orden": 1, "tipo": "libro", "ref": "filosofia-libertad-crisol", "nota": "La base epistemológica. Cómo piensa Steiner antes de hablar de lo espiritual." },
+      { "orden": 2, "tipo": "libro", "ref": "teosofia-crisol", "nota": "Introduce los cuerpos sutiles, karma y reencarnación." },
+      { "orden": 3, "tipo": "libro", "ref": "mundos-superiores-crisol", "nota": "La práctica: cómo desarrollar la percepción espiritual." },
+      { "orden": 4, "tipo": "libro", "ref": "ciencia-oculta-crisol", "nota": "La síntesis: evolución cósmica completa de Saturno a Vulcano." }
+    ]
+  },
+  {
+    "slug": "evangelios-steiner",
+    "titulo": "Los Evangelios según Steiner",
+    "descripcion": "Los cuatro Evangelios como ciclos de conferencias de Rudolf Steiner. Cada evangelista revela un aspecto distinto del Misterio de Gólgota.",
+    "nivel": "intermedio",
+    "temas": ["antroposofia"],
+    "duracion_estimada": "2 meses",
+    "pasos": [
+      { "orden": 1, "tipo": "libro", "ref": "evangelio-juan-crisol", "nota": "El Logos y la iniciación. El evangelio más esotérico." },
+      { "orden": 2, "tipo": "libro", "ref": "evangelio-lucas-crisol", "nota": "La compasión y el Buda. El evangelio del amor." },
+      { "orden": 3, "tipo": "libro", "ref": "evangelio-mateo-crisol", "nota": "La corriente abrahámica y la herencia salomónica." },
+      { "orden": 4, "tipo": "libro", "ref": "evangelio-marcos-crisol", "nota": "La fuerza cósmica del Cristo. El evangelio más concentrado." }
+    ]
+  },
+  {
+    "slug": "vida-muerte-steiner",
+    "titulo": "Vida, muerte y más allá según Steiner",
+    "descripcion": "Qué ocurre entre la muerte y el nuevo nacimiento según la investigación espiritual de Rudolf Steiner, y las fuerzas que actúan en la evolución humana.",
+    "nivel": "intermedio",
+    "temas": ["antroposofia"],
+    "duracion_estimada": "2 meses",
+    "pasos": [
+      { "orden": 1, "tipo": "libro", "ref": "teosofia-crisol", "nota": "Fundamento: los cuerpos sutiles y la estructura del ser humano." },
+      { "orden": 2, "tipo": "libro", "ref": "vida-despues-muerte-crisol", "nota": "El proceso de la muerte y los primeros días en el mundo espiritual." },
+      { "orden": 3, "tipo": "libro", "ref": "vida-muerte-nacimiento-crisol", "nota": "El recorrido completo entre dos encarnaciones." },
+      { "orden": 4, "tipo": "libro", "ref": "encarnacion-ahriman-crisol", "nota": "Las fuerzas adversarias y su papel en la evolución." }
+    ]
+  }
+]

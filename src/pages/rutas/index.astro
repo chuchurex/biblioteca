@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import RutaCard from '../../components/RutaCard.astro';
+import { getAllRutas } from '../../lib/datos';
+
+const rutas = getAllRutas();
+---
+
+<Layout
+  title="Rutas de estudio — Biblioteca"
+  description="Caminos de aprendizaje curados: secuencias de libros y meditaciones organizadas por tema y nivel."
+>
+  <section class="bg-brand-900 text-white py-12 relative overflow-hidden">
+    <div class="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 border border-brand-400/[0.06] rounded-full translate-x-1/2"></div>
+    <div class="container mx-auto px-4 md:px-8 relative z-10">
+      <nav class="text-sm text-brand-300/60 mb-5">
+        <a href="/" class="hover:text-brand-400 transition-colors duration-300">Inicio</a>
+        <span class="mx-2 text-brand-300/30">/</span>
+        <span class="text-white/90">Rutas de estudio</span>
+      </nav>
+      <h1 class="text-3xl md:text-4xl font-display font-bold">Rutas de estudio</h1>
+      <p class="mt-3 text-brand-300/80 max-w-3xl leading-relaxed">
+        Caminos de aprendizaje curados: secuencias de libros y meditaciones organizadas por tema y nivel para guiar tu exploración.
+      </p>
+      <div class="flex items-center gap-4 mt-4 text-[11px] text-brand-300/50 tracking-[0.1em] uppercase">
+        <span>{rutas.length} {rutas.length === 1 ? 'ruta' : 'rutas'}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="grid gap-6 md:grid-cols-2">
+        {rutas.map(ruta => (
+          <RutaCard ruta={ruta} href={`/rutas/${ruta.slug}/`} />
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

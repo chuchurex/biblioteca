@@ -1,39 +1,51 @@
 # Biblioteca — biblioteca.chuchurex.cl
 
-Videoteca multi-canal de YouTube. Organiza videos de múltiples canales por sus playlists nativas.
+Biblioteca digital de crecimiento personal. Organiza audiolibros, meditaciones y contenido de YouTube en rutas de estudio curadas.
 
 ## Stack
 
 - **Framework**: Astro 5 (output: static)
-- **Estilos**: Tailwind CSS 3 (paleta `brand-*` azul tinta/crema/verde)
-- **Tipografía**: Inter
-- **Datos**: JSON estático generado por scripts Python
-- **Deploy**: Cloudflare Pages (futuro)
+- **Estilos**: Tailwind CSS 3 (paleta `brand-*` dorado/azul tinta)
+- **Tipografia**: Cormorant Garamond (display) + Nunito Sans (body)
+- **Datos**: JSON estatico (`src/data/biblioteca.json` curado + `src/data/rutas.json` manual)
+- **Deploy**: Cloudflare Pages
 - **Puerto dev**: 4020
 
 ## Estructura
 
 ```
 src/
-├── components/     # Header, Footer, VideoPlayer, EpisodeCard, ChannelCard, FranjaRow
-├── data/youtube/   # canales.json (generado por pipeline)
+├── components/     # Header, Footer, VideoPlayer, EpisodeCard, LibroCard, MeditacionCard, TemaCard, EdicionSelector
+├── data/
+│   ├── biblioteca.json   # Datos principales (temas, canales, libros, meditaciones, series)
+│   └── rutas.json        # Rutas de estudio (curadas manualmente)
 ├── layouts/        # Layout.astro (SEO, Open Graph, JSON-LD)
 ├── lib/
-│   ├── types.ts    # Canal, Programa, Episode
-│   ├── utils.ts    # slugify, formatDate, formatNumber
-│   └── datos.ts    # Maps O(1) para lookup de canales/videos
+│   ├── types.ts    # Tema, Canal, Libro, Meditacion, Serie, Episode, Ruta, PasoRuta
+│   ├── utils.ts    # slugify, formatDate, isVideoAvailable, TIPO_LABELS
+│   └── datos.ts    # Maps O(1) para lookup de todas las entidades
 ├── pages/
 │   ├── index.astro
 │   ├── 404.astro
-│   └── canales/
-│       └── [canal]/
-│           ├── index.astro           # Programas del canal
-│           └── [programa]/
-│               ├── index.astro       # Episodios del programa
-│               └── [episodio].astro  # Video player
+│   ├── temas/
+│   │   ├── index.astro              # Indice de temas
+│   │   └── [tema]/index.astro       # Contenido por tema (agrupado por autor)
+│   ├── libros/
+│   │   ├── index.astro              # Todos los libros (agrupados por tema)
+│   │   └── [libro]/
+│   │       ├── index.astro          # Detalle libro + selector de ediciones
+│   │       └── [episodio].astro     # Video player
+│   ├── meditaciones/
+│   │   ├── index.astro              # Todas las meditaciones
+│   │   └── [meditacion]/
+│   │       ├── index.astro          # Detalle meditacion + versiones
+│   │       └── [episodio].astro     # Video player
+│   └── rutas/
+│       ├── index.astro              # Indice de rutas de estudio
+│       └── [ruta]/index.astro       # Detalle de ruta con pasos
 └── styles/global.css
 scripts/
-├── canales.json              # Config de canales (handles, slugs, patrones)
+├── canales.json              # Config de 17 canales (handles, slugs, patrones)
 ├── resolver_channel_id.py    # Resuelve @handle → channelId
 ├── youtube_extractor.py      # Extrae playlists y episodios
 ├── obtener_estadisticas.py   # Vistas, likes, embeddable
@@ -45,7 +57,7 @@ scripts/
 ```bash
 # Desarrollo
 npm run dev          # localhost:4020
-npm run build        # Build estático
+npm run build        # Build estatico
 npm run preview      # Preview del build
 
 # Pipeline de datos (requiere YOUTUBE_API_KEY en .env)
@@ -56,27 +68,36 @@ python scripts/limpiar_descripciones.py        # Limpiar descripciones
 cp datos/biblioteca_canales.json src/data/youtube/canales.json  # Copiar a src
 ```
 
-## Jerarquía de datos
+## Jerarquia de datos
 
-Canal > Programa (playlist) > Episodio (video)
+```
+Tema (8 temas)
+├── Libro (87 obras) → Edicion → Serie → Episode
+└── Meditacion (3+ series) → Version → Serie → Episode
 
+Ruta de estudio (curada manualmente, archivo separado)
+└── PasoRuta → ref a Libro | Meditacion | Episode
+```
+
+- `src/data/biblioteca.json`: datos principales (generados por pipeline + curados)
+- `src/data/rutas.json`: rutas de estudio (curadas manualmente, pipeline no lo toca)
 - Los channel IDs van en `scripts/canales.json` (versionado)
 - Solo `YOUTUBE_API_KEY` es secreto (va en `.env`)
-- `src/data/youtube/canales.json` es el archivo que consume Astro
 
 ## Paleta de colores
 
+- `brand-400` (#D4A05A): Dorado (acento principal)
 - `brand-600` (#1E3A5F): Azul primario (tinta)
-- `brand-400` (#1E6B52): Verde acento (marcapáginas)
-- `brand-50` (#F5F7FA): Fondo claro
-- `brand-900` (#0A1628): Fondo oscuro
-- Misma convención `brand-*` que lahoradelanostalgia.com
+- `brand-50` (#FAF7F2): Pergamino calido (fondo claro)
+- `brand-900` (#0A1628): Azul noche (fondo oscuro)
+- Misma convencion `brand-*` que lahoradelanostalgia.com
 
 ## Notas
 
 - Todas las rutas usan `getStaticPaths()` (static output)
 - Los episodios se identifican por `video_id` en la URL
 - El workflow de GitHub Actions actualiza datos cada 6h
+- Validacion build-time: refs en rutas.json deben apuntar a libros/meditaciones existentes
 
 ## Skill routing
 

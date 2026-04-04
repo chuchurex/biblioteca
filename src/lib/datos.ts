@@ -1,5 +1,6 @@
 import bibliotecaData from '../data/biblioteca.json';
-import type { Biblioteca, Tema, Canal, Serie, Episode, Libro, Meditacion } from './types';
+import rutasData from '../data/rutas.json';
+import type { Biblioteca, Tema, Canal, Serie, Episode, Libro, Meditacion, Ruta } from './types';
 import { isVideoAvailable } from './utils';
 
 const db = bibliotecaData as Biblioteca;
@@ -63,6 +64,23 @@ for (const med of db.meditaciones) {
     const arr = MEDITACIONES_POR_TEMA.get(temaSlug) ?? [];
     arr.push(med);
     MEDITACIONES_POR_TEMA.set(temaSlug, arr);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Índices de Rutas (con validación build-time de refs)
+// ---------------------------------------------------------------------------
+
+const RUTA_MAP = new Map<string, Ruta>();
+for (const r of rutasData as Ruta[]) {
+  RUTA_MAP.set(r.slug, r);
+  for (const paso of r.pasos) {
+    if (paso.tipo === 'libro' && !LIBRO_MAP.has(paso.ref)) {
+      throw new Error(`Ruta "${r.slug}" paso ${paso.orden}: libro "${paso.ref}" no existe`);
+    }
+    if (paso.tipo === 'meditacion' && !MEDITACION_MAP.has(paso.ref)) {
+      throw new Error(`Ruta "${r.slug}" paso ${paso.orden}: meditación "${paso.ref}" no existe`);
+    }
   }
 }
 
@@ -166,6 +184,18 @@ export function contarEpisodiosMeditacion(med: Meditacion): number {
     const serie = v.serie ? SERIE_MAP.get(v.serie) : undefined;
     return sum + (serie ? getSerieEpisodios(serie).length : 0);
   }, 0);
+}
+
+// ---------------------------------------------------------------------------
+// Rutas de estudio
+// ---------------------------------------------------------------------------
+
+export function getAllRutas(): Ruta[] {
+  return rutasData as Ruta[];
+}
+
+export function getRutaBySlug(slug: string): Ruta | undefined {
+  return RUTA_MAP.get(slug);
 }
 
 // ---------------------------------------------------------------------------
