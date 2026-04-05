@@ -13,26 +13,25 @@ const { episode, href, canalNombre } = Astro.props;
 
 <a
   href={href}
-  class="group block bg-white rounded-xl shadow-card overflow-hidden border border-brand-200/40 hover:border-brand-400/30 hover:shadow-card-hover transition-all duration-500"
+  class="group block rounded-lg overflow-hidden"
 >
-  <div class="aspect-video bg-brand-100 overflow-hidden relative">
+  <div class="aspect-video bg-brand-500 overflow-hidden relative">
     <img
       src={episode.thumbnail}
       alt={episode.titulo}
-      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+      class="w-full h-full object-cover group-hover:scale-[1.08] transition-transform duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)]"
       loading="lazy"
     />
-    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
-      <svg class="w-14 h-14 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M8 5v14l11-7z"/>
-      </svg>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 bg-accent rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 scale-75 group-hover:scale-100 transition-all duration-300 z-10">
+      <svg class="w-4 h-4 fill-brand-700 ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
     </div>
   </div>
-  <div class="p-4">
+  <div class="pt-3 pb-1">
     {canalNombre && (
-      <span class="text-[10px] font-semibold tracking-[0.1em] uppercase text-brand-400">{canalNombre}</span>
+      <span class="text-[10px] font-semibold tracking-[0.1em] uppercase text-accent">{canalNombre}</span>
     )}
-    <h3 class="font-semibold text-brand-800 line-clamp-2 mt-1 leading-snug">{episode.titulo}</h3>
-    <p class="text-sm text-brand-500/70 mt-1.5">{formatDate(episode.fecha_emision)}</p>
+    <h3 class="font-body text-sm font-semibold text-brand-50 group-hover:text-accent transition-colors duration-300 line-clamp-2 mt-0.5 leading-snug">{episode.titulo}</h3>
+    <p class="text-xs text-brand-200 mt-1">{formatDate(episode.fecha_emision)}</p>
   </div>
 </a>

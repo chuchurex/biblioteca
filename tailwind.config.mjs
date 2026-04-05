@@ -7,26 +7,31 @@ export default {
     extend: {
       colors: {
         brand: {
-          50:  '#FAF7F2',  // Pergamino cálido (bg-light)
-          100: '#EDE8E0',  // Crema suave (bg-warm)
-          200: '#D5CBBF',  // Gris cálido
-          300: '#8A9BB5',  // Gris azulado (texto sutil en fondos oscuros)
-          400: '#D4A05A',  // Dorado (acento principal)
-          500: '#2C4A6E',  // Azul medio (texto secundario)
-          600: '#1E3A5F',  // Azul primario (tinta)
-          700: '#152C4A',  // Azul oscuro
-          800: '#0F1F35',  // Azul muy oscuro (text-primary)
-          900: '#0A1628',  // Azul noche (bg-dark)
+          50:  '#F0EDE8',  // Crema calido (texto primario)
+          100: '#9A968E',  // Texto secundario
+          200: '#5A574F',  // Texto muted
+          300: '#222228',  // Hover state
+          400: '#E8B04A',  // Dorado (acento principal)
+          500: '#1A1A20',  // Cards, paneles
+          600: '#141418',  // Superficie elevada
+          700: '#0C0C0E',  // Fondo principal
+          800: '#C4785A',  // Terracota (acento)
+          900: '#0C0C0E',  // Alias fondo
         },
+        accent: '#E8B04A',
+        warm: '#C4785A',
+        cool: '#5A8EC4',
+        green: '#5AC47A',
       },
       fontFamily: {
-        display: ['"Cormorant Garamond"', ...defaultTheme.fontFamily.serif],
-        body: ['"Nunito Sans"', ...defaultTheme.fontFamily.sans],
+        display: ['"DM Serif Display"', ...defaultTheme.fontFamily.serif],
+        body: ['"DM Sans"', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: {
-        'card': '0 2px 8px rgba(15, 31, 53, 0.06)',
-        'card-hover': '0 16px 40px rgba(15, 31, 53, 0.14)',
-        'glow': '0 0 20px rgba(212, 160, 90, 0.15)',
+        'card': '0 2px 8px rgba(0, 0, 0, 0.2)',
+        'card-hover': '0 20px 60px rgba(0, 0, 0, 0.4)',
+        'glow': '0 0 20px rgba(232, 176, 74, 0.15)',
+        'glow-strong': '0 8px 32px rgba(232, 176, 74, 0.15)',
       }
     },
   },

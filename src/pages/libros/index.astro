@@ -10,24 +10,24 @@ const temas = getAllTemas().filter(t => getLibrosByTema(t.slug).length > 0);
 ---
 
 <Layout
-  title="Libros — Biblioteca"
-  description="Catálogo completo de libros: audiolibros, cursos, documentales y conferencias sobre consciencia y crecimiento personal."
+  title="Contenidos — chuchurex"
+  description="Catálogo completo: audiolibros, cursos, documentales y conferencias sobre consciencia y crecimiento personal."
 >
-  <section class="bg-brand-900 text-white py-12 relative overflow-hidden">
-    <div class="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 border border-brand-400/[0.06] rounded-full translate-x-1/2"></div>
-    <div class="container mx-auto px-4 md:px-8 relative z-10">
-      <nav class="text-sm text-brand-300/60 mb-5">
-        <a href="/" class="hover:text-brand-400 transition-colors duration-300">Inicio</a>
-        <span class="mx-2 text-brand-300/30">/</span>
-        <span class="text-white/90">Libros</span>
+  <section class="py-12 relative overflow-hidden">
+    <div class="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 border border-white/[0.03] rounded-full translate-x-1/2"></div>
+    <div class="container mx-auto px-6 md:px-12 relative z-10">
+      <nav class="text-sm text-brand-200 mb-5">
+        <a href="/" class="hover:text-accent transition-colors duration-300">Inicio</a>
+        <span class="mx-2 text-brand-200/30">/</span>
+        <span class="text-brand-50">Contenidos</span>
       </nav>
-      <h1 class="text-3xl md:text-4xl font-display font-bold">Libros</h1>
-      <p class="mt-3 text-brand-300/80 max-w-3xl leading-relaxed">
+      <h1 class="text-4xl md:text-5xl font-display font-bold text-brand-50">Contenidos</h1>
+      <p class="mt-3 text-brand-100 max-w-3xl leading-relaxed">
         Audiolibros, cursos, documentales y conferencias sobre consciencia y crecimiento personal.
       </p>
-      <div class="flex items-center gap-4 mt-4 text-[11px] text-brand-300/50 tracking-[0.1em] uppercase">
+      <div class="flex items-center gap-4 mt-4 text-[11px] text-brand-200 tracking-[0.1em] uppercase">
         <span>{libros.length} títulos</span>
-        <span class="w-1 h-1 rounded-full bg-brand-400/40"></span>
+        <span class="w-1 h-1 rounded-full bg-accent/40"></span>
         <span>{totalEps} episodios</span>
       </div>
     </div>
@@ -36,12 +36,12 @@ const temas = getAllTemas().filter(t => getLibrosByTema(t.slug).length > 0);
   {temas.map((tema, i) => {
     const librosDelTema = getLibrosByTema(tema.slug);
     return (
-      <section class:list={["py-10", i > 0 && "border-t border-brand-200/60"]}>
-        <div class="container mx-auto px-4 md:px-8">
-          <h2 class="text-2xl font-display font-bold text-brand-800 mb-6">
-            <a href={`/temas/${tema.slug}/`} class="hover:text-brand-600 transition">{tema.nombre}</a>
+      <section class:list={["py-10", i > 0 && "border-t border-white/[0.04]"]}>
+        <div class="container mx-auto px-6 md:px-12">
+          <h2 class="text-2xl font-display font-bold text-brand-50 mb-6">
+            <a href={`/temas/${tema.slug}/`} class="hover:text-accent transition">{tema.nombre}</a>
           </h2>
-          <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             {librosDelTema.map(libro => (
               <LibroCard libro={libro} href={`/libros/${libro.slug}/`} />
             ))}

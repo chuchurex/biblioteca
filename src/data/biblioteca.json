@@ -43,9 +43,15 @@
       "icono": "✦"
     },
     {
-      "slug": "tradiciones-orientales",
-      "nombre": "Tradiciones orientales",
-      "descripcion": "Budismo, ayurveda y filosofías orientales. Audiolibros, cursos y meditaciones de las grandes tradiciones de Oriente.",
+      "slug": "ayurveda",
+      "nombre": "Ayurveda",
+      "descripcion": "Medicina ayurvedica: doshas, alimentacion, rutinas y la relacion entre cuerpo, mente y emociones.",
+      "icono": "☸"
+    },
+    {
+      "slug": "lobsang-rampa",
+      "nombre": "Lobsang Rampa",
+      "descripcion": "La trilogia de Tuesday Lobsang Rampa: El Tercer Ojo, El Medico de Lhasa y La Caverna de los Antepasados. Vida monastica en el Tibet, clarividencia y sabiduria antigua.",
       "icono": "☸"
     }
   ],
@@ -1625,7 +1631,7 @@
       "autor": "María de Ezcurra",
       "descripcion": "Exploración de la relación entre Ayurveda, la mente y las emociones.",
       "temas": [
-        "tradiciones-orientales"
+        "ayurveda"
       ],
       "ediciones": [
         {
@@ -1642,7 +1648,7 @@
       "autor": "María de Ezcurra",
       "descripcion": "Curso introductorio al Ayurveda: doshas, constitución, alimentación y rutinas.",
       "temas": [
-        "tradiciones-orientales"
+        "ayurveda"
       ],
       "ediciones": [
         {
@@ -1659,7 +1665,7 @@
       "autor": "Tuesday Lobsang Rampa",
       "descripcion": "Segundo libro de la trilogía. Lobsang Rampa relata su formación como médico en Lhasa, sus experiencias con la clarividencia y sus viajes fuera del Tíbet.",
       "temas": [
-        "tradiciones-orientales"
+        "lobsang-rampa"
       ],
       "ediciones": [
         {
@@ -1676,7 +1682,7 @@
       "autor": "Tuesday Lobsang Rampa",
       "descripcion": "Primer libro de la trilogía de Tuesday Lobsang Rampa. Narra su infancia en el Tíbet, su formación como lama en el monasterio de Potala y la apertura de su tercer ojo.",
       "temas": [
-        "tradiciones-orientales"
+        "lobsang-rampa"
       ],
       "ediciones": [
         {
@@ -1693,7 +1699,7 @@
       "autor": "Tuesday Lobsang Rampa",
       "descripcion": "Tercer libro de la trilogía. Lobsang Rampa describe su viaje a una caverna secreta bajo el Potala donde se guardan registros de civilizaciones antiguas.",
       "temas": [
-        "tradiciones-orientales"
+        "lobsang-rampa"
       ],
       "ediciones": [
         {
@@ -1730,7 +1736,7 @@
       "guia": "Ramiro Calle",
       "descripcion": "Ejercicios de meditación guiados por Ramiro Calle, pionero del yoga en España. Una progresión desde la atención a la respiración hasta la meditación en el Ser, pasando por la contemplación del cuerpo, las sensaciones y los contenidos mentales.",
       "temas": [
-        "tradiciones-orientales"
+        "consciencia"
       ],
       "tipo": "guiada",
       "versiones": [

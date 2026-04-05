@@ -48,7 +48,7 @@ const jsonLd = {
 ---
 
 <Layout
-  title={`${episode.titulo} — Biblioteca`}
+  title={`${episode.titulo} — chuchurex`}
   description={episode.descripcion || `${episode.titulo} — ${med.titulo}`}
   image={episode.thumbnail}
   ogType="video.other"
@@ -62,29 +62,29 @@ const jsonLd = {
   />
 
   <section class="py-8">
-    <div class="container mx-auto px-4 md:px-8 max-w-5xl">
-      <nav class="text-sm text-brand-500/70 mb-4">
-        <a href="/" class="hover:text-brand-400 transition-colors duration-300">Inicio</a>
-        <span class="mx-2 text-brand-300/40">/</span>
-        <a href="/meditaciones/" class="hover:text-brand-400 transition-colors duration-300">Meditaciones</a>
-        <span class="mx-2 text-brand-300/40">/</span>
-        <a href={`/meditaciones/${medSlug}/`} class="hover:text-brand-400 transition-colors duration-300">{med.titulo}</a>
+    <div class="container mx-auto px-6 md:px-12 max-w-5xl">
+      <nav class="text-sm text-brand-200 mb-4">
+        <a href="/" class="hover:text-accent transition-colors duration-300">Inicio</a>
+        <span class="mx-2 text-brand-200/30">/</span>
+        <a href="/meditaciones/" class="hover:text-accent transition-colors duration-300">Meditaciones</a>
+        <span class="mx-2 text-brand-200/30">/</span>
+        <a href={`/meditaciones/${medSlug}/`} class="hover:text-accent transition-colors duration-300">{med.titulo}</a>
       </nav>
 
-      <h1 class="text-2xl md:text-3xl font-display font-bold text-brand-800">{episode.titulo}</h1>
+      <h1 class="text-2xl md:text-3xl font-display font-bold text-brand-50">{episode.titulo}</h1>
 
-      <div class="flex flex-wrap items-center gap-3 mt-3 text-sm text-brand-500/70">
+      <div class="flex flex-wrap items-center gap-3 mt-3 text-sm text-brand-200">
         <span>{formatDate(episode.fecha_emision)}</span>
         {canal && (
           <>
-            <span class="w-1 h-1 rounded-full bg-brand-400/40"></span>
+            <span class="w-1 h-1 rounded-full bg-accent/40"></span>
             <span>{canal.nombre}</span>
           </>
         )}
       </div>
 
       {episode.descripcion && (
-        <div class="mt-5 text-brand-700 whitespace-pre-line max-w-3xl leading-relaxed">
+        <div class="mt-5 text-brand-100 whitespace-pre-line max-w-3xl leading-relaxed">
           {episode.descripcion}
         </div>
       )}
@@ -92,10 +92,10 @@ const jsonLd = {
   </section>
 
   {relacionados.length > 0 && (
-    <section class="py-8 bg-brand-100/50">
-      <div class="container mx-auto px-4 md:px-8">
-        <h2 class="text-2xl font-display font-bold text-brand-800 mb-6">Más de {med.titulo}</h2>
-        <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <section class="py-8 border-t border-white/[0.04]">
+      <div class="container mx-auto px-6 md:px-12">
+        <h2 class="text-2xl font-display font-bold text-brand-50 mb-6">Más de {med.titulo}</h2>
+        <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {relacionados.map(ep => (
             <EpisodeCard
               episode={ep}

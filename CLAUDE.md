@@ -1,12 +1,12 @@
-# Biblioteca — biblioteca.chuchurex.cl
+# chuchurex — chuchurex.cl
 
-Biblioteca digital de crecimiento personal. Organiza audiolibros, meditaciones y contenido de YouTube en rutas de estudio curadas.
+Videoteca personal de crecimiento espiritual. Audiolibros, meditaciones y rutas de estudio curadas desde YouTube.
 
 ## Stack
 
 - **Framework**: Astro 5 (output: static)
-- **Estilos**: Tailwind CSS 3 (paleta `brand-*` dorado/azul tinta)
-- **Tipografia**: Cormorant Garamond (display) + Nunito Sans (body)
+- **Estilos**: Tailwind CSS 3 (dark-first, paleta definida en DESIGN.md)
+- **Tipografia**: DM Serif Display (display) + DM Sans (body)
 - **Datos**: JSON estatico (`src/data/biblioteca.json` curado + `src/data/rutas.json` manual)
 - **Deploy**: Cloudflare Pages
 - **Puerto dev**: 4020
@@ -84,13 +84,15 @@ Ruta de estudio (curada manualmente, archivo separado)
 - Los channel IDs van en `scripts/canales.json` (versionado)
 - Solo `YOUTUBE_API_KEY` es secreto (va en `.env`)
 
-## Paleta de colores
+## Design System
 
-- `brand-400` (#D4A05A): Dorado (acento principal)
-- `brand-600` (#1E3A5F): Azul primario (tinta)
-- `brand-50` (#FAF7F2): Pergamino calido (fondo claro)
-- `brand-900` (#0A1628): Azul noche (fondo oscuro)
-- Misma convencion `brand-*` que lahoradelanostalgia.com
+Leer DESIGN.md antes de tomar cualquier decision visual o de UI.
+Tipografia, colores, spacing, layout y direccion estetica estan definidos ahi.
+No desviarse sin aprobacion explicita del usuario.
+
+- Dark-first, sin light mode
+- Paleta: negro (#0C0C0E), dorado (#E8B04A), crema calido (#F0EDE8)
+- Layout tipo streaming (carruseles horizontales, cards con hover)
 
 ## Notas
 

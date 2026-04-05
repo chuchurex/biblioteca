@@ -17,40 +17,41 @@ const badgeLabel = TIPO_LABELS[tipoBadge] ?? tipoBadge;
 
 <a
   href={href}
-  class="group block bg-white rounded-xl shadow-card overflow-hidden border border-brand-200/40 hover:border-brand-400/30 hover:shadow-card-hover transition-all duration-500"
+  class="group block rounded-lg overflow-hidden"
 >
-  {libro.thumbnail && (
-    <div class="aspect-video bg-brand-100 overflow-hidden relative">
+  <div class="aspect-video bg-brand-500 overflow-hidden relative">
+    {libro.thumbnail ? (
       <img
         src={libro.thumbnail}
         alt={libro.titulo}
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        class="w-full h-full object-cover group-hover:scale-[1.08] transition-transform duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)]"
         loading="lazy"
       />
-      <div class="absolute inset-0 bg-gradient-to-t from-brand-900/50 via-transparent to-transparent"></div>
-      <div class="absolute bottom-2.5 left-3 right-3 flex justify-between items-end">
-        {multiEdicion && (
-          <span class="bg-brand-400 text-brand-900 text-[10px] font-bold px-2.5 py-1 rounded tracking-wide">
-            {libro.ediciones.length} ediciones
-          </span>
-        )}
-        <span class:list={["bg-brand-900/70 text-white text-xs px-2 py-1 rounded backdrop-blur-sm", !multiEdicion && "ml-auto"]}>
-          {totalEps} eps
-        </span>
+    ) : (
+      <div class="w-full h-full bg-gradient-to-br from-brand-600 to-brand-500 flex items-center justify-center">
+        <span class="font-display text-xl text-brand-200/30">{libro.autor?.split(' ').pop()}</span>
       </div>
+    )}
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 bg-accent rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 scale-75 group-hover:scale-100 transition-all duration-300 z-10">
+      <svg class="w-4 h-4 fill-brand-700 ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
     </div>
-  )}
-  <div class="p-4">
-    <span class="text-[10px] font-semibold tracking-[0.12em] uppercase text-brand-400">{badgeLabel}</span>
-    <h3 class="font-display text-lg font-bold text-brand-800 group-hover:text-brand-600 transition-colors duration-300 mt-1 line-clamp-2 leading-snug">
+    <div class="absolute bottom-2 right-2 flex gap-1.5 z-10">
+      {multiEdicion && (
+        <span class="bg-accent text-brand-700 text-[10px] font-bold px-2 py-0.5 rounded">
+          {libro.ediciones.length} ediciones
+        </span>
+      )}
+      <span class="bg-black/70 backdrop-blur-sm text-brand-50 text-[11px] font-medium px-2 py-0.5 rounded">
+        {totalEps} eps
+      </span>
+    </div>
+  </div>
+  <div class="pt-3 pb-1">
+    <span class="text-[10px] font-semibold tracking-[0.12em] uppercase text-accent">{badgeLabel}</span>
+    <h3 class="font-body text-sm font-semibold text-brand-50 group-hover:text-accent transition-colors duration-300 mt-0.5 line-clamp-2 leading-snug">
       {libro.titulo}
     </h3>
-    <p class="text-sm text-brand-500 mt-1.5">{libro.autor}</p>
-    {!libro.thumbnail && (
-      <p class="text-xs text-brand-500/70 mt-1.5">
-        {totalEps} {totalEps === 1 ? 'episodio' : 'episodios'}
-        {multiEdicion && ` · ${libro.ediciones.length} ediciones`}
-      </p>
-    )}
+    <p class="text-xs text-brand-200 mt-1">{libro.autor}</p>
   </div>
 </a>

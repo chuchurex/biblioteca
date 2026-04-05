@@ -3,46 +3,48 @@ const currentPath = Astro.url.pathname;
 
 const navItems = [
   { label: 'Inicio', href: '/' },
-  { label: 'Libros', href: '/libros/' },
+  { label: 'Contenidos', href: '/libros/' },
   { label: 'Meditaciones', href: '/meditaciones/' },
   { label: 'Rutas', href: '/rutas/' },
 ];
 ---
 
-<header class="bg-brand-900 text-white relative z-50 border-b border-white/[0.06]">
-  <nav class="container mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-3 group">
-      <svg class="w-7 h-7 text-brand-400" viewBox="0 0 512 512" fill="currentColor"><path d="M256 20C200 20 164 60 164 110C164 158 206 192 230 212L112 212L112 268L230 268L224 268L210 480C210 496 230 500 256 500C282 500 302 496 302 480L288 268L282 268L400 268L400 212L282 212C306 192 348 158 348 110C348 60 312 20 256 20ZM256 72C292 72 308 94 308 116C308 142 280 166 260 182L252 182C232 166 204 142 204 116C204 94 220 72 256 72Z"/></svg>
-      <span class="text-xl font-display font-bold text-white group-hover:text-brand-400 transition-colors duration-300">Biblioteca</span>
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-400" id="site-nav">
+  <nav class="container mx-auto px-6 md:px-12 h-16 flex items-center justify-between">
+    <a href="/" class="font-display text-[26px] text-brand-50 hover:text-accent transition-colors duration-300 tracking-tight">
+      chuchu<span class="text-accent">rex</span>
     </a>
 
-    <button id="menu-toggle" class="md:hidden flex flex-col gap-[5px] p-1" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
-      <span class="block w-6 h-[2px] bg-white transition-transform duration-300" id="bar1"></span>
-      <span class="block w-6 h-[2px] bg-white transition-opacity duration-300" id="bar2"></span>
-      <span class="block w-6 h-[2px] bg-white transition-transform duration-300" id="bar3"></span>
+    <button id="menu-toggle" class="md:hidden flex flex-col gap-[5px] p-1" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="block w-6 h-[2px] bg-brand-50 transition-transform duration-300" id="bar1"></span>
+      <span class="block w-6 h-[2px] bg-brand-50 transition-opacity duration-300" id="bar2"></span>
+      <span class="block w-6 h-[2px] bg-brand-50 transition-transform duration-300" id="bar3"></span>
     </button>
 
-    <div class="hidden md:flex items-center gap-1">
+    <div class="hidden md:flex items-center gap-8">
       {navItems.map(item => (
         <a
           href={item.href}
           class:list={[
-            "px-3 py-2 rounded-lg text-sm transition-colors duration-300",
+            "text-sm font-medium transition-colors duration-300 relative",
             (item.href === '/' ? currentPath === '/' : currentPath.startsWith(item.href))
-              ? "text-brand-400"
-              : "text-white/70 hover:text-brand-400"
+              ? "text-brand-50"
+              : "text-brand-100 hover:text-brand-50"
           ]}
         >
           {item.label}
+          {(item.href === '/' ? currentPath === '/' : currentPath.startsWith(item.href)) && (
+            <span class="absolute -bottom-1 left-0 right-0 h-0.5 bg-accent rounded-full"></span>
+          )}
         </a>
       ))}
     </div>
   </nav>
 
-  <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 transition-[max-height] duration-300 bg-brand-900">
-    <div class="px-4 pb-4 flex flex-col">
+  <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 transition-[max-height] duration-300 bg-brand-700/95 backdrop-blur-xl">
+    <div class="px-6 pb-4 flex flex-col">
       {navItems.map(item => (
-        <a href={item.href} class="py-3 text-lg text-white/80 hover:text-brand-400 transition-colors duration-300 border-b border-white/[0.06]">
+        <a href={item.href} class="py-3 text-lg text-brand-100 hover:text-accent transition-colors duration-300 border-b border-white/[0.04]">
           {item.label}
         </a>
       ))}
@@ -50,7 +52,11 @@ const navItems = [
   </div>
 </header>
 
+<!-- Spacer para compensar el header fixed -->
+<div class="h-16"></div>
+
 <script>
+  const nav = document.getElementById('site-nav');
   const toggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('mobile-menu');
   const bar1 = document.getElementById('bar1');
@@ -58,10 +64,22 @@ const navItems = [
   const bar3 = document.getElementById('bar3');
   let open = false;
 
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      nav!.style.background = 'rgba(12,12,14,0.97)';
+      nav!.style.backdropFilter = 'blur(20px)';
+      nav!.style.webkitBackdropFilter = 'blur(20px)';
+    } else {
+      nav!.style.background = 'linear-gradient(180deg, rgba(12,12,14,0.95) 0%, rgba(12,12,14,0) 100%)';
+      nav!.style.backdropFilter = 'none';
+      nav!.style.webkitBackdropFilter = 'none';
+    }
+  });
+
   toggle?.addEventListener('click', () => {
     open = !open;
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    toggle.setAttribute('aria-label', open ? 'Cerrar menu' : 'Abrir menu');
     if (open) {
       menu!.style.maxHeight = menu!.scrollHeight + 'px';
       bar1!.style.transform = 'rotate(45deg) translate(5px, 5px)';

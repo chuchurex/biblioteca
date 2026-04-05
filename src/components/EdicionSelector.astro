@@ -23,8 +23,8 @@ const multiEdicion = ediciones.length > 1;
           class:list={[
             "px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-300",
             i === 0
-              ? "bg-brand-400 text-brand-900 shadow-[0_0_12px_rgba(212,160,90,0.25)]"
-              : "bg-brand-100 text-brand-600 hover:bg-brand-200"
+              ? "bg-accent text-brand-700 shadow-glow"
+              : "bg-brand-500 text-brand-100 hover:bg-brand-300"
           ]}
         >
           {ed.edicion.nombre} ({ed.episodios.length} eps)
@@ -61,12 +61,12 @@ const multiEdicion = ediciones.length > 1;
 
             tabs.forEach(t => {
               t.setAttribute('aria-selected', 'false');
-              t.classList.remove('bg-brand-400', 'text-brand-900', 'shadow-[0_0_12px_rgba(212,160,90,0.25)]');
-              t.classList.add('bg-brand-100', 'text-brand-600');
+              t.classList.remove('bg-accent', 'text-brand-700', 'shadow-glow');
+              t.classList.add('bg-brand-500', 'text-brand-100');
             });
             tab.setAttribute('aria-selected', 'true');
-            tab.classList.remove('bg-brand-100', 'text-brand-600');
-            tab.classList.add('bg-brand-400', 'text-brand-900', 'shadow-[0_0_12px_rgba(212,160,90,0.25)]');
+            tab.classList.remove('bg-brand-500', 'text-brand-100');
+            tab.classList.add('bg-accent', 'text-brand-700', 'shadow-glow');
 
             panels.forEach(p => {
               p.classList.toggle('hidden', p.getAttribute('data-panel') !== idx);

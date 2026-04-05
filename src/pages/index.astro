@@ -19,88 +19,120 @@ const rutas = getAllRutas();
 const librosRecientes = libros.slice(0, 6);
 ---
 
-<Layout title="Biblioteca — Libros, meditaciones y crecimiento personal">
-  <section class="relative overflow-hidden bg-brand-900 py-20 md:py-32">
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border border-brand-400/[0.07] rounded-full"></div>
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] border border-brand-400/[0.05] rounded-full"></div>
-
-    <div class="container mx-auto px-4 md:px-8 text-center relative z-10">
-      <div class="flex justify-center mb-6">
-        <div class="gold-rule h-px w-16"></div>
-      </div>
-      <h1 class="text-5xl md:text-7xl font-display font-bold text-white tracking-tight">Biblioteca</h1>
-      <p class="mt-5 text-lg md:text-xl text-brand-300 max-w-xl mx-auto leading-relaxed">
-        Libros, meditaciones y recursos para el crecimiento personal y la consciencia.
-      </p>
-      <div class="flex justify-center mt-8">
-        <div class="gold-rule h-px w-28"></div>
-      </div>
-      <p class="mt-5 text-sm text-brand-300/60 tracking-widest uppercase">
-        {libros.length} libros &nbsp;&middot;&nbsp; {meditaciones.length} meditaciones &nbsp;&middot;&nbsp; {totalEpisodios.toLocaleString('es-CL')} episodios
-      </p>
+<Layout title="chuchurex - Contenidos, meditaciones y crecimiento espiritual">
+  <!-- Hero -->
+  <section class="relative overflow-hidden py-24 md:py-36 -mt-16">
+    <div class="absolute inset-0">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_70%_30%,rgba(232,176,74,0.08)_0%,transparent_60%)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_20%_80%,rgba(90,142,196,0.05)_0%,transparent_50%)]"></div>
     </div>
-  </section>
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-700 via-transparent to-brand-700"></div>
 
-  <section class="py-14 md:py-16">
-    <div class="container mx-auto px-4 md:px-8">
-      <h2 class="text-3xl font-display font-bold text-brand-800 mb-8">Temas</h2>
-      <div class="grid gap-4 md:grid-cols-2">
-        {temas.map(tema => (
-          <TemaCard tema={tema} />
-        ))}
-      </div>
-    </div>
-  </section>
-
-  {meditaciones.length > 0 && (
-    <section class="py-14 md:py-16 bg-brand-100/50">
-      <div class="container mx-auto px-4 md:px-8">
-        <div class="flex items-baseline justify-between mb-8">
-          <h2 class="text-3xl font-display font-bold text-brand-800">Meditaciones</h2>
-          <a href="/meditaciones/" class="text-sm text-brand-500 hover:text-brand-700 transition">
-            Ver todas &rarr;
+    <div class="container mx-auto px-6 md:px-12 relative z-10 pt-16">
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2 bg-accent/[0.08] border border-accent/20 text-accent text-[11px] font-semibold tracking-[0.1em] uppercase px-3.5 py-1.5 rounded-full mb-6">
+          <span class="w-1.5 h-1.5 bg-accent rounded-full animate-pulse"></span>
+          {rutas.length} rutas de estudio
+        </div>
+        <h1 class="text-5xl md:text-7xl font-display font-bold text-brand-50 tracking-tight leading-[1.05]">
+          Contenidos y meditaciones para <em class="italic text-accent">despertar</em>
+        </h1>
+        <p class="mt-5 text-lg text-brand-100 max-w-lg leading-relaxed">
+          {libros.length} contenidos, {meditaciones.length} meditaciones y {totalEpisodios.toLocaleString('es-CL')} episodios curados sobre consciencia, chamanismo, astrologia y mas.
+        </p>
+        <div class="flex gap-3 mt-8">
+          <a href="/rutas/" class="inline-flex items-center gap-2 bg-accent text-brand-700 text-sm font-semibold px-7 py-3 rounded-lg hover:bg-[#F0BC5A] hover:shadow-glow-strong hover:-translate-y-px transition-all duration-300">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Explorar rutas
+          </a>
+          <a href="/libros/" class="inline-flex items-center gap-2 bg-white/[0.08] text-brand-50 text-sm font-semibold px-7 py-3 rounded-lg border border-white/10 hover:bg-white/[0.14] hover:border-white/20 transition-all duration-300">
+            Ver contenidos
           </a>
         </div>
-        <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-          {meditaciones.map(med => (
-            <MeditacionCard meditacion={med} href={`/meditaciones/${med.slug}/`} />
-          ))}
-        </div>
       </div>
-    </section>
-  )}
+    </div>
+  </section>
 
+  <!-- Stats -->
+  <div class="flex justify-center gap-12 md:gap-16 py-10 border-t border-b border-white/[0.04]">
+    <div class="text-center">
+      <div class="font-display text-4xl text-brand-50">{libros.length}</div>
+      <div class="text-xs text-brand-200 uppercase tracking-[0.08em] mt-1">Contenidos</div>
+    </div>
+    <div class="text-center">
+      <div class="font-display text-4xl text-brand-50">{rutas.length}</div>
+      <div class="text-xs text-brand-200 uppercase tracking-[0.08em] mt-1">Rutas</div>
+    </div>
+    <div class="text-center">
+      <div class="font-display text-4xl text-brand-50">{totalEpisodios.toLocaleString('es-CL')}</div>
+      <div class="text-xs text-brand-200 uppercase tracking-[0.08em] mt-1">Episodios</div>
+    </div>
+    <div class="text-center">
+      <div class="font-display text-4xl text-brand-50">{totalTemas}</div>
+      <div class="text-xs text-brand-200 uppercase tracking-[0.08em] mt-1">Temas</div>
+    </div>
+  </div>
+
+  <!-- Rutas de estudio -->
   {rutas.length > 0 && (
-    <section class="py-14 md:py-16">
-      <div class="container mx-auto px-4 md:px-8">
-        <div class="flex items-baseline justify-between mb-8">
-          <h2 class="text-3xl font-display font-bold text-brand-800">Rutas de estudio</h2>
-          <a href="/rutas/" class="text-sm text-brand-500 hover:text-brand-700 transition">
-            Ver todas &rarr;
-          </a>
-        </div>
-        <div class="grid gap-6 md:grid-cols-2">
-          {rutas.map(ruta => (
+    <section class="py-12 md:py-16 px-6 md:px-12">
+      <div class="flex items-baseline justify-between mb-6">
+        <h2 class="text-[28px] font-display font-bold text-brand-50">Rutas de estudio</h2>
+        <a href="/rutas/" class="text-[13px] font-medium text-brand-200 hover:text-accent transition-colors">Ver todas &rarr;</a>
+      </div>
+      <div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide" style="scrollbar-width: none;">
+        {rutas.map(ruta => (
+          <div class="flex-shrink-0 w-[380px]">
             <RutaCard ruta={ruta} href={`/rutas/${ruta.slug}/`} />
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   )}
 
-  <section class="py-14 md:py-16">
-    <div class="container mx-auto px-4 md:px-8">
-      <div class="flex items-baseline justify-between mb-8">
-        <h2 class="text-3xl font-display font-bold text-brand-800">Libros</h2>
-        <a href="/libros/" class="text-sm text-brand-500 hover:text-brand-700 transition">
-          Ver todos &rarr;
-        </a>
-      </div>
-      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-        {librosRecientes.map(libro => (
+  <!-- Contenidos -->
+  <section class="py-12 md:py-16 px-6 md:px-12">
+    <div class="flex items-baseline justify-between mb-6">
+      <h2 class="text-[28px] font-display font-bold text-brand-50">Contenidos</h2>
+      <a href="/libros/" class="text-[13px] font-medium text-brand-200 hover:text-accent transition-colors">Ver todos &rarr;</a>
+    </div>
+    <div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide" style="scrollbar-width: none;">
+      {librosRecientes.map(libro => (
+        <div class="flex-shrink-0 w-60">
           <LibroCard libro={libro} href={`/libros/${libro.slug}/`} />
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   </section>
+
+  <!-- Temas -->
+  <section class="py-12 md:py-16 px-6 md:px-12">
+    <h2 class="text-[28px] font-display font-bold text-brand-50 mb-6">Explora por tema</h2>
+    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      {temas.map(tema => (
+        <TemaCard tema={tema} />
+      ))}
+    </div>
+  </section>
+
+  <!-- Meditaciones -->
+  {meditaciones.length > 0 && (
+    <section class="py-12 md:py-16 px-6 md:px-12">
+      <div class="flex items-baseline justify-between mb-6">
+        <h2 class="text-[28px] font-display font-bold text-brand-50">Meditaciones</h2>
+        <a href="/meditaciones/" class="text-[13px] font-medium text-brand-200 hover:text-accent transition-colors">Ver todas &rarr;</a>
+      </div>
+      <div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide" style="scrollbar-width: none;">
+        {meditaciones.map(med => (
+          <div class="flex-shrink-0 w-72">
+            <MeditacionCard meditacion={med} href={`/meditaciones/${med.slug}/`} />
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
 </Layout>
+
+<style>
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+</style>
