@@ -13,18 +13,6 @@ const { ruta: rutaSlug } = Astro.params;
 const ruta = getRutaBySlug(rutaSlug) as Ruta;
 const temas = ruta.temas.map(s => getTemaBySlug(s)).filter(Boolean);
 
-const nivelLabels: Record<string, string> = {
-  principiante: 'Principiante',
-  intermedio: 'Intermedio',
-  avanzado: 'Avanzado',
-};
-
-const nivelColors: Record<string, string> = {
-  principiante: 'bg-green/15 text-green',
-  intermedio: 'bg-accent/15 text-accent',
-  avanzado: 'bg-warm/15 text-warm',
-};
-
 const pasos = ruta.pasos.map(paso => {
   if (paso.tipo === 'libro') {
     const libro = getLibroBySlug(paso.ref)!;
@@ -66,9 +54,6 @@ const pasos = ruta.pasos.map(paso => {
         <span class="text-brand-50">{ruta.titulo}</span>
       </nav>
       <div class="flex flex-wrap items-center gap-3 mb-3">
-        <span class:list={["text-[10px] font-semibold tracking-[0.12em] uppercase px-2.5 py-1 rounded", nivelColors[ruta.nivel] ?? 'bg-accent/15 text-accent']}>
-          {nivelLabels[ruta.nivel] ?? ruta.nivel}
-        </span>
         {ruta.duracion_estimada && (
           <span class="text-[11px] text-brand-200">{ruta.duracion_estimada}</span>
         )}
