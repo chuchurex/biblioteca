@@ -37,8 +37,8 @@
   },
   {
     "slug": "fundamentos-antroposofia",
-    "titulo": "Las obras básicas de Steiner",
-    "descripcion": "Las cuatro obras escritas básicas de Rudolf Steiner, en un orden que ayuda: la base filosófica primero, la cosmología completa al final.",
+    "titulo": "Las obras fundamentales de Steiner",
+    "descripcion": "Las cuatro obras escritas fundamentales de Rudolf Steiner, en un orden que ayuda: la base filosófica primero, la cosmología completa al final.",
     "temas": ["antroposofia"],
     "pasos": [
       { "orden": 1, "tipo": "libro", "ref": "filosofia-libertad-crisol", "nota": "La base epistemológica. Cómo piensa Steiner antes de hablar de lo espiritual." },
