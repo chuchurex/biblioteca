@@ -7,8 +7,8 @@ const rutas = getAllRutas();
 ---
 
 <Layout
-  title="Rutas de estudio — chuchurex"
-  description="Caminos de aprendizaje curados: secuencias de libros y meditaciones organizadas por tema y nivel."
+  title="Rutas — chuchurex"
+  description="Recorridos sugeridos por la biblioteca: un orden para escuchar los libros y meditaciones de cada tema."
 >
   <section class="py-12 relative overflow-hidden">
     <div class="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 border border-white/[0.03] rounded-full translate-x-1/2"></div>
@@ -16,11 +16,11 @@ const rutas = getAllRutas();
       <nav class="text-sm text-brand-200 mb-5">
         <a href="/" class="hover:text-accent transition-colors duration-300">Inicio</a>
         <span class="mx-2 text-brand-200/30">/</span>
-        <span class="text-brand-50">Rutas de estudio</span>
+        <span class="text-brand-50">Rutas</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-display font-bold text-brand-50">Rutas de estudio</h1>
+      <h1 class="text-4xl md:text-5xl font-display font-bold text-brand-50">Rutas</h1>
       <p class="mt-3 text-brand-100 max-w-3xl leading-relaxed">
-        Caminos de aprendizaje curados: secuencias de libros y meditaciones organizadas por tema y nivel para guiar tu exploración.
+        Recorridos sugeridos por la biblioteca: un orden para escuchar los libros y meditaciones de cada tema, y por qué ese orden.
       </p>
       <div class="flex items-center gap-4 mt-4 text-[11px] text-brand-200 tracking-[0.1em] uppercase">
         <span>{rutas.length} {rutas.length === 1 ? 'ruta' : 'rutas'}</span>

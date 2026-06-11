@@ -84,9 +84,7 @@ export interface Ruta {
   slug: string;
   titulo: string;
   descripcion: string;
-  nivel: 'principiante' | 'intermedio' | 'avanzado';
   temas: string[];
-  duracion_estimada?: string;
   pasos: PasoRuta[];
 }
 

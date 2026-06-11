@@ -40,7 +40,7 @@ const pasos = ruta.pasos.map(paso => {
 ---
 
 <Layout
-  title={`${ruta.titulo} — Rutas de estudio — chuchurex`}
+  title={`${ruta.titulo} — Rutas — chuchurex`}
   description={ruta.descripcion}
 >
   <section class="py-12 relative overflow-hidden">
@@ -54,9 +54,6 @@ const pasos = ruta.pasos.map(paso => {
         <span class="text-brand-50">{ruta.titulo}</span>
       </nav>
       <div class="flex flex-wrap items-center gap-3 mb-3">
-        {ruta.duracion_estimada && (
-          <span class="text-[11px] text-brand-200">{ruta.duracion_estimada}</span>
-        )}
         {temas.map(t => (
           <a href={`/temas/${t!.slug}/`} class="text-[11px] text-brand-200 hover:text-accent transition-colors duration-300">
             {t!.nombre}

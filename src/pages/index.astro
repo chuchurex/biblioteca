@@ -32,13 +32,13 @@ const librosRecientes = libros.slice(0, 6);
       <div class="max-w-2xl">
         <div class="inline-flex items-center gap-2 bg-accent/[0.08] border border-accent/20 text-accent text-[11px] font-semibold tracking-[0.1em] uppercase px-3.5 py-1.5 rounded-full mb-6">
           <span class="w-1.5 h-1.5 bg-accent rounded-full animate-pulse"></span>
-          {rutas.length} rutas de estudio
+          {rutas.length} rutas para recorrer
         </div>
         <h1 class="text-5xl md:text-7xl font-display font-bold text-brand-50 tracking-tight leading-[1.05]">
-          Contenidos y meditaciones para <em class="italic text-accent">despertar</em>
+          Una biblioteca espiritual para <em class="italic text-accent">recorrer</em>
         </h1>
         <p class="mt-5 text-lg text-brand-100 max-w-lg leading-relaxed">
-          {libros.length} contenidos, {meditaciones.length} meditaciones y {totalEpisodios.toLocaleString('es-CL')} episodios curados sobre consciencia, chamanismo, astrologia y mas.
+          {libros.length} contenidos, {meditaciones.length} meditaciones y {totalEpisodios.toLocaleString('es-CL')} episodios curados sobre consciencia, chamanismo, astrología y más.
         </p>
         <div class="flex gap-3 mt-8">
           <a href="/rutas/" class="inline-flex items-center gap-2 bg-accent text-brand-700 text-sm font-semibold px-7 py-3 rounded-lg hover:bg-[#F0BC5A] hover:shadow-glow-strong hover:-translate-y-px transition-all duration-300">
@@ -73,11 +73,11 @@ const librosRecientes = libros.slice(0, 6);
     </div>
   </div>
 
-  <!-- Rutas de estudio -->
+  <!-- Rutas -->
   {rutas.length > 0 && (
     <section class="py-12 md:py-16 px-6 md:px-12">
       <div class="flex items-baseline justify-between mb-6">
-        <h2 class="text-[28px] font-display font-bold text-brand-50">Rutas de estudio</h2>
+        <h2 class="text-[28px] font-display font-bold text-brand-50">Rutas</h2>
         <a href="/rutas/" class="text-[13px] font-medium text-brand-200 hover:text-accent transition-colors">Ver todas &rarr;</a>
       </div>
       <div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide" style="scrollbar-width: none;">
