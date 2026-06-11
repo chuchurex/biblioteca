@@ -58,7 +58,7 @@ import Layout from '../../layouts/Layout.astro';
               </button>
             </form>
           </div>
-          <p id="chat-status" class="text-xs text-brand-200/60 h-4"></p>
+          <p id="chat-status" class="text-sm text-brand-100 h-5"></p>
 
           <p class="text-brand-50">Mi correo: chuchurex en gmail.</p>
         </div>
@@ -130,6 +130,10 @@ import Layout from '../../layouts/Layout.astro';
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ session_id: session, text }),
       });
+      if (res.status === 429) {
+        statusEl.textContent = 'Muchos mensajes seguidos. Espera un momento y vuelve a intentar.';
+        return;
+      }
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       if (data.id > lastId) lastId = data.id;
