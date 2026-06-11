@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   output: 'static',
-  site: 'https://biblioteca.chuchurex.cl',
+  site: 'https://chuchurex.cl',
   integrations: [
     tailwind({ applyBaseStyles: false }),
     sitemap(),
