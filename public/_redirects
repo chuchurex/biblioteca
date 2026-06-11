@@ -1,3 +1,7 @@
+# Página Acerca dada de baja (jun 2026)
+/about/* / 301
+/about / 301
+
 # =============================================
 # Meditaciones específicas (antes del catch-all de temas)
 # =============================================
