@@ -12,7 +12,7 @@ interface Props {
   jsonLd?: Record<string, any> | Record<string, any>[];
 }
 
-const { title, description = 'chuchurex - Contenidos, meditaciones y rutas de crecimiento espiritual', image, ogType = 'website', canonicalPath, jsonLd } = Astro.props;
+const { title, description = 'Una biblioteca espiritual para recorrer: audiolibros, meditaciones y rutas curadas desde YouTube.', image, ogType = 'website', canonicalPath, jsonLd } = Astro.props;
 const canonicalURL = new URL(canonicalPath || Astro.url.pathname, Astro.site);
 const ogImage = image || undefined;
 
@@ -21,7 +21,7 @@ const orgSchema = {
   '@type': 'WebSite',
   name: 'chuchurex',
   url: Astro.site?.href || 'https://chuchurex.cl',
-  description: 'Contenidos, meditaciones y rutas de crecimiento espiritual.',
+  description: 'Una biblioteca espiritual para recorrer: audiolibros, meditaciones y rutas curadas desde YouTube.',
 };
 ---
 
