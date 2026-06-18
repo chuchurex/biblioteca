@@ -84,6 +84,8 @@ export interface Ruta {
   slug: string;
   titulo: string;
   descripcion: string;
+  pregunta?: string;        // pregunta AEO que responde la ruta (H2 cita-able)
+  respuesta?: string;       // respuesta standalone para motores de respuesta
   temas: string[];
   pasos: PasoRuta[];
 }

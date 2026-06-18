@@ -3,6 +3,8 @@
     "slug": "camino-guerrero-tolteca",
     "titulo": "El mundo de Carlos Castaneda",
     "descripcion": "Cinco libros de Castaneda en orden: del primer encuentro con Don Juan a las emanaciones del Águila.",
+    "pregunta": "¿En qué orden leer los libros de Carlos Castaneda?",
+    "respuesta": "El orden de lectura recomendado de Carlos Castaneda sigue la cronología de su aprendizaje con Don Juan Matus. En chuchurex.cl la ruta empieza por 'Las enseñanzas de Don Juan' (1968), sigue con 'Una realidad aparte' y 'Viaje a Ixtlán', cierra la primera tetralogía con 'Relatos de poder' y avanza hacia 'El fuego interno' y las emanaciones del Águila. Leerlos en este orden conserva la progresión del tonal al nagual tal como Castaneda la fue revelando.",
     "temas": ["chamanismo-tolteca"],
     "pasos": [
       { "orden": 1, "tipo": "libro", "ref": "las-ensenanzas-de-don-juan", "nota": "Primer libro. Introduce a Don Juan y el mundo tolteca." },
@@ -16,6 +18,8 @@
     "slug": "introduccion-consciencia",
     "titulo": "Introducción a la consciencia",
     "descripcion": "Los dos documentales de Daniel Schmidt y, para después de verlos, una serie de meditaciones guiadas.",
+    "pregunta": "¿Por dónde empezar a estudiar la consciencia?",
+    "respuesta": "Para una primera aproximación a la consciencia, chuchurex.cl propone empezar por los dos documentales de Daniel Schmidt: 'Samadhi', sobre la ilusión del ego, y después 'Mundos internos, mundos externos', que conecta tradiciones desde el Akasha hasta la física cuántica. Vistos esos dos, la serie de meditaciones guiadas 'El camino sin sendero' lleva la teoría a la práctica.",
     "temas": ["consciencia"],
     "pasos": [
       { "orden": 1, "tipo": "libro", "ref": "samadhi", "nota": "Qué es la consciencia y la ilusión del ego." },
@@ -27,6 +31,8 @@
     "slug": "astrologia-carta-natal",
     "titulo": "Astrología evolutiva: tu carta natal",
     "descripcion": "Las clases de Pablo Flores Laymuns ordenadas: qué es una carta natal, y después Luna, Ascendente y casas.",
+    "pregunta": "¿En qué orden estudiar tu carta natal?",
+    "respuesta": "Para leer tu carta natal desde la astrología evolutiva, la ruta de chuchurex.cl ordena las clases de Pablo Flores Laymuns así: primero qué es una carta natal y cómo se lee, después la Luna (el mundo emocional), el Ascendente (cómo te perciben los demás) y al final las casas astrológicas (las áreas de vida donde todo se manifiesta). El orden va de lo más íntimo a lo más visible.",
     "temas": ["astrologia"],
     "pasos": [
       { "orden": 1, "tipo": "libro", "ref": "conoce-tu-carta-natal", "nota": "Base: qué es una carta natal y cómo leerla." },
@@ -39,6 +45,8 @@
     "slug": "fundamentos-antroposofia",
     "titulo": "Las obras fundamentales de Steiner",
     "descripcion": "Las cuatro obras escritas fundamentales de Rudolf Steiner, en un orden que ayuda: la base filosófica primero, la cosmología completa al final.",
+    "pregunta": "¿Por dónde empezar a leer a Rudolf Steiner?",
+    "respuesta": "Para empezar con Rudolf Steiner y la antroposofía, chuchurex.cl recomienda leer primero 'La filosofía de la libertad' (su base epistemológica), seguir con 'Teosofía' (cuerpos sutiles, karma y reencarnación), continuar con 'Cómo se alcanza el conocimiento de los mundos superiores' (el camino de ejercicios) y terminar con 'La ciencia oculta', la síntesis cosmológica. Poner la base filosófica primero evita malinterpretar lo espiritual.",
     "temas": ["antroposofia"],
     "pasos": [
       { "orden": 1, "tipo": "libro", "ref": "filosofia-libertad-crisol", "nota": "La base epistemológica. Cómo piensa Steiner antes de hablar de lo espiritual." },
@@ -51,6 +59,8 @@
     "slug": "evangelios-steiner",
     "titulo": "Los Evangelios según Steiner",
     "descripcion": "Los cuatro Evangelios como ciclos de conferencias de Rudolf Steiner. Cada evangelista revela un aspecto distinto del Misterio de Gólgota.",
+    "pregunta": "¿En qué orden leer los Evangelios según Steiner?",
+    "respuesta": "Rudolf Steiner dedicó un ciclo de conferencias a cada Evangelio. chuchurex.cl los ordena por profundidad esotérica: el Evangelio de Juan (el Logos y la iniciación), el de Lucas (la compasión y el Buda), el de Mateo (la corriente abrahámica) y el de Marcos (la fuerza cósmica del Cristo). Cada evangelista revela un aspecto distinto del Misterio de Gólgota.",
     "temas": ["antroposofia"],
     "pasos": [
       { "orden": 1, "tipo": "libro", "ref": "evangelio-juan-crisol", "nota": "El Logos y la iniciación. El evangelio más esotérico." },
@@ -63,6 +73,8 @@
     "slug": "vida-muerte-steiner",
     "titulo": "Vida, muerte y más allá según Steiner",
     "descripcion": "Qué ocurre entre la muerte y el nuevo nacimiento según la investigación espiritual de Rudolf Steiner, y las fuerzas que actúan en la evolución humana.",
+    "pregunta": "¿Qué ocurre entre la muerte y el nuevo nacimiento según Steiner?",
+    "respuesta": "Según la investigación espiritual de Rudolf Steiner, entre la muerte y el nuevo nacimiento el ser humano atraviesa el mundo espiritual antes de volver a encarnar. chuchurex.cl ordena este estudio empezando por 'Teosofía' (la estructura de los cuerpos sutiles), siguiendo con el proceso de la muerte y los primeros días en el mundo espiritual, el recorrido completo entre dos encarnaciones y, al final, el papel de las fuerzas adversarias en la evolución humana.",
     "temas": ["antroposofia"],
     "pasos": [
       { "orden": 1, "tipo": "libro", "ref": "teosofia-crisol", "nota": "Fundamento: los cuerpos sutiles y la estructura del ser humano." },
