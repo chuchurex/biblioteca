@@ -4,6 +4,7 @@ import LibroCard from '../../../components/LibroCard.astro';
 import MeditacionCard from '../../../components/MeditacionCard.astro';
 import { getAllTemas, getTemaBySlug, getContenidoPorAutor, contarEpisodiosPorTema, contarEpisodiosLibro, contarEpisodiosMeditacion, getLibrosByTema, getMeditacionesByTema } from '../../../lib/datos';
 import type { Tema } from '../../../lib/types';
+import { buildTema, buildBreadcrumb } from '../../../lib/schema';
 
 export function getStaticPaths() {
   return getAllTemas()
@@ -20,11 +21,20 @@ const libros = getLibrosByTema(temaSlug!);
 const meditaciones = getMeditacionesByTema(temaSlug!);
 const totalEpisodios = contarEpisodiosPorTema(temaSlug!);
 const totalTitulos = libros.length + meditaciones.length;
+
+const jsonLd = [
+  buildBreadcrumb([
+    { name: 'Inicio', path: '/' },
+    { name: tema.nombre, path: `/temas/${temaSlug}/` },
+  ]),
+  buildTema(tema, totalTitulos),
+];
 ---
 
 <Layout
   title={`${tema.nombre} — chuchurex`}
   description={tema.descripcion}
+  jsonLd={jsonLd}
 >
   <section class="py-12 relative overflow-hidden">
     <div class="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 border border-white/[0.03] rounded-full translate-x-1/2"></div>

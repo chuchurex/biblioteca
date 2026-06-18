@@ -3,6 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import EdicionSelector from '../../../components/EdicionSelector.astro';
 import { getAllLibros, getLibroBySlug, getEdicionesDeLLibro, contarEpisodiosLibro } from '../../../lib/datos';
 import { TIPO_LABELS } from '../../../lib/utils';
+import { buildLibro, buildBreadcrumb } from '../../../lib/schema';
 
 export function getStaticPaths() {
   return getAllLibros().map(libro => ({
@@ -16,11 +17,21 @@ const ediciones = getEdicionesDeLLibro(libro);
 const totalEps = contarEpisodiosLibro(libro);
 const multiEdicion = ediciones.length > 1;
 const tipoBadge = TIPO_LABELS[libro.ediciones[0]?.tipo] ?? libro.ediciones[0]?.tipo;
+
+const jsonLd = [
+  buildBreadcrumb([
+    { name: 'Inicio', path: '/' },
+    { name: 'Contenidos', path: '/libros/' },
+    { name: libro.titulo, path: `/libros/${libroSlug}/` },
+  ]),
+  buildLibro(libro, totalEps),
+];
 ---
 
 <Layout
   title={`${libro.titulo} — chuchurex`}
   description={libro.descripcion || `${libro.titulo} — ${libro.autor}`}
+  jsonLd={jsonLd}
 >
   <section class="py-10 relative overflow-hidden">
     <div class="absolute top-1/2 right-0 -translate-y-1/2 w-48 h-48 border border-white/[0.03] rounded-full translate-x-1/2"></div>

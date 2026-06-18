@@ -15,14 +15,6 @@ interface Props {
 const { title, description = 'Una biblioteca espiritual para recorrer: audiolibros, meditaciones y rutas curadas desde YouTube.', image, ogType = 'website', canonicalPath, jsonLd } = Astro.props;
 const canonicalURL = new URL(canonicalPath || Astro.url.pathname, Astro.site);
 const ogImage = image || undefined;
-
-const orgSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: 'chuchurex',
-  url: Astro.site?.href || 'https://chuchurex.cl',
-  description: 'Una biblioteca espiritual para recorrer: audiolibros, meditaciones y rutas curadas desde YouTube.',
-};
 ---
 
 <!DOCTYPE html>
@@ -61,8 +53,7 @@ const orgSchema = {
   <link rel="preconnect" href="https://www.youtube.com" />
   <link rel="preconnect" href="https://i.ytimg.com" />
   <title>{title}</title>
-  <!-- JSON-LD -->
-  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+  <!-- JSON-LD (por página; el WebSite va solo en el home) -->
   {jsonLd && (
     Array.isArray(jsonLd)
       ? jsonLd.map(schema => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)

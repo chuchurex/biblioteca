@@ -1,10 +1,24 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { buildPerson, buildBreadcrumb } from '../../lib/schema';
+
+const persona = buildPerson({
+  jobTitle: 'Desarrollador front end',
+  sameAs: [
+    'https://github.com/chuchurex',
+    'https://www.instagram.com/chuchurex/',
+  ],
+});
+const breadcrumb = buildBreadcrumb([
+  { name: 'Inicio', path: '/' },
+  { name: 'Acerca', path: '/about/' },
+]);
 ---
 
 <Layout
   title="Acerca — chuchurex"
   description="Quién está detrás de esta biblioteca y cómo conversar directamente conmigo."
+  jsonLd={[breadcrumb, persona]}
 >
   <section class="py-12 relative overflow-hidden">
     <div class="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 border border-white/[0.03] rounded-full translate-x-1/2"></div>

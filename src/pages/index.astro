@@ -5,6 +5,7 @@ import LibroCard from '../components/LibroCard.astro';
 import MeditacionCard from '../components/MeditacionCard.astro';
 import RutaCard from '../components/RutaCard.astro';
 import { getAllTemas, getAllLibros, getAllMeditaciones, getAllRutas, getLibrosByTema, getMeditacionesByTema, contarEpisodiosPorTema, contarEpisodiosLibro, contarEpisodiosMeditacion } from '../lib/datos';
+import { buildWebSite } from '../lib/schema';
 
 const temas = getAllTemas().filter(t => {
   return getLibrosByTema(t.slug).length > 0 || getMeditacionesByTema(t.slug).length > 0;
@@ -19,7 +20,7 @@ const rutas = getAllRutas();
 const librosRecientes = libros.slice(0, 6);
 ---
 
-<Layout title="chuchurex - Una biblioteca espiritual para recorrer">
+<Layout title="chuchurex - Una biblioteca espiritual para recorrer" jsonLd={buildWebSite()}>
   <!-- Hero -->
   <section class="relative overflow-hidden py-24 md:py-36 -mt-16">
     <div class="absolute inset-0">

@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import { getAllRutas, getRutaBySlug, getLibroBySlug, getMeditacionBySlug, getTemaBySlug, contarEpisodiosLibro, contarEpisodiosMeditacion } from '../../../lib/datos';
 import type { Ruta } from '../../../lib/types';
+import { buildRuta, buildBreadcrumb } from '../../../lib/schema';
 
 export function getStaticPaths() {
   return getAllRutas().map(ruta => ({
@@ -37,11 +38,21 @@ const pasos = ruta.pasos.map(paso => {
     badge: 'Meditación',
   };
 });
+
+const jsonLd = [
+  buildBreadcrumb([
+    { name: 'Inicio', path: '/' },
+    { name: 'Rutas', path: '/rutas/' },
+    { name: ruta.titulo, path: `/rutas/${rutaSlug}/` },
+  ]),
+  buildRuta(ruta, pasos),
+];
 ---
 
 <Layout
   title={`${ruta.titulo} — Rutas — chuchurex`}
   description={ruta.descripcion}
+  jsonLd={jsonLd}
 >
   <section class="py-12 relative overflow-hidden">
     <div class="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 border border-white/[0.03] rounded-full translate-x-1/2"></div>
