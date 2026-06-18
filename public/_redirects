@@ -1,4 +1,12 @@
 # =============================================
+# Legacy del sitio anterior (portafolio) que vivía en el dominio
+# Solo /about.html tiene equivalente real (la nueva /about/).
+# El resto (/icei/, /flor/, /1-2-3-sali/, /privacidad) es contenido
+# inexistente en la biblioteca: se deja en 404 a propósito.
+# =============================================
+/about.html /about/ 301
+
+# =============================================
 # Meditaciones específicas (antes del catch-all de temas)
 # =============================================
 /consciencia/sudja-meditacion-diaria-2026/* /meditaciones/sudja-meditacion-diaria-2026/:splat 301
