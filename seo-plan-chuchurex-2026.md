@@ -78,13 +78,13 @@ Nota: en nivel producto los competidores SERP son YouTube, Spotify e Ivoox, no s
 
 | # | Acción | Ejecutor | Estado |
 |---:|---|---|---|
-| 2.1 | Schema JSON-LD: WebSite + SearchAction (home), Organization o Person como publisher, BreadcrumbList global | Claude Code | Pendiente |
-| 2.2 | Schema por tipo de página: /libros/ → Audiobook o CreativeWork (con author real), /rutas/ → ItemList con itemListOrder, /temas/ → CollectionPage. NO usar HowTo ni FAQPage (deprecados/restringidos) | Claude Code | Pendiente |
-| 2.3 | Validar TODO schema en validator.schema.org antes de deploy. Schema con errores es peor que sin schema | Claude Code + Carlos | Pendiente |
-| 2.4 | Meta descriptions únicas por página (la del home hoy repite el title). Patrón por tipo de página, con keyword al inicio | Claude Code | Pendiente |
-| 2.5 | Person schema en /about/: Carlos Martínez, jobTitle, sameAs → GitHub (chuchurex), LinkedIn, bombuslab.cl si aplica | Claude Code | Pendiente |
-| 2.6 | Core Web Vitals: medir LCP, INP, CLS (PageSpeed Insights). INP < 200ms, LCP < 2.5s | Claude Code | Pendiente |
-| 2.7 | Canonicals autorreferentes en todas las páginas, verificar paginaciones/filtros | Claude Code | Pendiente |
+| 2.1 | Schema JSON-LD: WebSite + publisher Person, BreadcrumbList global | Claude Code | HECHO (2026-06-18) — `src/lib/schema.ts`. WebSite movido a solo el home, Person como publisher por @id. SearchAction omitido a propósito (no hay buscador aún y Google retiró el sitelinks searchbox) |
+| 2.2 | Schema por tipo de página: /libros/ y /meditaciones/ → CreativeWork (author real), /rutas/ → ItemList con itemListOrder, /temas/ → CollectionPage. NO usar HowTo ni FAQPage | Claude Code | HECHO (2026-06-18) — los 5 tipos + episodios (VideoObject) |
+| 2.3 | Validar TODO schema en validator.schema.org antes de deploy | Claude Code + Carlos | HECHO — 0 errores / 0 warnings en los 5 tipos |
+| 2.4 | Meta descriptions únicas por página | Claude Code | HECHO — detalle (libro/ruta/tema/medit/about) e índices pasan description propia; el default del Layout solo cubre páginas sin una específica |
+| 2.5 | Person schema en /about/: Carlos Martínez, jobTitle, sameAs | Claude Code | HECHO — jobTitle "Desarrollador front end", sameAs GitHub + Instagram |
+| 2.6 | Core Web Vitals: medir LCP, INP, CLS | Claude Code | PARCIAL — PSI bloqueado (rate limit anónimo / no reusar key YouTube). Auditoría de recursos: home 6.5KB gzip, GA4 async, imgs lazy, sin scripts bloqueantes. Único render-blocking externo: Google Fonts (mitigado con preconnect + display=swap). Optimización opcional pendiente: self-hostear fuentes. Falta medición Lighthouse formal |
+| 2.7 | Canonicals autorreferentes, verificar paginaciones/filtros | Claude Code | HECHO — canonical autorreferente en el Layout; no hay paginación ni filtros en los índices |
 
 ## Fase 3 — AEO on-page en rutas y temas (semanas 4-6)
 
@@ -92,11 +92,11 @@ Las rutas son el activo AEO principal: responden exactamente las preguntas que l
 
 | # | Acción | Ejecutor | Estado |
 |---:|---|---|---|
-| 3.1 | Reescribir intro de cada ruta con entidades + tripletes: sujeto explícito, verbo activo, dato medible. Ej: "chuchurex.cl ordena los 5 primeros libros de Carlos Castaneda (1968-1984) en una ruta de lectura progresiva" | Carlos + Claude Code | Pendiente |
-| 3.2 | Chunking: secciones de 100-200 palabras, cada H2 en formato pregunta ("¿En qué orden leer a Castaneda?"), cada sección responde standalone y menciona chuchurex.cl | Carlos + Claude Code | Pendiente |
-| 3.3 | Páginas /temas/: párrafo inicial que defina la entidad en formato cita-able ("La antroposofía es...") antes del listado de contenidos | Carlos + Claude Code | Pendiente |
-| 3.4 | Internal linking piramidal: temas → rutas → libros, anchors descriptivos variados | Claude Code | Pendiente |
-| 3.5 | Evaluar llms.txt en raíz del sitio | Claude Code | Pendiente |
+| 3.1 | Reescribir intro de cada ruta con entidades + tripletes | Carlos + Claude Code | HECHO (2026-06-18) — campo `respuesta` por ruta en rutas.json: sujeto chuchurex.cl, orden explícito, entidades nombradas. Revisar voz si hace falta |
+| 3.2 | Chunking: cada H2 en formato pregunta, respuesta standalone que menciona chuchurex.cl | Carlos + Claude Code | HECHO (2026-06-18) — campo `pregunta` renderizado como H2 + `respuesta` tras el intro. Sin FAQPage (prohibido); Q&A como HTML on-page |
+| 3.3 | Páginas /temas/: párrafo inicial que defina la entidad en formato cita-able antes del listado | Carlos + Claude Code | Pendiente — las /temas/ ya tienen `descripcion` arriba; falta darle formato definición cita-able ("La antroposofía es...") |
+| 3.4 | Internal linking piramidal: temas → rutas → libros, anchors descriptivos | Claude Code | Pendiente |
+| 3.5 | Evaluar llms.txt en raíz del sitio | Claude Code | HECHO (2026-06-18) — `public/llms.txt` generado desde datos (rutas + temas + secciones), en vivo |
 
 ## Fase 4 — Medir e iterar (desde semana 6, recurrente)
 
