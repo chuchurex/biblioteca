@@ -2,7 +2,7 @@
 // JSON-LD builders. Una sola fuente de verdad para el schema del sitio.
 // Entidades enlazadas por @id estable para que los motores las unifiquen.
 // ---------------------------------------------------------------------------
-import type { Libro, Ruta, Tema } from './types';
+import type { Libro, Meditacion, Ruta, Tema } from './types';
 
 const SITE = 'https://chuchurex.cl';
 const WEBSITE_ID = `${SITE}/#website`;
@@ -75,6 +75,21 @@ export function buildLibro(libro: Libro, _totalEps: number) {
     ...(libro.descripcion && { description: libro.descripcion }),
     ...(libro.thumbnail && { image: libro.thumbnail }),
     url: abs(`/libros/${libro.slug}/`),
+    inLanguage: 'es',
+    isPartOf: { '@id': WEBSITE_ID },
+    publisher: publisherRef,
+  };
+}
+
+export function buildMeditacion(med: Meditacion) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: med.titulo,
+    ...(med.guia && { author: { '@type': 'Person', name: med.guia } }),
+    ...(med.descripcion && { description: med.descripcion }),
+    ...(med.thumbnail && { image: med.thumbnail }),
+    url: abs(`/meditaciones/${med.slug}/`),
     inLanguage: 'es',
     isPartOf: { '@id': WEBSITE_ID },
     publisher: publisherRef,

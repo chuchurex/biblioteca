@@ -1,0 +1,33 @@
+# chuchurex
+
+> Biblioteca espiritual curada en español: audiolibros, conferencias y meditaciones de YouTube, ordenados por tema y en rutas de estudio progresivas. La curaduría es el valor: qué leer y en qué orden. Mantenida por Carlos Martínez.
+
+Cubre antroposofía (Rudolf Steiner), la Ley del Uno (Material de Ra), chamanismo tolteca (Carlos Castaneda), el Cuarto Camino (Gurdjieff), astrología evolutiva, hermetismo y tradiciones de consciencia. Todo el contenido enlaza a videos de YouTube; el sitio aporta el orden y el contexto, no el hosting del audio.
+
+## Rutas de estudio
+
+Recorridos con un orden de lectura/escucha definido. Responden "por dónde empiezo" y "en qué orden".
+
+- [El mundo de Carlos Castaneda](https://chuchurex.cl/rutas/camino-guerrero-tolteca/): Cinco libros de Castaneda en orden: del primer encuentro con Don Juan a las emanaciones del Águila.
+- [Introducción a la consciencia](https://chuchurex.cl/rutas/introduccion-consciencia/): Los dos documentales de Daniel Schmidt y, para después de verlos, una serie de meditaciones guiadas.
+- [Astrología evolutiva: tu carta natal](https://chuchurex.cl/rutas/astrologia-carta-natal/): Las clases de Pablo Flores Laymuns ordenadas: qué es una carta natal, y después Luna, Ascendente y casas.
+- [Las obras fundamentales de Steiner](https://chuchurex.cl/rutas/fundamentos-antroposofia/): Las cuatro obras escritas fundamentales de Rudolf Steiner, en un orden que ayuda: la base filosófica primero, la cosmología completa al final.
+- [Los Evangelios según Steiner](https://chuchurex.cl/rutas/evangelios-steiner/): Los cuatro Evangelios como ciclos de conferencias de Rudolf Steiner. Cada evangelista revela un aspecto distinto del Misterio de Gólgota.
+- [Vida, muerte y más allá según Steiner](https://chuchurex.cl/rutas/vida-muerte-steiner/): Qué ocurre entre la muerte y el nuevo nacimiento según la investigación espiritual de Rudolf Steiner, y las fuerzas que actúan en la evolución humana.
+
+## Temas
+
+- [La Ley del Uno](https://chuchurex.cl/temas/ley-del-uno/): El Material de Ra: cosmología, densidades, el Creador, la evolución del alma y el servicio a otros.
+- [Antroposofía](https://chuchurex.cl/temas/antroposofia/): La ciencia espiritual de Rudolf Steiner: mundos superiores, teosofía, ciencia oculta, pedagogía Waldorf y medicina antroposófica.
+- [El mundo de Carlos Castaneda](https://chuchurex.cl/temas/chamanismo-tolteca/): Carlos Castaneda, don Juan Matus, el nagualismo, Jacobo Grinberg y la tradición chamánica mesoamericana.
+- [Cuarto Camino](https://chuchurex.cl/temas/cuarto-camino/): G.I. Gurdjieff, P.D. Ouspensky: el trabajo sobre sí, el recuerdo de sí, la atención y la consciencia.
+- [Astrología evolutiva](https://chuchurex.cl/temas/astrologia/): Carta natal, tránsitos, casas y planetas como herramienta de autoconocimiento y evolución personal.
+- [Hermetismo y geometría sagrada](https://chuchurex.cl/temas/hermetismo/): Las leyes universales del hermetismo, la geometría sagrada y los patrones ocultos de la creación.
+- [Consciencia y no-dualidad](https://chuchurex.cl/temas/consciencia/): Exploración de la consciencia, el despertar interior y las enseñanzas no-duales. Documentales, meditaciones y prácticas contemplativas.
+- [Ayurveda](https://chuchurex.cl/temas/ayurveda/): Medicina ayurvédica: doshas, alimentación, rutinas y la relación entre cuerpo, mente y emociones.
+
+## Secciones
+
+- [Contenidos (audiolibros, cursos, documentales)](https://chuchurex.cl/libros/)
+- [Meditaciones](https://chuchurex.cl/meditaciones/)
+- [Acerca / contacto](https://chuchurex.cl/about/)

@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import EpisodeCard from '../../../components/EpisodeCard.astro';
 import { getAllMeditaciones, getMeditacionBySlug, getVersionesDeMeditacion, contarEpisodiosMeditacion } from '../../../lib/datos';
+import { buildMeditacion, buildBreadcrumb } from '../../../lib/schema';
 
 export function getStaticPaths() {
   return getAllMeditaciones().map(med => ({
@@ -13,11 +14,21 @@ const { meditacion: medSlug } = Astro.params;
 const med = getMeditacionBySlug(medSlug!)!;
 const versiones = getVersionesDeMeditacion(med);
 const totalEps = contarEpisodiosMeditacion(med);
+
+const jsonLd = [
+  buildBreadcrumb([
+    { name: 'Inicio', path: '/' },
+    { name: 'Meditaciones', path: '/meditaciones/' },
+    { name: med.titulo, path: `/meditaciones/${medSlug}/` },
+  ]),
+  buildMeditacion(med),
+];
 ---
 
 <Layout
   title={`${med.titulo} — chuchurex`}
   description={med.descripcion || `${med.titulo} — ${med.guia}`}
+  jsonLd={jsonLd}
 >
   <section class="py-10 relative overflow-hidden">
     <div class="absolute top-1/2 right-0 -translate-y-1/2 w-48 h-48 border border-white/[0.03] rounded-full translate-x-1/2"></div>
