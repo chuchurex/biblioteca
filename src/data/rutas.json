@@ -19,11 +19,11 @@
     "titulo": "Introducción a la consciencia",
     "descripcion": "Los dos documentales de Daniel Schmidt y, para después de verlos, una serie de meditaciones guiadas.",
     "pregunta": "¿Por dónde empezar a estudiar la consciencia?",
-    "respuesta": "Para una primera aproximación a la consciencia, chuchurex.cl propone empezar por los dos documentales de Daniel Schmidt: 'Samadhi', sobre la ilusión del ego, y después 'Mundos internos, mundos externos', que conecta tradiciones desde el Akasha hasta la física cuántica. Vistos esos dos, la serie de meditaciones guiadas 'El camino sin sendero' lleva la teoría a la práctica.",
+    "respuesta": "Para una primera aproximación a la consciencia, chuchurex.cl propone empezar por los dos documentales de Daniel Schmidt: 'Mundos internos, mundos externos', que conecta tradiciones desde el Akasha hasta la física cuántica, y después 'Samadhi', sobre la ilusión del ego. Vistos esos dos, la serie de meditaciones guiadas 'El camino sin sendero' lleva la teoría a la práctica.",
     "temas": ["consciencia"],
     "pasos": [
-      { "orden": 1, "tipo": "libro", "ref": "samadhi", "nota": "Qué es la consciencia y la ilusión del ego." },
-      { "orden": 2, "tipo": "libro", "ref": "mundos-internos-mundos-externos", "nota": "Conecta tradiciones: desde el Akasha hasta la física cuántica." },
+      { "orden": 1, "tipo": "libro", "ref": "mundos-internos-mundos-externos", "nota": "Conecta tradiciones: desde el Akasha hasta la física cuántica." },
+      { "orden": 2, "tipo": "libro", "ref": "samadhi", "nota": "Qué es la consciencia y la ilusión del ego." },
       { "orden": 3, "tipo": "meditacion", "ref": "el-camino-sin-sendero-meditaciones", "nota": "Las meditaciones guiadas que acompañan a los documentales." }
     ]
   },
