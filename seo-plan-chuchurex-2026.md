@@ -1,7 +1,7 @@
 # Plan SEO + AEO — chuchurex.cl v2 — Q2/Q3 2026
 
 **Owner:** Carlos Martínez (chuchurex)
-**Última actualización:** 2026-06-18
+**Última actualización:** 2026-07-13
 **Cadencia de revisión:** mensual (regla: si este doc lleva 6 semanas sin actualizarse, está muerto)
 **Estado del sitio:** v2 lanzada el 2026-06-10. El dominio antes alojaba un portafolio personal (no una biblioteca v1), con presencia de búsqueda casi nula (ver Fase 0). GA4 activo (G-P2G8CL5J2V). GSC: propiedad de dominio verificada, sitemap enviado. Automatización de GSC vía service account (no gcloud); detalle al final de Fase 0.
 **Repo y hosting:** este sitio es el proyecto `biblioteca` (Astro, output estático SSG), Cloudflare Pages, sirviendo el dominio raíz chuchurex.cl. `biblioteca.chuchurex.cl` y `www` redirigen 301 a la raíz. Todo el trabajo técnico de este plan se ejecuta en este repo (`~/Sites/active/biblioteca`), NO en el repo `chuchurex/chuchurex` (que hoy es solo portafolio + API en chuchurex.pages.dev).
@@ -36,8 +36,8 @@ Nota: en nivel producto los competidores SERP son YouTube, Spotify e Ivoox, no s
 
 ## Objetivos SMART (borrador, ajustar con baseline)
 
-1. Indexación completa: 100% de URLs nuevas indexadas en GSC antes del 2026-07-15.
-2. Tráfico orgánico no-branded: establecer baseline en julio 2026 y crecer 3x para diciembre 2026 (HIPÓTESIS - sin datos de la v2 aún, recalibrar con primer mes de GSC).
+1. Indexación completa: 100% de URLs nuevas indexadas en GSC antes del 2026-07-15. **Medido 2026-07-13: 90,1% (1.568/1.741 vía URL Inspection API).** Todas las páginas estratégicas (home, rutas, temas, índices, detalle de meditaciones) al 100%; el gap son 152 episodios y 15 fichas de libro sin indexar todavía (cold start, no hay bloqueo técnico: 0 errores, robots OK). Nuevo objetivo: 98%+ para 2026-08-15.
+2. Tráfico orgánico no-branded: establecer baseline en julio 2026 y crecer 3x para diciembre 2026. **Baseline parcial julio (1-13): 33 impresiones no-branded, 0 clicks, 100% de queries no-branded.** Tendencia al alza: de ~3 impr/día (junio) a ~20-25 impr/día (julio). Total desde lanzamiento v2: 7 clicks, 304 impresiones. Cerrar baseline con el mes completo a inicios de agosto.
 3. Visibilidad AEO como fuente primaria: de baseline (medición junio 2026) a 40%+ en las 5 preguntas test para septiembre 2026.
 4. Entidad personal: que la búsqueda "carlos martínez chuchurex desarrollador" y consultas AI sobre el creador del sitio devuelvan información correcta para agosto 2026.
 
@@ -52,7 +52,7 @@ Nota: en nivel producto los competidores SERP son YouTube, Spotify e Ivoox, no s
 
 **Conclusión:** el archivo `public/_redirects` (que mapea el cambio de slugs tema→libros de la biblioteca) es correcto mantenerlo para links viejos, pero NO recupera tráfico relevante. El trabajo real es de cold start: indexar las 1.790 URLs y construir autoridad desde cero (Fase 2 + 3).
 
-**Hallazgo abierto:** existe un subdominio `admision.chuchurex.cl` con contenido ajeno (UChile/SAE). Como la propiedad GSC es de dominio, ensucia los datos. Decidir si se separa o se filtra en los reportes.
+**Hallazgo cerrado (2026-07-13):** el subdominio `admision.chuchurex.cl` NO ensucia los datos: en el pull completo desde el lanzamiento v2 tiene 0 impresiones. No requiere acción.
 
 | # | Acción | Ejecutor | Estado |
 |---:|---|---|---|
@@ -60,7 +60,7 @@ Nota: en nivel producto los competidores SERP son YouTube, Spotify e Ivoox, no s
 | 0.2 | Mapear URLs viejas → nuevas con 301s | Claude Code | HECHO — `_redirects` cubre slugs biblioteca; añadido `/about.html`→`/about/`; resto del portafolio se deja en 404 a propósito |
 | 0.3 | Verificar sitemap generado y enviado en GSC | Carlos | HECHO — `sitemap-index.xml` enviado 2026-06-15, leído 2026-06-16, 0 errores, 1.790 URLs |
 | 0.4 | Verificar robots.txt no bloquea nada crítico | Claude Code | HECHO — `Allow: /` + referencia al sitemap (commit 94045e1) |
-| 0.5 | Revisar GSC Cobertura primeros 14 días: 404s, soft 404s, duplicados | Carlos | En curso — sin errores de sitemap; revisar indexación de las 1.790 |
+| 0.5 | Revisar GSC Cobertura primeros 14 días: 404s, soft 404s, duplicados | Carlos | HECHO (2026-07-13) — barrido completo con URL Inspection API: 1.568 indexadas (90,1%), 125 "unknown to Google", 48 "crawled - not indexed", 0 errores/bloqueos. Datos en `datos/gsc/inspeccion.jsonl`. Sitemap resubmitido (Google no lo releía desde 2026-06-18 y la poda de videos lo dejó en 1.741 URLs) |
 | 0.6 | Verificar que el HTML SSG trae el contenido clave sin depender de JS | Claude Code | Pendiente |
 | 0.7 | Confirmar si las URLs cambiaron | Claude Code | HECHO — sí cambiaron (`/{tema}/{libro}` → `/libros/{libro}`), redirects construidos |
 
@@ -71,7 +71,7 @@ Nota: en nivel producto los competidores SERP son YouTube, Spotify e Ivoox, no s
 | # | Acción | Ejecutor | Estado |
 |---:|---|---|---|
 | 1.1 | Audit AEO de 5 preguntas (ver sección AEO abajo) en ChatGPT, Claude, Perplexity y Gemini, en incógnito. Guardar como aeo-baseline-2026-06-XX.csv | Carlos (manual, incógnito obligatorio) | Pendiente |
-| 1.2 | Pull GSC v1: top queries y top pages históricos como referencia de qué ya rankeaba | Claude Code (API) | Pendiente |
+| 1.2 | Pull GSC v1: top queries y top pages históricos como referencia de qué ya rankeaba | Claude Code (API) | HECHO (2026-07-13) — pull completo desde lanzamiento v2 en `datos/gsc/` (queries, pages, serie diaria, julio). Hallazgos clave: (a) julio ya es 100% no-branded; (b) el AEO de rutas funciona: todas las variantes de "libros de castaneda en orden" rankean pos. 7-11 hacia /rutas/camino-guerrero-tolteca/ (página top del sitio, 56 impr); (c) "el cuarto camino gurdjieff audiolibro" pos. 5-6 hacia /temas/cuarto-camino/; (d) cluster "meditación ramiro calle" pos. 11-16 = low-hanging fruit clásico (posiciones 11-20) para optimizar |
 | 1.3 | Radiografía de competidores: hermandadblanca.org, bibliotecas antroposóficas online, upasika, canales Ivoox/YouTube que rankean en web para las keywords de nivel producto y solución | Carlos + Claude | Pendiente |
 
 ## Fase 2 — Fundamentos técnicos (semanas 2-3)
