@@ -9,6 +9,87 @@ const persona = buildPerson({
     'https://www.instagram.com/chuchurex/',
   ],
 });
+
+// Sitios construidos por Carlos, agrupados por el eje que trabajan.
+// Los que no tienen url todavía no están lanzados.
+const sitios = [
+  {
+    eje: 'Espíritu',
+    items: [
+      {
+        nombre: 'Gabriel Lugo',
+        dominio: 'gabriel-lugo.com',
+        url: 'https://gabriel-lugo.com',
+        descripcion:
+          'Guía espiritual. El Camino Directo: integrar el verdadero yo a través de la meditación sin esfuerzo.',
+      },
+      {
+        nombre: 'Ser y Fluir',
+        dominio: 'seryfluir.cl',
+        url: 'https://seryfluir.cl',
+        descripcion:
+          'Terapias espirituales: el libre albedrío, la muerte y sus procesos, el acompañamiento del alma.',
+      },
+    ],
+  },
+  {
+    eje: 'Antroposofía',
+    items: [
+      {
+        nombre: 'Pablo Moche',
+        dominio: 'pablomoche.cl',
+        url: 'https://pablomoche.cl',
+        descripcion:
+          'Médico de orientación antroposófica. Artículos que conectan la antroposofía con la ciencia moderna.',
+      },
+      {
+        nombre: 'Escuela Escencia',
+        dominio: 'escuelaescencia.org',
+        url: null,
+        descripcion:
+          'Escuela de orientación antroposófica. Sitio en construcción.',
+      },
+    ],
+  },
+  {
+    eje: 'Psique',
+    items: [
+      {
+        nombre: 'Karen Klein',
+        dominio: 'karenklein.cl',
+        url: 'https://karenklein.cl',
+        descripcion:
+          'Psicóloga clínica. Terapia individual y familiar sistémica, constelaciones familiares.',
+      },
+      {
+        nombre: 'Eduardo Yentzen',
+        dominio: 'yentzen.org',
+        url: 'https://yentzen.org',
+        descripcion:
+          'Escritor y terapeuta. Publicaciones y proyectos sobre desarrollo personal y transformación cultural.',
+      },
+    ],
+  },
+  {
+    eje: 'Cuerpo',
+    items: [
+      {
+        nombre: 'Sportpits',
+        dominio: 'sportpits.cl',
+        url: 'https://sportpits.cl',
+        descripcion:
+          'Quiropraxia profesional en Barrio Italia, Santiago.',
+      },
+      {
+        nombre: 'SaludMasaje',
+        dominio: 'saludmasaje.cl',
+        url: 'https://saludmasaje.cl',
+        descripcion:
+          'Masajes corporativos y a domicilio en Santiago, con más de 10 años de experiencia.',
+      },
+    ],
+  },
+];
 const breadcrumb = buildBreadcrumb([
   { name: 'Inicio', path: '/' },
   { name: 'Acerca', path: '/about/' },
@@ -76,6 +157,51 @@ const breadcrumb = buildBreadcrumb([
 
           <p class="text-brand-50">Mi correo: chuchurex en gmail.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto px-6 md:px-12 max-w-4xl">
+      <h2 class="text-3xl font-display font-bold text-brand-50 mb-3">Sitios que he construido</h2>
+      <p class="text-brand-100 leading-relaxed mb-10 max-w-2xl">
+        Esta biblioteca no está sola. He construido sitios para personas y
+        proyectos que recorren el mismo camino desde distintos ángulos: el
+        espíritu, la antroposofía, la psique y el cuerpo.
+      </p>
+
+      <div class="space-y-10">
+        {sitios.map((grupo) => (
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.1em] text-accent mb-4">{grupo.eje}</p>
+            <div class="grid md:grid-cols-2 gap-4">
+              {grupo.items.map((sitio) =>
+                sitio.url ? (
+                  <a
+                    href={sitio.url}
+                    target="_blank"
+                    rel="noopener"
+                    class="block bg-brand-500 rounded-xl border border-white/[0.06] p-5 transition-all duration-300 hover:border-accent/20 hover:-translate-y-1 hover:shadow-card-hover"
+                  >
+                    <div class="flex items-baseline justify-between gap-3 mb-2">
+                      <span class="text-xl font-display font-bold text-brand-50">{sitio.nombre}</span>
+                      <span class="text-xs text-brand-200">{sitio.dominio}</span>
+                    </div>
+                    <p class="text-sm text-brand-100 leading-relaxed">{sitio.descripcion}</p>
+                  </a>
+                ) : (
+                  <div class="bg-brand-500/50 rounded-xl border border-white/[0.04] p-5">
+                    <div class="flex items-baseline justify-between gap-3 mb-2">
+                      <span class="text-xl font-display font-bold text-brand-100">{sitio.nombre}</span>
+                      <span class="text-xs text-brand-200">{sitio.dominio}</span>
+                    </div>
+                    <p class="text-sm text-brand-200 leading-relaxed">{sitio.descripcion}</p>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   </section>
