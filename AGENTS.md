@@ -120,3 +120,9 @@ Key routing rules:
 - Architecture review → invoke plan-eng-review
 - Save progress, checkpoint, resume → invoke checkpoint
 - Code quality, health check → invoke health
+
+## Infraestructura (deploy y datos SEO)
+
+El deploy en Cloudflare y el acceso a datos SEO (Search Console / Analytics) usan credenciales
+gestionadas localmente por el mantenedor, fuera del repositorio. No hay secretos versionados:
+tokens y service accounts viven solo en el entorno local, nunca en el repo.
